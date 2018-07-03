@@ -1,23 +1,23 @@
 # Site settings
-title: "Paper Jekyll Theme"
+title: "Andy's Blog"
 description: > 
-  Write a description of your website here.
+  A jumbled collection of thoughts
 
-author: Johnny Appleseed
-email: johnny@appleseed.com
-twitter_username: _HairForceOne
-github_username: mkchoi212
+author: Andy Hansen
+email: ahansen.nz@gmail.com
+twitter_username: andyCamelCase
+github_username: andyhansen
 
-baseurl: "/paper-jekyll-theme" # the subpath of your site, e.g. /blog
-url: "https://deadbeef.me" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://andyhansen.co.nz" # the base hostname & protocol for your site
 
-google_analytics_id: UA-1111111111-1
-disqus_id:
+google_analytics_id: UA-91125210-1
+disqus_id: andyhansen
 
 # Build settings
 include: [_pages]
 markdown: kramdown
-permalink: /:year/:month/:title.html
+permalink: /posts/:title
 
 sass:
     style: compressed
