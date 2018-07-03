@@ -3,20 +3,14 @@ layout: content
 title: About
 permalink: /about/
 ---
-Hi, I'm Johnny and I live in the Shire. Thanks for visiting my site.
 
-I program and write about software development when I have the time. More information can be found through <a href="https://www.linkedin.com/" data-network="LinkedIn" data-proofer-ignore>LinkedIn.</a>
+Hey there, I'm Andy, a Wellington based .NET developer who has recently switched it up to Ruby.
+This blog is predominantly used for me to gather my thoughts on whatever thought is spinning around in my mind.
+I hope you like it!
+
+Obligatory: My opinions are my own and not the views of my employer.
 
 ----
 
 ## The Website
-This site was made on an [Apple MBP](https://www.apple.com/) powered by [Jekyll](https://jekyllrb.com) on [Github Pages](https://pages.github.com).
-I'd love to hear your feedback on this site and my work.
-
-----
-
-## Etcetera
-
-- [Instagram](https://www.instagram.com/) for 📸
-- [Facebook](https://www.facebook.com/) for 🕺
-
+This site is powered by [Jekyll](https://jekyllrb.com), and hosted on [Github Pages](https://pages.github.com).
