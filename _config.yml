@@ -24,3 +24,5 @@ sass:
 
 exclude: [vendor]
 
+gems:
+  - jekyll-sitemap

@@ -223,6 +223,7 @@ DEPENDENCIES
   html-proofer
   jekyll (= 3.4.3)
   jekyll-livereload
+  jekyll-sitemap
   rb-fsevent (= 0.9.8)
 
 BUNDLED WITH
