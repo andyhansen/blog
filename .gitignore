@@ -5,4 +5,3 @@ _site/
 .DS_Store
 .bundle
 vendor/*
-!.git/hooks/post-commit
