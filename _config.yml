@@ -19,6 +19,8 @@ include: [_pages]
 markdown: kramdown
 permalink: /posts/:title
 
+timezone: Pacific/Auckland
+
 sass:
     style: compressed
 
