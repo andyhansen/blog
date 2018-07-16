@@ -3,7 +3,8 @@ layout: post
 title: "My Transition from .NET to Ruby"
 description: "My journey from noob to rube"
 date: 2018-07-11
-tags: ruby, .net
+tags: ruby .net
+published: false
 comments: true
 ---
 
@@ -11,6 +12,7 @@ Late last year, I made the switch from .NET to Ruby as my server-side language.
 It's been an interesting ride so far, and now feels like a good time to quickly walk through some of the landmarks on my journey so far.
 
 ## From IDE to text editors
+
 If you are developing in .NET, you are almost certainly going to be using Visual Studio.
 Out of the box you are getting great code generation, code completion, error checking, and unit test runners.
 I also found that very little of my daily development tasks would require me to use the command-line.
@@ -40,7 +42,7 @@ It also feels like there is a much more active hunger for learning, though that 
 
 ## Time away from the Microsoft ecosystem
 Microsoft does a great job at gluing all their offerings together, which often makes it the first thing you reach for to solve a problem.
-If you needed a database, you'll probably be using [SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-2016), for Bots, it's [Box Framework](https://dev.botframework.com/), [Azure](https://azure.microsoft.com/en-us/) is the easiest way to set up web hosting.
+If you needed a database, you'll probably be using [SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-2016), for Bots, it's [Bot Framework](https://dev.botframework.com/), [Azure](https://azure.microsoft.com/en-us/) is the easiest way to set up web hosting.
 These are all great solutions, but I was starting to feel a bit boxed in by them.
 My career at this point had ended up being entirely Microsoft.
 I could see the thriving world of open source through my window, and it was giving me major [FOMO](https://en.wikipedia.org/wiki/Fear_of_missing_out).
