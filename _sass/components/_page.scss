@@ -7,17 +7,26 @@
 }
 
 .c-page__header {
-    margin-bottom: 10rem; // 100px
+  margin-bottom: 1rem;
 
-    h1 {
-        margin-bottom: 2.5rem; // 25px
-        @include fs--heading-2;
-        color: $c-base__02;
-    }
+  h1 {
+    margin-bottom: 1.2rem;
+    @include fs--heading-2;
+    color: $c-base__02;
+  }
 
-    p {
-        @include fs--meta;
-    }
+  p {
+    @include fs--meta;
+  }
+}
+
+.c-page__main {
+  // -webkit-box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);
+  // -moz-box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);
+  // box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);
+  // padding: 4rem 2rem 2rem 2rem;
+  padding: 2.5rem 0 0 0;
+  margin-bottom: 2rem;
 }
 
 .c-page__footer {
