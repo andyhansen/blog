@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Humility Is an Important Trait for Any Programmer"
+title: "Humility as a Programmer"
 date: 2017-07-02
-tags: programming, mindset
+tags: programming mindset
 comments: true
 ---
 _"Hey pal, can't wait to work with you. I love that high opinion you have of yourself, and that you always make sure you get your way!"_
