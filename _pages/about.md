@@ -8,9 +8,6 @@ Hey there, I'm Andy, a Wellington based .NET developer who has recently switched
 This blog is predominantly used for me to gather my thoughts on whatever is spinning around in my mind.
 I hope you like it!
 
+The source code for my site [can be found on GitHub](https://github.com/andyhansen/blog).
+
 Obligatory: My opinions are my own and not the views of my employer.
-
-----
-
-## The Website
-This site is powered by [Jekyll](https://jekyllrb.com), and hosted on [Github Pages](https://pages.github.com).
