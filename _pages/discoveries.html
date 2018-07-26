@@ -1,10 +1,13 @@
 ---
-layout: page
-title: Home
+layout: content
+title: Discoveries
+permalink: /discoveries/
 ---
+{% assign discoveries = site.posts | where:'type','discovery' %}
+<p>Often I'll come across something which really amazes me, or something that ends up shaping who I am. I use this page to write about those exciting things. They are essentially my "super bookmarks".</p>
 <section class="c-archives">
   <link rel="shortcut icon" href="">
-  {% for post in site.posts  %}
+  {% for post in discoveries  %}
   {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
   {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
   {% if forloop.first %}
@@ -13,14 +16,7 @@ title: Home
     {% endif %}
     <li class="c-archives__item">
       <h3>
-        <a href="{{ post.url | prepend: site.baseurl }}"
-          {% if post.type == 'discovery' %}
-            class="discovery"
-          {% endif %}
-        >{{post.title}}</a>
-        {% if post.type == 'discovery' %}
-          <a href="{{ post.link }}" class="simple"><img src="/assets/icon/link.svg" fill="red" height="12px" alt="A link icon" /></a>
-        {% endif %}
+        <a href="{{ post.url | prepend: site.baseurl }}" class="discovery">{{post.title}}</a>
         <br>
         <small>{{post.description}}</small>
       </h3>

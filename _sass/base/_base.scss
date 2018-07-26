@@ -56,7 +56,7 @@ a {
   display: inline-block;
   padding: 0px 1px;
   transition: color ease 0.3s;
-  
+
   /* Hover animation effect for all buttons */
   &::after {
     content: '';
@@ -77,23 +77,41 @@ a {
     }
   }
 
+  &.discovery {
+    color: $c-accent__red;
+
+    &::after {
+      background-color: $c-accent__red;
+    }
+
+    &:hover {
+      color: white;
+    }
+  }
 }
 
-/* Override hover animation with no-hov class */
-a.no-hov {
+i.link-icon {
 	&:after {
-		content: none
+    color: $c-accent__darkblue;
+    content: url('/assets/icon/link.svg');
+	}
+}
+
+a.simple {
+	&:after {
+		content: none;
 	}
 	
 	&:hover {
-		color: $c-accent__darkblue
-	}
+		color: $c-accent__darkblue;
+  }
 }
 
 a.nav {
   padding: 10px 35px;  
   overflow:hidden;
 }
+
 a.nav:before {
     font-family: FontAwesome;
     content:"\f07a";
@@ -111,3 +129,18 @@ small {
   color: gray;
 }
 
+
+.youtube-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
