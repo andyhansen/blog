@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Tips to Improve Your Scrum Team"
+title: "Improving Your Scrum Team"
 date: 2017-02-07
-tags: scrum, agile
+tags: scrum agile
 comments: true
 ---
 
