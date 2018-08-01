@@ -25,5 +25,5 @@ It's not a long video, so I'd be wasting my time bumbling on much longer.
 If you've got five minutes I highly recommend checking it out below.
 
 <div class="youtube-wrapper">
-  <iframe align="middle" src="https://www.youtube-nocookie.com/embed/-BdbiZcNBXg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  <iframe src="https://www.youtube-nocookie.com/embed/-BdbiZcNBXg" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
 </div>
