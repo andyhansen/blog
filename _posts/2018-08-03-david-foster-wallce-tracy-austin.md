@@ -18,6 +18,11 @@ DFW reflects on what he was hoping to get out of the biography, a sense of what 
 Moments that mere mortals like us never truly know.
 How the flat, lifeless language sucked away any chance he had to find out what it was really like to be Tracy Austin in those moments.
 
+My favourite part is at the end of the essay, where he is wondering 
+
+This is just a small fragment of the the experience that DFW presents to the reader, but if I tried to explain any more I would be doing his essay a disservice.
+I love the essay so much, and I've gone back to listen to the audio multiple times.
+Through explaining his disappointment, David Foster Wallace taught me so many valuable lessons in storytelling.
 
 
 We all all know how it feels to be on the receiving end of a poorly told story.
