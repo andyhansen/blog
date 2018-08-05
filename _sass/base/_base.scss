@@ -122,7 +122,8 @@ pre {
   overflow: auto;
 }
 
-small {
+span.small {
+  @include fs--caption;
   color: gray;
 }
 
