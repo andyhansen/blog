@@ -2,7 +2,7 @@
 layout: post
 type: discovery
 title: "How Tracy Austin Broke My Heart - David Foster Wallace"
-description: "David Foster Wallace's taught me about emotive language"
+description: "David Foster Wallace taught me about emotive language"
 date: 2018-08-05
 tags: storytelling stories david-foster-wallace
 comments: true
