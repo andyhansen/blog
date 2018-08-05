@@ -90,11 +90,8 @@ a {
   }
 }
 
-i.link-icon {
-	&:after {
-    color: $c-accent__darkblue;
-    content: url('/assets/icon/link.svg');
-	}
+i.fa-link {
+  color: $c-accent__blue;
 }
 
 a.simple {
