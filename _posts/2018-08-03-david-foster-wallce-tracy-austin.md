@@ -2,40 +2,33 @@
 layout: post
 type: discovery
 title: "How Tracy Austin Broke My Heart - David Foster Wallace"
-description: "David Foster Wallace's ability to tell a story"
-date: 2018-08-01
-tags: storytelling stories
+description: "David Foster Wallace's taught me about emotive language"
+date: 2018-08-05
+tags: storytelling stories david-foster-wallace
 comments: true
 link: https://www.scribd.com/doc/134106158/How-Tracy-Austin-Broke-My-Heart-David-Foster-Wallace
 ---
 
-David Foster Wallace was incredibly disappointed by Tracy Austin's biography, and it feels like I've experienced his disappointment more than I've experienced my own at times.
-DFW didn't just outline the areas this biography feel short.
-He dived right in, giving a rich description of each layer as he went down.
+["How Tracy Austin Broke My Heart"](https://www.scribd.com/doc/134106158/How-Tracy-Austin-Broke-My-Heart-David-Foster-Wallace) has got to be my favourite essay in David Foster Wallace's, [Consider the Lobster](https://www.goodreads.com/book/show/6751.Consider_the_Lobster_and_Other_Essays).
+In it, he thoroughly explains each layer of disappointment he has with Tracy's ghostwritten autobiography.
+Touching on aspects such as the misplaced target audience, Tracy's almost surreal naivety, and the lifeless descriptions of her experiences.
 
-Intense back and forth matches between Tracy and her rival were essentially reduced to "they got some points, I thought I was going to lose, I got some points, I won, that was good".
-DFW reflects on what he was hoping to get out of the biography, a sense of what it was like to be Tracy in those intense, life defining moments.
-Moments that mere mortals like us never truly know.
-How the flat, lifeless language sucked away any chance he had to find out what it was really like to be Tracy Austin in those moments.
+Intense back and forth matches are essentially reduced to "they got some points, I thought I was going to lose, I got some points, I won, that was good".
+These terrible descriptions contrast perfectly with with how DFW explains his disappointment.
+He longs to know what it's like to be in the head of a top athlete like Tracy, to experience her life defining moments.
+To go into a book hoping to understand those experiences, and getting such flat language in return felt like a real slap in the face.
+Thankfully for us, in describing his disappointment, DFW paints an incredible picture of how her story could have been framed.
 
-My favourite part is at the end of the essay, where he is wondering 
+What this essay taught me, is that if you are trying to convey your feelings in a story, it's not enough to just say that you felt an emotion.
+Tracy's achievements are nothing short of incredible, but the dull language makes it impossible to feel drawn into her life story.
+You can have amazing life experiences but you properly unpack why they felt so amazing, then the story is nearly worthless.
 
-This is just a small fragment of the the experience that DFW presents to the reader, but if I tried to explain any more I would be doing his essay a disservice.
-I love the essay so much, and I've gone back to listen to the audio multiple times.
-Through explaining his disappointment, David Foster Wallace taught me so many valuable lessons in storytelling.
-
-
-We all all know how it feels to be on the receiving end of a poorly told story.
-However, somewhat ironically, it can be difficult to perfectly articulate what makes a story so boring.
-This is where David Foster Wallace comes in with his excellent essay, ["How Tracy Austin Broke My Heart"](https://www.scribd.com/doc/134106158/How-Tracy-Austin-Broke-My-Heart-David-Foster-Wallace), which is about the biography of his favourite childhood tennis player.
-In the essay, we are given the full emotional rollercoaster he went on as he read the biography.
-How the flat, lifeless language sucked away any chance he had to find out what it was really like to be Tracy Austin in those moments.
-
-If audiobooks are more your thing, you can listen to David Foster Wallace himself reading it on YouTube below.
+I've only described a tiny fragment of what makes this essay great, and I also appreciate the irony that I've given a fairly flat description as to why I love it so much.
+I highly recommend giving it a read, or if audiobooks are more your thing, you can listen to David Foster Wallace himself reading it on YouTube below.
 
 <div class="youtube-wrapper">
   <iframe src="https://www.youtube-nocookie.com/embed/U7BYK0hZibk" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
 </div>
 
-David Foster Wallace has an uncanny ability create an interesting narrative out of anything.
-One example is his essay on [the grammar battle between dictionaries (pdf)](https://harpers.org/wp-content/uploads/HarpersMagazine-2001-04-0070913.pdf).
+If you liked my post, or feel like I could have done something better, please let me know in the comments!
+I'm doing my best, but I've still got a long way to go.
