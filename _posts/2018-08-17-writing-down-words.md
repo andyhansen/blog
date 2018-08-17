@@ -13,7 +13,7 @@ It's something we do every day, and we do it directly to a person, which gives u
 
 Writing words down is a whole new kettle of fish.
 The feedback loop is massive, it's almost totally non-existent.
-I'm not going to end up rewriting a post after finishing it
+I'm not going to end up rewriting a post after finishing it.
 There is no "second chance", like how you can refine a story over time.
 These posts are a result of conversations I have with myself a thousand times over.
 First in my head as I come up with the idea, then on my computer as I type and tweak every sentence over and over again.
