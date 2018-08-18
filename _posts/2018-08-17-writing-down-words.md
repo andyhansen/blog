@@ -17,7 +17,7 @@ I'm not going to end up rewriting a post after finishing it.
 There is no "second chance", like how you can refine a story over time.
 These posts are a result of conversations I have with myself a thousand times over.
 First in my head as I come up with the idea, then on my computer as I type and tweak every sentence over and over again.
-So in theory these should be the most fine tuned conversations every... right?
+So in theory these should be the most fine tuned conversations ever... right?
 Well, at this stage they certainly aren't, but I'm getting a bit better each time.
 Even though it still takes me a long time, the process is really enjoyable.
 
