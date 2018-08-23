@@ -21,3 +21,10 @@ The solution is that you need to make sure that the work is structured so that i
 By making the work rewarding, the developers are productive, and are a lot happier because there are not the same presures on them.
 
 There is also the case that a forced deadline is going to lead to more bugs, because there is less time available to make sure you are producing a high quality product.
+
+Next up was about desk and office layouts.
+The authors would run a programming competition every year at a variaty of workplaces, and were then able to compare workplace conditions with the results.
+One interesting finding was that in general, different teams within the same organisation performed roughly as well as each other.
+Another was that teams with higher quality work, with lower error rates were in an office that had a noise level they were comfortable with.
+I thought it was particularly funny that the "terrible open offices" mentioned were not as bad as the offices we are now used to.
+At the time of writing the book, I dream of working in at least somewhat isolated cubicles, rather than the super open offices that are common now.
