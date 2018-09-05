@@ -39,3 +39,22 @@ Let people work in smaller spaces, with people they are actively working with, a
 A sterile office is a sign of a happy office manager, but an unhappy development team.
 Team offices may seem expensive, but they are much cheaper than the hidden cost that comes with a less productive development team.
 
+**Turnover.**
+It's not a comfortable thing to be aware of, but a company should be aware of their turnover amounts, and the cost to hire new employees.
+Replacing employees can be very expensive, as a new employee will likely be operating at negative productivity for at least a few months before they become as effective as the person they are replacing.
+
+A business needs to really invest in their employees to make them want to stick around.
+This is not just in training, but also in social facilities which allow employees to really get to know each other.
+One extreme example is at HP, where some offices have their own gardens, where employees can spend their lunch times growing vegetables.
+If a company is handling these correctly, it will seem like total insanity to leave the community of that workplace behind.
+If a company is caring for their employees, it will also be much less likely that they will leave in the middle of important pieces of work.
+
+**Teams.**
+A team which works well together, or "jells", can be an unstoppable force.
+Not only will they be more productive, but because they enjoy working together, they will happily work on tasks which could otherwise be considered "dull".
+There is no real formula for getting a team to start jelling, but their are some behaviours which will inhibit it.
+These are: .........................................
+
+Managers should make sure they keep teams together, even after projects are completed, because they will continue to function well as a group.
+If you are splitting teams up because you are afraid they might leave the company together, you are just hindering progress, and increasing turnover.
+Even if people leave a company, and new people join a team, you can keep the magic of that team as long as it can keep it's identity.
