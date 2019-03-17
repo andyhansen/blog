@@ -7,12 +7,12 @@ comments: true
 ---
 
 I recently got some advice on how my team could begin working more effectively, and it loved it so much I had to write this wee post about it.
-The advice was simply this "your team should be working outside of their comfort zone as much as they can".
+The advice was simply this, "your team should be working outside of their comfort zone as much as they can".
 It is so simple that I've got no idea why I hadn't thought of it before.
 
-As a team we were performing well, but we were often only working in area we were comfortable with.
-I can see how we ended up that way, it's easier to estimate, it will likely get done faster, and we assume that someone who knows that area of code is going to do a better job.
-Upon reflection, that isn't always the case, which is exactly why I got excited enough to write this post.
+We were performing well as a team, but we were also only working on the areas of the codebase we knew.
+I can see how we ended up that way: it's easier to estimate, the task will likely get done faster, and we assume that someone who knows that area of code is going to do a better job.
+Upon reflection, the upsides are all very focused on the short-term, which is exactly why I got excited enough to write this post.
 Below are some of the benefits I've come across since mixing up the work.
 
 ## Why it's great
