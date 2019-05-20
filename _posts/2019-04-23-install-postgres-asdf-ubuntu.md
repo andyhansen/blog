@@ -6,8 +6,6 @@ tags: posgres uuid asdf ubuntu
 comments: true
 ---
 
-## Installing PostgreSQL with UUID support on Ubuntu
-
 I've recently moved to Ubuntu for my work machine, and wanted to set up PostgreSQL using the [asdf](https://github.com/asdf-vm/asdf) version manager. As it turns out, it is not installed with UUID support out the box, so extra options need to be passed in.
 
 This guide is for PostgreSQL version `9.6.12` with this [postgres plugin](https://github.com/smashedtoatoms/asdf-postgres) for [asdf](https://github.com/asdf-vm/asdf), on Ubuntu 19.04.
