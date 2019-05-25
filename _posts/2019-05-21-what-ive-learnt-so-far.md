@@ -23,3 +23,7 @@ Over the last 4 years I've been working I've picked up a few knowledge nuggets a
 **To be a good developer, you need to be a good person.** I've seen a lot of teams suffer at the hands of someone who is technically proficient, but difficult to work with. It's a chore to get them to change their opinions, they generally spend their energy making the team work in a way that suits themselves, rather than anyone else. They can be a proficient developer, but they slow everyone around them down.
 
 **Break down your work small to keep yourself engaged.** The times in my career that I've found myself the least engaged have been when I have a massive task with no achievement checkpoints a long the way. After about a week on one task, I find it gets harder to stay on task, and I'm less engaged. I now try to avoid that situation for myself, and anyone else, by helping them break down stories small. Not only is value getting delivered earlier, but you are also clearing space in your head every time you complete a task.
+
+
+
+I think that might be all I've got so far, but no doubt there is plenty more. I'll likely expand on these theme over the next year, or write more detailed posts on some of the points here.
