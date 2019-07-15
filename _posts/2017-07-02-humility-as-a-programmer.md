@@ -26,7 +26,7 @@ When you work on existing code bases you may find yourself wondering, "Why on _e
 It takes a bit of experience to understand that you can't always write perfect code.
 Complex problems have multiple solutions, and you may not always end up picking the right one.
 You will always see ways to improve your old code, because you are always becoming a better developer.
-Being too vocal about the mistakes of others before you've learnt these lessons is a sure fire way to make yourself look like an ass.
+Being too vocal about the mistakes of others before you've learned these lessons is a sure fire way to make yourself look like an ass.
 
 Humility is obviously not just some switch you can turn on and off, but I've found that it's a very useful concept to remember as I work day to day.
 Hopefully this post has been a benefit to you, but if not, feel free to leave a comment below.

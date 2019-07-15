@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Lessons I've Learnt at Hackathons"
+title: "Lessons I've Learned at Hackathons"
 description: "and why you should go to one!"
 date: 2018-07-28
 tags: hackathons personal-growth
@@ -9,12 +9,12 @@ comments: true
 
 There are a lot of reasons to love hackathons.
 You get to meet some new people in a casual way, you get a bunch of free food and merch, but most of all, it's a focused weekend project for you to really grow as a developer.
-Each the three hackathons I've participated in, I've learnt some valuable lessons that I still carry with me.
+Each the three hackathons I've participated in, I've learned some valuable lessons that I still carry with me.
 
 The first hackathon, I was able to help put together a basic web front-end with a few graphs.
 Problem was, I had no idea how to get this thing onto the internet!
 Thankfully the other members of the team had that covered, but I gotta say, I was _shook_.
-The next week, with my newly highlighted flaws, I learnt how to deploy to both Azure and Github pages.
+The next week, with my newly highlighted flaws, I learned how to deploy to both Azure and Github pages.
 That feeling of being totally out of my depth was worth it.
 I really thought I was getting the hang of coding, but I was just introduced to the world that exists around it.
 

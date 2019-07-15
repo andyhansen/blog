@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "What I've Learnt So Far"
+title: "What I've Learned So Far"
 date: 2019-05-21
 tags: life personal-growth
 comments: true

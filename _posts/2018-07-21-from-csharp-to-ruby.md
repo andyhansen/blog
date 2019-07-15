@@ -69,5 +69,5 @@ Their new version of .NET, [.NET Core](https://github.com/dotnet/core) is open s
 I still really love C#/.NET, and plan to pick it up for a side project at some stage in the future, but I'll be trying my best to keep the stack as open source as possible.
 
 Until then, I'm absolutely loving Ruby, and the open source ecosystem that surrounds it.
-Even in this short time I've learnt so much, and it's amazing to have such a new world of technology to explore.
+Even in this short time I've learned so much, and it's amazing to have such a new world of technology to explore.
 I can absolutely recommend jumping over the fence to try it out, even if it's just for a while.
