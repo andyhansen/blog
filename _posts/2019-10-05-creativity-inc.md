@@ -6,9 +6,21 @@ tags: software teams
 comments: true
 ---
 
-I've just recently got through Creativity Inc, by __ __ and there were so many ideas in there that I plan to take with me into my job as a software developer. Many of them aren't a perfect match, making software and making movies are very different development processes, but I'm absolutely going to be taking a version of them along with me. I was also pleased to find there were already things suggested that I was already doing.
+I've just recently got through Creativity Inc, by __ __ and was totally blown away.
+Despite the advice being more directly geared towards a creative industry, there are many take aways which will change the way I approach leadership, and how to work in a company.
 
-Hire people better than you, getting feedback early and often, 
+One of the major themes of the book was around feedback.
+At Pixar they have the concept of a brains trust - a group of experienced people who give feedback on a film during it's development process.
+[There are many other blog posts explaining how they run it](https://www.fastcompany.com/3027135/inside-the-pixar-braintrust), so I will stick to talking about how I'll use that concept to adjust the way I'll try to work going forward.
+WORDZ
+
+There is a whole chapter dedicated to balancing "the beast", with "the baby".
+In a companies lifetime, there is always going to be a battle between wanting to make money through safe methods (the beast), and pushing the creative limits to make something exciting and new (the baby).
+As __ __ puts it, by making sure you doing enough work to satisty "the beast", it gives you much more room to experiement, and makes it much safer for those experiements to fail.
+By going too far in either in direction, you either risk stagnatiing, or running out of money when too many experiments don't pay off.
+It's not groundbreaking subject matter to tackle, but through it I've built a much better understanding on how feeding the beast will give you the room you need to experiement and (potentially) fail.
+
+How to carry yourself as a leader.
 
 A major theme of the book was that as their company changed overtime, they had to constantly go out of their way to make sure their original ideals were still active. They highly valued candour, and wanted all employees to feel like they could speak their mind without fear of being punished because of it. However, despite being so keen to get open and honest feedback, they often found that 
 
