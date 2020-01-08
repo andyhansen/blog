@@ -7,22 +7,22 @@ comments: true
 ---
 
 I've just recently got through Creativity Inc, by __ __ and was totally blown away.
-Despite the advice being more directly geared towards a creative industry, there are many take aways which will change the way I approach leadership, and how to work in a company.
+Though the advice being more directly applicable to the creative industry, there are many take aways which will change the way I work, and approach leadership.
 
-One of the major themes of the book was around feedback.
 At Pixar they have the concept of a brains trust - a group of experienced people who give feedback on a film during it's development process.
 [There are many other blog posts explaining how they run it](https://www.fastcompany.com/3027135/inside-the-pixar-braintrust), so I will stick to talking about how I'll use that concept to adjust the way I'll try to work going forward.
 WORDZ
 
-There is a whole chapter dedicated to balancing "the beast", with "the baby".
-In a companies lifetime, there is always going to be a battle between wanting to make money through safe methods (the beast), and pushing the creative limits to make something exciting and new (the baby).
-As __ __ puts it, by making sure you doing enough work to satisty "the beast", it gives you much more room to experiement, and makes it much safer for those experiements to fail.
-By going too far in either in direction, you either risk stagnatiing, or running out of money when too many experiments don't pay off.
-It's not groundbreaking subject matter to tackle, but through it I've built a much better understanding on how feeding the beast will give you the room you need to experiement and (potentially) fail.
+There is a fantastic chapter dedicated to how a company must continue to release content to "feed the hungry beast", while still giving new "ugly baby" ideas room to grow.
+Once you've achieved some success, a hungry beast will emerge which wants to continue consuming and creating.
+However, if you to focus solely on the needs of the beast, you then neglect growing new ideas then you will end up stagnating.
+Through this chapter I grew an understanding that it's not just growing new ideas that is important, you also need to keep the machine fueled.
+There are parallels of this in other chapters, for example, they found that people were spending too much time perfecting every minor detail, which extending the time it took to develop new movies.
 
-How to carry yourself as a leader.
+Another major topic was around how they managed to keep their values in place, even has Pixar continued to change.
+There were multiple times they had to adjust their processes to make sure that the 
 
-A major theme of the book was that as their company changed overtime, they had to constantly go out of their way to make sure their original ideals were still active. They highly valued candour, and wanted all employees to feel like they could speak their mind without fear of being punished because of it. However, despite being so keen to get open and honest feedback, they often found that 
+they had to constantly go out of their way to make sure their original ideals were still active. They highly valued candour, and wanted all employees to feel like they could speak their mind without fear of being punished because of it. However, despite being so keen to get open and honest feedback, they often found that 
 
 They used short films as a way of growing and trialling new directors before committing them to larger films.
 
