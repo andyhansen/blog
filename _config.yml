@@ -26,5 +26,5 @@ sass:
 
 exclude: [vendor]
 
-gems:
+plugins:
   - jekyll-sitemap
