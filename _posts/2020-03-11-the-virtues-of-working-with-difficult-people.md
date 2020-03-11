@@ -10,7 +10,7 @@ comments: true
 Enough that I thought it would be a good idea to write it down!
 Working with difficult people is inevitable, but there is plenty you can do to learn how to manage the relationship, and use that to grow yourself as a person.
 
-Difficult people are brilliant test cases for finding out what a personality trait looks like when it’s dialed up to 11.
+They are brilliant test cases for finding out what a personality trait looks like when it’s dialed up to 11.
 You can use this information to know if you want to be more or less like them in the future.
 For example, having a colleague who refuses to do anything outside of their role, can remind you how great a bit of flexibility can be.
 
