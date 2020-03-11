@@ -6,14 +6,14 @@ tags: life personal-growth teamwork teams
 comments: true
 ---
 
-This was a question which came up during a Lean Coffee at work, and I was surprised how much I had to say about it.
+This question came up during a Lean Coffee, and I was surprised how much I had to say about it.
 Enough that I thought it would be a good idea to write it down!
 Working with difficult people is inevitable, but there is plenty you can do to learn how to manage the relationship, and use that to grow yourself as a person.
 
 A diverse team should have people with different views and experiences, but at times those differences can cause tension.
-Use this an an opportunity to go away and research your position, you will be much better at explaining it in the future, and you may end up updating your views for the better.
+Use this as an opportunity to go away and research your position, you will be much better at explaining it in the future, and you may end up updating your views for the better.
 Through contrarian people I’ve gotten better at explaining what I think is important.
-Topics have ranged from the benefit to unit tests, to the the importance of diversity.
+Topics have ranged from the benefit to unit tests, to the importance of diversity.
 
 Difficult people are brilliant test cases for finding out what a personality trait looks like when it’s dialed up to 11.
 You can use this information to know if you want to be more or less like them in the future.
