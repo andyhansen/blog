@@ -7,7 +7,7 @@ comments: true
 ---
 
 "How do I work with people I don't like?" came up during a Lean Coffee, and I was surprised how much I had to say about it.
-Enough that I thought it would be a good idea to write it down!
+So much to say, that I thought it would be a good idea to write it down!
 Working with difficult people is inevitable, but there is plenty you can do to learn how to manage the relationship, and use that to grow yourself as a person.
 
 They are brilliant test cases for finding out what a personality trait looks like when it’s dialed up to 11.
