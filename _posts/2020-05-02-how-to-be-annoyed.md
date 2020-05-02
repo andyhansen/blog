@@ -50,10 +50,55 @@ This is where you want to end up, and what I'll be spending the rest of this blo
 
 ## The anatomy of effective feedback
 
-There are a thousand resources to given good feedback, and yes, I am unironically adding one more.
-ASK is the best feeback framework I've found for getting started.
-Before giving feedback you make sure that is is *actionable*, *specific*, and *kind*.
-I generally have to tweak my feedback until it has all three of those properties.
+There are thousands of resources on giving good feedback, and I am unironically adding one more.
+[A.S.K. is the best feedback framework I've found for getting started, because it's simple](https://medium.com/unsupervised-learning/giving-actionable-specific-and-kind-feedback-6fc83eb04a65).
+Give feedback which is *actionable*, *specific*, and *kind*.
 
-As a quick example, I'm going to make some feedback fit within the ASK framework.
-"I really hate when you show up to stand up late" certainly tells someone that you are frustraighted when they are late, but the lack of kindness will make them less likely to take initative on the implied action of "showing up to stand up on time".
+Creating feedback which is _not_ "ASK", is easy.
+"I really hate when you show up to stand up late".
+This certainly tells someone that you are frustraighted when they are late, but it is unkind, and they probably won't take initative on the implied action of "showing up to stand up on time".
+
+In my opinion, better feedback looks something like "I appricate mornings can be busy, but I'd like to show up to stand up on time. It's important to me that everyone in this team respects each others time".
+Within this feedback you are offering them an excuse, but you are telling them directly what you need from them, and why you think it's important.
+
+Working out the best way to give a bit of feedback is useful for everyone.
+It's clear to the person receiving the feedback what they have done wrong, and it gives them something specific that they can change.
+I've also found it useful as the person giving the feedback.
+It helps me to understand specifically what has annoyed me, and why it annoyed me.
+
+Of course, giving feedback does not guarentee it will be acted upon, but it's in your best interest to make is as likely as possible.
+
+## When to give feedback
+
+Constructive feedback early and often is one of the best indicators of a healthy team.
+It means issues are being dealt with before they become a real problem.
+When I get feedback it's a massive relief, because it's an opportunty for me to become a better teammate.
+It's also incredibly empowering to be a part of a team which is looking out for each other in this way.
+You can feel safe knowing that you are a valued member of the team, because any issue you are causing is open for discussion.
+
+Early feedback does not mean instant, I generally recommend it giving it privately afterward.
+Public feedback is better kept for particularly bad behaviour which needs to be stopped right away.
+
+Now that all sounds well and good, but how do you go about creating a culture of feedback?
+
+## Creating a culture of feedback
+
+Creating a culture of feedback is not a short process, but you will see the benefits at every step along the way.
+Feedback needs to be supported by a culture which allows failure.
+Getting feedback can mean you are failing in some (often minor) way.
+A culture of feedback where it is not safe to fail is a hostile environment, and will not last long.
+Your motivation when responding to feedback should be to become a better teammate, not to avoid punishment.
+
+The best way to kick start a culture of feedback is to give everyone the tools they need.
+Run small sessions (no more than 5ish) with each of your teams, giving them the fundamentals of feedback, and explaining why it's important.
+Use this session as a discussion, giving participants the opportuntiy to talk about what they think makes good or bad feedback.
+Over the next few weeks, the participants have a bit of homework: one positive, and one constructive piece of feedback for each member of their team.
+This is best done face-to-face, but over messages can work as well if the team is very new to this.
+In my experience, these sessions work as a great ice-breaker to the idea of feedback.
+
+To maintain that momentum, you can run these feedback sessions a few times each year.
+
+## Feedback can be positive
+
+I've focused on the negative here, but these tools can be used to give positive feedback as well.
+Positive feedback, can make a massive difference to a someones day.
