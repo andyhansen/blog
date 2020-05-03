@@ -6,7 +6,7 @@ tags: teamwork teams feedback
 comments: true
 ---
 
-Not knowing how to give feedback is a trait of many people working in software.
+Being unable to give feedback is a common trait in the software industry.
 We learn how to talk to a computer, but we end up in a team with a bunch of people, so it's unsurprising that the majority of issues teams have are with people.
 
 In this post I'm going to outline what effective feedback looks like, and how to harness it by creating a culture of feedback.
