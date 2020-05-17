@@ -9,18 +9,42 @@ tags: architecture
 comments: true
 ---
 
-When I first moved to Wellington, I lived down the road from this bizare building, [George Porter Towers](http://betonbrut.net/george-porter-towers/).
-It was strange in so many ways: the barred windows, the glasshouse laundromats, and of course, the giant tower.
+_NOTE: Photos to come. I'm sorry!_
+
+<!-- Photo of the tower -->
+
+When I first moved to Wellington, I lived down the road from the [George Porter Towers](http://betonbrut.net/george-porter-towers/).
+A bizare building in many ways: barred windows, glasshouse laundromats, and of course, the giant tower.
 I was transfixed.
-Why does this weird building exist?
-Built when [brutalism](https://www.designingbuildings.co.uk/wiki/Brutalism) was popular, it is designed to look rough, unfinished, and unusual.
-A great setting for a dystopian story, but no longer feels like a good fit for social housing.
+Why does this building exist?
+Designed by [Sir Ian Athfield](https://www.thearts.co.nz/artists/sir-ian-athfield), and built when [brutalism](https://www.designingbuildings.co.uk/wiki/Brutalism) was popular, it is supposed to look rough, unfinished, and unusual.
+Originally created for a socially progressive future, it now looks like a great setting for a dystopian story.
+Unfortunately, cool dystopian looking buildings are not a good fit for social housing.
 
-Designed by the internationally aclaimed architect, [Sir Ian Athfield](https://www.thearts.co.nz/artists/sir-ian-athfield)
+I think that's part of what makes it so fasinating.
+Designed for good, but genuinely terrifying.
+I've taken some photos of what I consider to the be the main features.
 
-After sustaining earthquake damage, it's been empty for about a year, and [the Wellington councel has made the choice to demolish it](https://www.nzherald.co.nz/nz/news/article.cfm?c_id=1&objectid=12260331).
-If it was just for decoration, I'd love to see it restored, it's a facinating building.
-Designed by [Sir Ian Athfield](https://www.thearts.co.nz/artists/sir-ian-athfield), who is one of New Zealands only internationally recognised architects.
-However, I don't think I'd ever want to live there myself, so it's not fair to think that money should be invested to make others live there.
+The stairs which wind around to the top of the tower; looking so rickety it's almost surreal.
+I've got no idea how often they were used, but I hope it wasn't frequent.
 
-Over the last year I've taken way too many photos of the tower. I hope you enjoy them!
+<!-- Photo of the tower + stairs -->
+
+The bars on the windows make it look like a prison staircase.
+
+<!-- Photo of the bars -->
+
+The laundries, which hang precariously off the building.
+
+<!-- Photo of the laundry -->
+
+After sustaining earthquake damage, it's been empty for about a year, and [the Wellington councel has made the decision to demolish it](https://www.nzherald.co.nz/nz/news/article.cfm?c_id=1&objectid=12260331).
+As much as I'd love to see it restored, it doesn't feel responsible.
+It doesn't look like an inviting building to live it, even less so with age.
+No doubt what replaces it will for the greater good, but it's sad to see it go all the same.
+
+<!-- Photo of the tower from afar -->
+
+<!-- Photo of penthouse part of the day -->
+
+<!-- Photo of the firehose -->
