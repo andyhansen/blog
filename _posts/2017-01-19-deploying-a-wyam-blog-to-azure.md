@@ -2,7 +2,7 @@
 layout: post
 title: "Deploying a Wyam Blog to Azure"
 date: 2017-01-29
-tags: wyam, devops, azure
+tags: wyam devops azure
 comments: true
 ---
 

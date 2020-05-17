@@ -5,6 +5,7 @@ date: 2017-07-02
 tags: programming mindset
 comments: true
 ---
+
 _"Hey pal, can't wait to work with you. I love that high opinion you have of yourself, and that you always make sure you get your way!"_
 
 I'd like to think a sentence like this has never been said in real life, and that I've worded it sarcastically enough that it was obvious why.

@@ -2,7 +2,7 @@
 layout: post
 title: "Programming Podcasts to Check Out"
 date: 2017-03-21
-tags: recommendations, podcasts
+tags: recommendations podcasts
 comments: true
 ---
 This last year I've been finding myself listening to podcasts more and more.
