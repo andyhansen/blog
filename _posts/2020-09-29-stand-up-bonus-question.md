@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Stand Up Bonus Question
+title: Stand up bonus question
 description: A casual way to learn more about your teammates
 date: 2020-09-29
 tags: stand-up agile team-work
