@@ -1,10 +1,14 @@
 # Source Code for Andy's Wee Blog
 
-## Rakefile
-- `rake check`    - Check links/html files of the generated site
-- `rake clean`    - Clean up generated site
-- `rake post`     - Begin a new post in `./_posts`
-- `rake preview`  - Preview with livereload on local machine
+## Development
+
+```sh
+# Install dependencies
+bundle install
+
+# Run the Jekyll server
+bundle exec jekyll serve
+```
 
 ## Future post ideas
 
