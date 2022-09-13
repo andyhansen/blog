@@ -50,7 +50,7 @@ svg {
 a {
   color: $c-accent__blue;
   text-decoration: none;
-  transition: color 1.2s;
+  transition: color 1s ease-out;
 
   &:hover {
     color: $c-accent__darkblue;
