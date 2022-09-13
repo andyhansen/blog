@@ -13,9 +13,9 @@ title: Home
     {% endif %}
     <li class="c-archives__item">
       <h3>
-        <a href="{{ post.url | prepend: site.baseurl }}">{{post.title}}</a>
+        <a class="sliding-link" href="{{ post.url | prepend: site.baseurl }}">{{post.title}}</a>
         {% if post.link %}
-          <a href="{{ post.link }}" class="simple"><i class="fas fa-link"></i></a>
+          <a href="{{ post.link }}"><i class="fas fa-link"></i></a>
         {% endif %}
         <br>
         <span class="small">{{post.description}}</span>

@@ -63,6 +63,10 @@
     @include fs--body;
   }
 
+  a {
+    @include sliding-link;
+  }
+
   strong {
     color: $c-base__02;
     font-weight: 700;
@@ -92,18 +96,6 @@
     width: 100%;
     max-width: 100%;
     height: 100%;
-  }
-
-  a {
-    color: $c-accent__blue;
-    box-shadow: $c-accent__blue 0 0 0 inset;
-    text-decoration: none;
-    transition: box-shadow 0.20s ease-out 0s, color 0.20s ease-out 0s;
-
-    &:hover {
-      color: #FFF;
-      box-shadow: $c-accent__blue 0 -1.4em inset;
-    }
   }
 }
 

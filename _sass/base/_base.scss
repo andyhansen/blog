@@ -25,7 +25,10 @@ h6 {
   color: $c-base__02;
 }
 
-[hidden], template { display: none; }
+[hidden],
+template {
+  display: none;
+}
 
 img {
   max-width: 100%;
@@ -34,7 +37,9 @@ img {
   border: 0;
 }
 
-svg:not(:root) { overflow: hidden; }
+svg:not(:root) {
+  overflow: hidden;
+}
 
 svg {
   pointer-events: none;
@@ -42,7 +47,7 @@ svg {
 }
 
 .center {
-  text-align: center; 
+  text-align: center;
 }
 
 /* Links */
@@ -57,44 +62,38 @@ a {
   }
 }
 
-i.fa-link {
-  color: $c-accent__blue;
-  -webkit-transition: -webkit-transform .8s ease-in-out;
-  -ms-transition: -ms-transform .8s ease-in-out;
-  transition: transform .8s ease-in-out; 
-
-  &:hover {
-    transform:rotate(180deg);
-    -ms-transform:rotate(180deg);
-    -webkit-transform:rotate(180deg);
-  }
-}
-
-a.simple {
-	&:after {
-		content: none;
-	}
-	
-	&:hover {
-		color: $c-accent__darkblue;
-  }
+a.sliding-link {
+  @include sliding-link;
 }
 
 a.nav {
-  padding: 10px 35px;  
-  overflow:hidden;
-}
+  padding: 10px 35px;
+  overflow: hidden;
 
-a.nav:before {
+  &:before {
     font-family: FontAwesome;
-    content:"\f07a";
+    content: "\f07a";
     position: absolute;
     top: 11px;
     left: -30px;
     transition: all 200ms ease;
+  }
 }
 
-pre { 
+i.fa-link {
+  color: $c-accent__blue;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  -ms-transition: -ms-transform .8s ease-in-out;
+  transition: transform .8s ease-in-out;
+
+  &:hover {
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+  }
+}
+
+pre {
   overflow: auto;
 }
 
@@ -103,10 +102,10 @@ span.small {
   color: gray;
 }
 
-
 .youtube-wrapper {
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
+  padding-bottom: 56.25%;
+  /* 16:9 */
   padding-top: 25px;
   height: 0;
 
