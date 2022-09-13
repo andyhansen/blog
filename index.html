@@ -13,12 +13,8 @@ title: Home
     {% endif %}
     <li class="c-archives__item">
       <h3>
-        <a href="{{ post.url | prepend: site.baseurl }}"
-          {% if post.type == 'discovery' %}
-            class="discovery"
-          {% endif %}
-        >{{post.title}}</a>
-        {% if post.type == 'discovery' %}
+        <a href="{{ post.url | prepend: site.baseurl }}">{{post.title}}</a>
+        {% if post.link %}
           <a href="{{ post.link }}" class="simple"><i class="fas fa-link"></i></a>
         {% endif %}
         <br>

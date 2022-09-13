@@ -1,6 +1,5 @@
 ---
 layout: post
-type: discovery
 title: "George Porter Towers"
 description: Brutalist social housing
 link: http://betonbrut.net/george-porter-towers/

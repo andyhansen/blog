@@ -1,6 +1,5 @@
 ---
 layout: post
-type: discovery
 title: "Being a Good Listener - The School of Life"
 description: "What the School of Life has taught me about listening"
 date: 2018-07-26

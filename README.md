@@ -15,18 +15,11 @@
 - Another post about things I've learned
 - How I've grown, and not grown as a person
 
-### Discoveries
-
-#### Music
+### Music
 
 - Tigers Jaw
 - AJJ
 - Listener
-
-#### Books
-
-- IT
-- The Shining
 
 ## License
 

@@ -5,7 +5,7 @@ layout: page
   <header class="c-article__header">
     <h1 class="c-article__title">
       {{ page.title }}
-      {% if page.type == 'discovery' %}
+      {% if page.link %}
         <a href="{{ page.link }}" class="simple"><i class="fas fa-link"></i></a>
       {% endif %}
     </h1>

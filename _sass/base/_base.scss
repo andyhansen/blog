@@ -55,14 +55,6 @@ a {
   &:hover {
     color: $c-accent__darkblue;
   }
-
-  &.discovery {
-    color: $c-accent__red;
-
-    &:hover {
-      color: $c-accent__darkred;
-    }
-  }
 }
 
 i.fa-link {
