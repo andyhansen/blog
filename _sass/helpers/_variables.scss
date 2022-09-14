@@ -1,25 +1,9 @@
-/* ==========================================================================
-   Variables
-   ========================================================================== */
+:root {
+  --color-accent-primary: #0067FB;
+  --color-accent-primary-dark: #0029F9;
 
-$c-base__03: #0D2B35;
-$c-base__02: #163541;
-$c-base__01: #5C6E74;
-$c-base__00: #697B82;
-$c-base__0: #869395;
-$c-base__1: #96A0A0;
-$c-base__2: #EDE7D6;
-$c-base__3: #FCF5E4;
+  --color-text: #5C6E74;
+  --color-text-dark: #163541;
 
-$c-accent__blue: #0067FB;
-$c-accent__darkblue: #0029F9;
-$c-accent__red: #BA1818;
-$c-accent__darkred: #961313;
-$c-accent__green: #8BE367;
-$c-accent__darkgreen: #29CD00;
-
-// Breakpoints
-$bp__sm: 25rem; // 450px
-
-// Misc
-$m-border: 1px solid $c-base__2;
+  --breakpoint-small: 25rem; // 450px
+}

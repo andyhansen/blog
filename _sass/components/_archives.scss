@@ -21,7 +21,7 @@
   padding: 1.5rem 0;
   border-top: 1px solid #EFF1F3;
 
-  @media screen and (min-width: $bp__sm) {
+  @media screen and (min-width: var(--breakpoint-small)) {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;

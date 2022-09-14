@@ -9,7 +9,7 @@
 .c-article__header {
   margin-bottom: 2rem; // 50px
 
-  @media screen and (min-width: $bp__sm) {
+  @media screen and (min-width: var(--breakpoint-small)) {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -30,18 +30,18 @@
 
 .c-article__title {
   @include fs--heading-1;
-  color: $c-base__02;
+  color: var(--color-text-dark);
 }
 
 .c-article__time {
   @include fs--body;
-  color: $c-base__01;
+  color: var(--color-text);
 }
 
 .c-article__main {
   margin-bottom: 5rem; // 50px
   @include fs--body;
-  color: $c-base__01;
+  color: var(--color-text);
 
   >* {
     margin-bottom: 1.8rem; // 18px
@@ -68,7 +68,7 @@
   }
 
   strong {
-    color: $c-base__02;
+    color: var(--color-text-dark);
     font-weight: 700;
   }
 

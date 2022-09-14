@@ -22,7 +22,7 @@ h4,
 h5,
 h6 {
   font-weight: 400;
-  color: $c-base__02;
+  color: var(--color-text-dark);
 }
 
 [hidden],
@@ -53,12 +53,12 @@ svg {
 /* Links */
 
 a {
-  color: $c-accent__blue;
+  color: var(--color-accent-primary);
   text-decoration: none;
   transition: color 1s ease-out;
 
   &:hover {
-    color: $c-accent__darkblue;
+    color: var(--color-accent-primary-dark);
   }
 }
 
@@ -81,7 +81,7 @@ a.nav {
 }
 
 i.fa-link {
-  color: $c-accent__blue;
+  color: var(--color-accent-primary);
   -webkit-transition: -webkit-transform .8s ease-in-out;
   -ms-transition: -ms-transform .8s ease-in-out;
   transition: transform .8s ease-in-out;

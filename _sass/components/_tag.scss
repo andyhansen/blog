@@ -25,6 +25,7 @@
   margin: 0 10px 50px 0;
   text-decoration: none;
   -webkit-transition: color 0.2s;
+  transition: color 0.2s;
 }
 
 .c-tag::before {
@@ -51,22 +52,11 @@
 }
 
 .c-tag:hover {
-  background-color: $c-accent__blue;
+  background-color: var(--color-accent-primary);
   color: white;
 }
 
 .c-tag:hover::after {
-   border-left-color: $c-accent__blue;
-}
-
-.c-c-tag {
-    margin-right: 1rem;
-    position: relative;
-    white-space: nowrap;
-    @include fs--body;
-    &:before {
-        color: $c-base__0;
-        content: '#\2009';
-    }
+   border-left-color: var(--color-accent-primary);
 }
 

@@ -15,14 +15,14 @@
 }
 
 @mixin sliding-link {
-  color: $c-accent__blue;
-  box-shadow: $c-accent__blue 0 0 0 inset;
+  color: var(--color-accent-primary);
+  box-shadow: var(--color-accent-primary) 0 0 0 inset;
   text-decoration: none;
   transition: box-shadow 0.50s ease-out 0s, color 0.50s ease-out 0s;
 
   &:hover {
     color: #FFF;
-    box-shadow: $c-accent__blue 0 -1.4em inset;
+    box-shadow: var(--color-accent-primary) 0 -1.4em inset;
   }
 }
 
