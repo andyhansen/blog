@@ -1,13 +1,5 @@
-/* ==========================================================================
-   Reset
-   ========================================================================== */
-
-/* Reset Modified from Normalize.css */
-
-/* Base Reset */
 body {
   @include ff--sans-serif(400);
-  -webkit-font-smoothing: antialiased;
   font-size: 16px;
 }
 
@@ -82,14 +74,10 @@ a.nav {
 
 i.fa-link {
   color: var(--color-accent-primary);
-  -webkit-transition: -webkit-transform .8s ease-in-out;
-  -ms-transition: -ms-transform .8s ease-in-out;
-  transition: transform .8s ease-in-out;
 
   &:hover {
+    transition: transform 1.2s ease-in-out;
     transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    -webkit-transform: rotate(180deg);
   }
 }
 
@@ -99,7 +87,7 @@ pre {
 
 span.small {
   @include fs--caption;
-  color: gray;
+  color: var(--color-text-dark);
 }
 
 .youtube-wrapper {
