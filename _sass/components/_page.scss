@@ -1,8 +1,4 @@
-/* ==========================================================================
-   Page
-   ========================================================================== */
-
-.c-page { }
+.c-page {}
 
 .c-page__header {
   margin-bottom: 1rem;
@@ -19,34 +15,19 @@
 }
 
 .c-page__main {
-  // -webkit-box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);
-  // -moz-box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);
-  // box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);
-  // padding: 4rem 2rem 2rem 2rem;
   padding: 3rem 0 0 0;
   margin-bottom: 2rem;
 }
 
 .c-page__footer {
-    margin-bottom: 10rem;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    p {
-        @include fs--body;
-        color: var(--color-text);
-    }
-}
+  margin-bottom: 10rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 
+  p {
+    @include fs--body;
+    color: var(--color-text);
+  }
+}
