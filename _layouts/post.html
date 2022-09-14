@@ -12,9 +12,9 @@ layout: page
     <p class="c-article__time"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time></p>
   </header>
   <!-- Post Tags -->
-  <ul class="c-tags">
+  <ul class="tags">
     {% for tag in page.tags %}
-    <li class="c-tag">{{ tag }}</li>
+    <li class="tag">{{ tag }}</li>
     {% endfor %}
   </ul>
   <div class="c-article__main">
