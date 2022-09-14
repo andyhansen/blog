@@ -21,4 +21,6 @@ I highly recommend giving the essay a read, or if audio books are more your thin
 If you liked my post, or feel like I could have done something better, please let me know in the comments!
 I'm doing my best, but I've still got a long way to go.
 
-> 	Note: This is my second attempt at this post. The first ended up way too much like a terrible high school essay. I felt compelled to remove my poorly written justifications, and just stick to the basics. "I like this essay because it is written good". [You can find the old version on GitHub.](https://github.com/andyhansen/blog/blob/9167215ce27874420b03927ad9b4291d94d39d81/_posts/2018-08-05-david-foster-wallce-tracy-austin.md)
+<blockquote>
+Note: This is my second attempt at this post. The first ended up way too much like a terrible high school essay. I felt compelled to remove my poorly written justifications, and just stick to the basics. "I like this essay because it is written good". <a href="https://github.com/andyhansen/blog/blob/9167215ce27874420b03927ad9b4291d94d39d81/_posts/2018-08-05-david-foster-wallce-tracy-austin.md">You can find the old version on GitHub.</a>
+</blockquote>
