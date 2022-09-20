@@ -47,10 +47,6 @@
       @include fs--body;
     }
 
-    a {
-      @include sliding-link;
-    }
-
     strong {
       color: var(--color-text-dark);
       font-weight: 700;

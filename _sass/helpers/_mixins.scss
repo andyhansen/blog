@@ -14,18 +14,6 @@
   }
 }
 
-@mixin sliding-link {
-  color: var(--color-accent-primary);
-  box-shadow: var(--color-accent-primary) 0 0 0 inset;
-  text-decoration: none;
-  transition: box-shadow 0.50s ease-out 0s, color 0.50s ease-out 0s;
-
-  &:hover {
-    color: #FFF;
-    box-shadow: var(--color-accent-primary) 0 -1.4em inset;
-  }
-}
-
 // Font families
 @mixin ff--sans-serif($font-weight: normal) {
   font-family: 'Roboto', 'Helvetica Neue', Helvetica, sans-serif;
