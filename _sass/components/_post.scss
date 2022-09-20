@@ -1,91 +1,90 @@
-.c-article {
+.post {
   margin-bottom: 10rem; // 100px
-}
 
-.c-article__header {
-  margin-bottom: 2rem; // 50px
+  &__header {
+    margin-bottom: 2rem; // 50px
 
-  @media screen and (min-width: var(--breakpoint-small)) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: baseline;
-  }
-}
-
-.c-article__title {
-  @include fs--heading-1;
-  color: var(--color-text-dark);
-}
-
-.c-article__time {
-  @include fs--body;
-  color: var(--color-text);
-}
-
-.c-article__main {
-  margin-bottom: 5rem; // 50px
-  @include fs--body;
-  color: var(--color-text);
-
-  >* {
-    margin-bottom: 1.8rem; // 18px
+    @media screen and (min-width: var(--breakpoint-small)) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: baseline;
+    }
   }
 
-  h2 {
-    @include fs--heading-2;
-  }
-
-  h3 {
-    @include fs--heading-3;
-  }
-
-  h4 {
-    @include fs--heading-4;
-  }
-
-  h5 {
-    @include fs--body;
-  }
-
-  a {
-    @include sliding-link;
-  }
-
-  strong {
+  &__title {
+    @include fs--heading-1;
     color: var(--color-text-dark);
-    font-weight: 700;
   }
 
-  blockquote {
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 1.8rem; // 18px
-    border-left: 5px solid #ccc;
+  &__time {
+    @include fs--body;
+    color: var(--color-text);
+  }
+
+  &__main {
+    margin-bottom: 5rem; // 50px
+    @include fs--body;
+    color: var(--color-text);
+
+    >* {
+      margin-bottom: 1.8rem; // 18px
+    }
+
+    h2 {
+      @include fs--heading-2;
+    }
+
+    h3 {
+      @include fs--heading-3;
+    }
+
+    h4 {
+      @include fs--heading-4;
+    }
+
+    h5 {
+      @include fs--body;
+    }
+
+    a {
+      @include sliding-link;
+    }
+
+    strong {
+      color: var(--color-text-dark);
+      font-weight: 700;
+    }
+
+    blockquote {
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: 1.8rem; // 18px
+      border-left: 5px solid #ccc;
+    }
+  }
+
+  &__footer {}
+
+  .pagenav {
+    width: 100%;
+    text-align: center;
+    border: 1px solid LightGrey;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    font-size: 18px;
+    overflow: hidden;
+    margin-bottom: 8rem;
+
+    a {
+      margin-top: 5px;
+    }
+
+    div {
+      border-color: transparent;
+    }
   }
 }
-
-.c-article__footer {}
-
-.pagenav {
-  width: 100%;
-  text-align: center;
-  border: 1px solid LightGrey;
-  border-left-color: transparent;
-  border-right-color: transparent;
-  font-size: 18px;
-  overflow: hidden;
-  margin-bottom: 8rem;
-
-  a {
-    margin-top: 5px;
-  }
-
-  div {
-    border-color: transparent;
-  }
-}
-
 
 .wrapper {
   padding: 10px;

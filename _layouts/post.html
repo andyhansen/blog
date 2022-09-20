@@ -1,15 +1,15 @@
 ---
 layout: page
 ---
-<article class="c-article">
-  <header class="c-article__header">
-    <h1 class="c-article__title">
+<article class="post">
+  <header class="post__header">
+    <h1 class="post__title">
       {{ page.title }}
       {% if page.link %}
         <a href="{{ page.link }}" class="simple"><i class="fas fa-link"></i></a>
       {% endif %}
     </h1>
-    <p class="c-article__time"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time></p>
+    <p class="post__time"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time></p>
   </header>
   <!-- Post Tags -->
   <ul class="tags">
@@ -17,7 +17,7 @@ layout: page
     <li class="tag">{{ tag }}</li>
     {% endfor %}
   </ul>
-  <div class="c-article__main">
+  <div class="post__main">
     {{ content }}
   </div>
   <!-- Previous / Next Buttons -->
@@ -39,11 +39,5 @@ layout: page
     </div>
     {% endif %}
   </div>
-  <!-- Disqus comments view -->
-  {% if page.comments != false and site.disqus_id %}
-  <div class="post-disqus">
-    <section id="disqus_thread"></section>
-    {% include disqus.html %}
-  </div>
-  {% endif %}
+  {% include disqus.html %}
 </article>
