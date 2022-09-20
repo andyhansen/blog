@@ -4,10 +4,11 @@ description: >
   A jumbled collection of thoughts
 
 author: Andy Hansen
-email: ahansen.nz@gmail.com
-twitter_username: AndyHecksen
+email: blog@andyhansen.co.nz
+# twitter_username: AndyHecksen
 github_username: andyhansen
 instagram_username: andyhansen.nz
+linkedin_username: https://www.linkedin.com/in/hansenandy/
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://andyhansen.co.nz" # the base hostname & protocol for your site

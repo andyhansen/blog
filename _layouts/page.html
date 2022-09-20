@@ -26,18 +26,18 @@ layout: default
     <p>
       {% if site.github_username %}
         <a href="https://github.com/{{ site.github_username }}">Github</a>
-        {% if site.twitter_username %}
-          <span class="u-separate"></span>
-        {% endif %}
       {% endif %}
       {% if site.twitter_username %}
+        <span class="u-separate"></span>
         <a href="https://twitter.com/{{ site.twitter_username }}">Twitter</a>
-        {% if site.instagram_username %}
-          <span class="u-separate"></span>
-        {% endif %}
       {% endif %}
       {% if site.instagram_username %}
+        <span class="u-separate"></span>
         <a href="https://www.instagram.com/{{ site.instagram_username }}">Instagram</a>
+      {% endif %}
+      {% if site.linkedin_username %}
+        <span class="u-separate"></span>
+        <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}">LinkedIn</a>
       {% endif %}
     </p>
   </footer>
