@@ -4,10 +4,15 @@ title: About
 permalink: /about/
 ---
 
-Hey there, I'm Andy, a Wellington based .NET developer who has recently switched it up to Ruby.
-This blog is predominantly used for me to gather my thoughts on whatever is spinning around in my mind.
-I hope you like it!
+Hi.
+I'm a Wellington based Ruby developer.
 
-The source code for my site [can be found on GitHub](https://github.com/andyhansen/blog).
+I use this blog to understand whatever is spinning around in my mind.
+Most of what I've written has never been posted because I don't feel like it would be perfect for every single person who would read it.
+Very silly, I know.
 
-Obligatory: My opinions are my own and not the views of my employer.
+If you would like to get in contact, you can find me at blog@ my domain.
+I've avoided listing it directly to reduce the chance of me being spammed.
+
+My opinions are my own and not the views of my employer etc etc.
+You know the drill.
