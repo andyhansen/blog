@@ -1,10 +1,44 @@
 ---
 layout: default
 ---
-<div class="c-page">
-  {% include header.html %}
-  <div class="c-page__main">
+<div class="page">
+  <header>
+    <h1>
+      <code>{{ site.title}}</code>
+      {% if page.title == 'Home' %}
+        <br />
+        {{ site.description }}
+      {% endif %}
+    </h1>
+    <p>
+      <a href="{{ "/" | prepend: site.baseurl }}">Home</a><span class="u-separate"></span>
+      <a href="{{ "/about/" | prepend: site.baseurl }}">About</a><span class="u-separate"></span>
+      <a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a>
+    </p>
+  </header>
+
+  <div class="page_main">
     {{ content }}
   </div>
-  {% include footer.html %}
+
+  <footer>
+    <p>&copy; {{ site.author }} {{ 'now' | date: '%Y' }}</p>
+    <p>
+      {% if site.github_username %}
+        <a href="https://github.com/{{ site.github_username }}">Github</a>
+        {% if site.twitter_username %}
+          <span class="u-separate"></span>
+        {% endif %}
+      {% endif %}
+      {% if site.twitter_username %}
+        <a href="https://twitter.com/{{ site.twitter_username }}">Twitter</a>
+        {% if site.instagram_username %}
+          <span class="u-separate"></span>
+        {% endif %}
+      {% endif %}
+      {% if site.instagram_username %}
+        <a href="https://www.instagram.com/{{ site.instagram_username }}">Instagram</a>
+      {% endif %}
+    </p>
+  </footer>
 </div>
