@@ -20,24 +20,20 @@ layout: page
   <div class="post__main">
     {{ content }}
   </div>
-  <!-- Previous / Next Buttons -->
-  <div class="pagenav">
+  <footer class="post__footer">
+    <!-- Previous / Next Buttons -->
     {% if page.previous.url %}
-    <div class="wrapper" id="left">
-      <small><b>Previous</b> {{page.previous.date | date: "%b %-d, %Y"}}</small>
-      <br>
-      <br>
-      <a class="simple" href="{{ page.previous.url | prepend: site.baseurl }}">&laquo; {{page.previous.title}}</a>
-    </div>
-    {% endif %}
-    {% if page.next.url %}
-    <div class="wrapper" id="right">
-      <small>{{page.next.date | date: "%b %-d, %Y"}} <b>Next</b></small>
-      <br>
-      <br>
-      <a class="simple" href="{{ page.next.url | prepend: site.baseurl }}">{{page.next.title}} &raquo;</a>
-    </div>
-    {% endif %}
-  </div>
+      <div class="page__nav-wrapper page__nav-left">
+        <p><small><strong>Previous</strong> {{page.previous.date | date: "%b %-d, %Y"}}</small></p>
+        <a class="simple" href="{{ page.previous.url | prepend: site.baseurl }}">&laquo; {{page.previous.title}}</a>
+      </div>
+      {% endif %}
+      {% if page.next.url %}
+      <div class="page__nav-wrapper page__nav-right">
+        <a class="simple" href="{{ page.next.url | prepend: site.baseurl }}">{{page.next.title}} &raquo;</a>
+        <p><small>{{page.next.date | date: "%b %-d, %Y"}} <strong>Next</strong></small></p>
+      </div>
+      {% endif %}
+  </footer>
   {% include disqus.html %}
 </article>

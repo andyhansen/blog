@@ -64,39 +64,31 @@
     }
   }
 
-  &__footer {}
-
-  .pagenav {
-    width: 100%;
-    text-align: center;
-    border: 1px solid LightGrey;
-    border-left-color: transparent;
-    border-right-color: transparent;
-    font-size: 18px;
-    overflow: hidden;
+  &__footer {
+    border-top: 1px solid LightGrey;
+    border-bottom: 1px solid LightGrey;
     margin-bottom: 8rem;
 
     a {
-      margin-top: 5px;
+      margin: .5em ;
     }
 
     div {
       border-color: transparent;
     }
+
+    .page__nav {
+      &-wrapper {
+        padding: 10px;
+      }
+
+      &-left {
+        text-align: left;
+      }
+
+      &-right {
+        text-align: right;
+      }
+    }
   }
-}
-
-.wrapper {
-  padding: 10px;
-  border: 1px solid LightGrey;
-  display: inline-block;
-  margin: 0 auto;
-}
-
-#left {
-  float: left;
-}
-
-#right {
-  float: right;
 }
