@@ -44,7 +44,7 @@ a:not(.icon) {
   color: var(--color-accent-primary);
   box-shadow: var(--color-accent-primary) 0 0 0 inset;
   text-decoration: none;
-  transition: box-shadow 0.50s ease-out 0s, color 0.50s ease-out 0s;
+  transition: box-shadow 0.25s ease-out 0s, color 0.25s ease-out 0s;
 
   &:hover {
     color: var(--color-white);
