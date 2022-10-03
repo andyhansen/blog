@@ -14,14 +14,17 @@ At the bottom of the post you will find the config in full, so you can copy it f
 I can only confirm that this config works with my Wyam site on Azure, but it should work with any other IIS hosted static site.
 
 ## Web.config sections
+
 Here I'll go through the sections of my web.config, what they do, and why I'm using them.
 
 ### Error handling
+
 I have a couple of error redirects so that the user isn't given a blank page when something goes wrong.
 These pages cover 404 (page not found), and 500 (server) errors.
 If either of these errors occur, the user will be redirected to the specified error pages I've created so that they know what has gone wrong.
 In my case, the error pages are named 404.html and 500.html, but you can name yours whatever you like by changing the path.
-```
+
+```xml
 <httpErrors errorMode="Custom">
     <remove statusCode="500" subStatusCode="-1" />
     <remove statusCode="404" subStatusCode="-1" />
@@ -32,8 +35,10 @@ In my case, the error pages are named 404.html and 500.html, but you can name yo
 ```
 
 ### Routing rules
+
 I've got a rule set up to remove the .html from the end of the URL, making it look cleaner.
-```
+
+```xml
 <rule name="RewriteHtml">
     <match url="^(.*)$" />
     <conditions logicalGrouping="MatchAll">
@@ -48,7 +53,8 @@ I've got a rule set up to remove the .html from the end of the URL, making it lo
 This rule will remove the "www." from the URLs.
 You won't break anything if you don't include this rule, so you can skip it if you prefer the default behaviour. 
 I'm removing them on my site because I like to keep the URLs as short as possible.
-```
+
+```xml
 <rule name="Remove WWW" stopProcessing="true">
     <match url="(.*)" ignoreCase="true" />
     <conditions logicalGrouping="MatchAll">
@@ -64,7 +70,8 @@ Though this rule is a must if you are using SSL, because it will ensure that the
 SSL is not as necessary for static sites, because no user data is being transferred between your servers and your users. 
 However, it is best practice to have it set up, and it will help with your [Search Engine Optimization](https://en.wikipedia.org/wiki/Search_engine_optimization).
 If you are interested in setting up SSL, you can get a certificate for free via [Let's Encrypt](https://letsencrypt.org/).
-```
+
+```xml
 <rule name="Redirect to HTTPS" stopProcessing="true">
     <match url="(.*)" />
     <conditions>
@@ -76,6 +83,7 @@ If you are interested in setting up SSL, you can get a certificate for free via 
 ```
 
 ### Static content file types
+
 Static content was the most important section I was missing in my original web.config.
 It tells ISS what the content type is for file extensions it doesn't recognize.
 Before it was set up, the browser couldn't open the RSS feed for my site, and some of my font files weren't loading.
@@ -86,7 +94,8 @@ As you can see below, each extension is defined using the same pattern.
 We tell IIS to forget everything it knows about a particular file extension, and then we tell it what the file type should be.
 I've got a bit of future proofing in my web.config, so you may want to only include extensions you are using now.
 I didn't see the harm of adding more now, I don't want to edit my web.config each time I use a new file type on my blog.
-```
+
+```xml
 <staticContent>
     <remove fileExtension=".mp4" />
     <mimeMap fileExtension=".mp4" mimeType="video/mp4" />
@@ -126,11 +135,13 @@ I didn't see the harm of adding more now, I don't want to edit my web.config eac
     <mimeMap fileExtension=".atom" mimeType="application/atom+xml" />
 </staticContent>
 ```
+
 ## Full web.config
+
 So there we have it. Hopefully my explanations all made sense, and if not, leave a comment and let me know how I can make the post better.
 Below is the full contents of my web.config.
 
-```
+```xml
 <?xml version="1.0"?>
 <configuration>
     <system.webServer>
