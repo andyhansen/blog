@@ -2,14 +2,14 @@
 layout: page
 ---
 <article class="post">
-  <header class="post__header">
-    <h1 class="post__title">
+  <header>
+    <h1 class="title">
       {{ page.title }}
       {% if page.link %}
         <a href="{{ page.link }}" class="icon"><i class="fas fa-link"></i></a>
       {% endif %}
     </h1>
-    <p class="post__time"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time></p>
+    <p class="time"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time></p>
   </header>
   <!-- Post Tags -->
   <ul class="tags">
@@ -17,10 +17,10 @@ layout: page
     <li class="tag">{{ tag }}</li>
     {% endfor %}
   </ul>
-  <div class="post__main">
+  <main>
     {{ content }}
-  </div>
-  <footer class="post__footer">
+  </main>
+  <footer>
     <!-- Previous / Next Buttons -->
     {% if page.previous.url %}
       <div class="page__nav-wrapper page__nav-left">

@@ -1,7 +1,7 @@
 .post {
   margin-bottom: 10rem; // 100px
 
-  &__header {
+  & > header {
     margin-bottom: 2rem; // 50px
 
     @media screen and (min-width: var(--breakpoint-small)) {
@@ -10,19 +10,20 @@
       justify-content: space-between;
       align-items: baseline;
     }
+
   }
 
-  &__title {
+  .title {
     @include fs--heading-1;
     color: var(--color-text-dark);
   }
 
-  &__time {
+  .time {
     @include fs--body;
     color: var(--color-text);
   }
 
-  &__main {
+  & > main {
     margin-bottom: 5rem; // 50px
     @include fs--body;
     color: var(--color-text);
@@ -60,7 +61,7 @@
     }
   }
 
-  &__footer {
+  & > footer {
     border-top: 1px solid LightGrey;
     border-bottom: 1px solid LightGrey;
     margin-bottom: 8rem;
