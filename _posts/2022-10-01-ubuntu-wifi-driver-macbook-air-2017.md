@@ -10,7 +10,7 @@ I've written this down so that I don't have to look so hard anymore.
 
 ## Steps
 
-1. Check which device you have
+### 1. Check which device you have
 
 ```sh
 $ lspci -nn | grep 0280
@@ -19,10 +19,10 @@ $ lspci -nn | grep 0280
 In my case I had `Broadcom Inc. and subsidiaries BCM4360 802.11ac Wireless Network Adapter [14e4:43a0] (rev 03)`.
 I was then able to search online for the specific wireless device, which I found returned better results than searching for the type of laptop.
 
-2. Install the driver for your device
+### 2. Install the driver for your device
 
 ```sh
-sudo apt install bcmwl-kernel-source
+$ sudo apt install bcmwl-kernel-source
 ```
 
 In my case, running this command was enough to get my WiFi working.
