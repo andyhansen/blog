@@ -1,6 +1,6 @@
 # Site settings
 title: "Andy Hansen"
-description: > 
+description: >
   A jumbled collection of thoughts
 
 author: Andy Hansen
@@ -17,16 +17,21 @@ google_analytics_id: UA-91125210-1
 # disqus_id: andyhansen
 
 # Build settings
+safe: false
 include: [_pages]
+exclude: [vendor]
 markdown: kramdown
 permalink: /posts/:title
+collections:
+  tags:
+    output: true
+    permalink: tags/:path/
+
 
 timezone: Pacific/Auckland
 
 sass:
     style: compressed
-
-exclude: [vendor]
 
 plugins:
   - jekyll-sitemap

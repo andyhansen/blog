@@ -1,0 +1,19 @@
+---
+layout: page
+---
+<article class="post">
+  <header>
+    <h1>Tags</h1>
+  </header>
+  <main>
+    <h1 class="snippets-heading">Articles tagged with "{{ page.tag-name }}"</h1>
+
+    {% for post in site.posts %}
+      {% if post.tags contains page.tag-name %}
+        <p>{{ post.title }}</p>
+      {% endif %}
+    {% endfor %}
+  </main>
+  <footer>
+  </footer>
+</article>
