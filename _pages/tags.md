@@ -5,16 +5,17 @@ permalink: /tags/
 ---
 
 <div class="all-tags">
-  All tags:
   <ul>
     {% assign tags = site.posts | all_tags %}
     {% for tag in tags %}
-      {% assign tag_slug = tag['name'] | slugify: "raw" %}
+      {% assign slug = tag['name'] | slugify: "raw" %}
+      {% assign name = tag['name'] %}
+      {% assign count = tag['count'] %}
       <li>
         <a class="tag-link"
-          href={{ site.baseurl | append: "/tags/" | append: tag_slug | append: "/" }}
-          rel="category tag">
-          #{{ tag['name'] }} ({{ tag['count'] }})
+           href="{{ site.baseurl | append: "/tags/" | append: slug | append: "/" }}"
+           rel="category tag">
+          #{{ name }} ({{ count }})
         </a>
       </li>
     {% endfor %}
