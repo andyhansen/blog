@@ -3,7 +3,7 @@ layout: post
 title: "Writing Down Words"
 description: "A long winded tangent"
 date: 2018-08-17
-tags: meta tangent
+tags: tangent
 comments: true
 ---
 

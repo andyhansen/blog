@@ -2,7 +2,7 @@
 layout: post
 title: "Giving effective feedback"
 date: 2020-05-03
-tags: teamwork teams feedback
+tags: teamwork feedback
 comments: true
 ---
 

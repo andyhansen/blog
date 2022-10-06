@@ -4,7 +4,7 @@ title: "George Porter Towers"
 description: Brutalist social housing
 link: http://betonbrut.net/george-porter-towers/
 date: 2020-05-17
-tags: architecture
+tags: photography
 comments: true
 ---
 

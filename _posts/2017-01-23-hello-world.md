@@ -2,7 +2,7 @@
 layout: post
 title: "Hello World"
 date: 2017-01-23
-tags: meta
+tags: tangent
 comments: true
 ---
 

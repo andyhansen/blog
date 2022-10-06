@@ -2,7 +2,7 @@
 layout: post
 title: "Installing PostgreSQL with UUID on Ubuntu"
 date: 2019-04-23
-tags: postgres uuid asdf ubuntu
+tags: postgres asdf ubuntu
 comments: true
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: "Web.config for a Static Site"
 date: 2017-02-12
-tags: wyam iis
+tags: wyam
 comments: true
 ---
 

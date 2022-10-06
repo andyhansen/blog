@@ -2,7 +2,7 @@
 layout: post
 title: Installing Ubuntu wireless drivers on an older Macbook Air
 date: 2022-10-01
-tags: ubuntu wifi-driver
+tags: ubuntu
 ---
 
 Whenever I reinstall Ubuntu on my laptop, I spend 15 minutes digging around the internet trying to remember how to install the wireless driver.

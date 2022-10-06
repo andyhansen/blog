@@ -3,7 +3,7 @@ layout: post
 title: "Being a Good Listener - The School of Life"
 description: "What the School of Life has taught me about listening"
 date: 2018-07-26
-tags: listening
+tags: recommendations
 comments: true
 link: https://www.youtube.com/watch?v=-BdbiZcNBXg
 ---

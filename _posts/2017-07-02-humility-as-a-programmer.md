@@ -2,7 +2,7 @@
 layout: post
 title: "Humility as a Programmer"
 date: 2017-07-02
-tags: programming mindset
+tags: programming
 comments: true
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: "Lessons I've Learned at Hackathons"
 description: "and why you should go to one!"
 date: 2018-07-28
-tags: hackathons personal-growth
+tags: hackathons
 comments: true
 ---
 

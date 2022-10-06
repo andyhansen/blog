@@ -2,7 +2,7 @@
 layout: post
 title: "The virtues of working with difficult people"
 date: 2020-03-11
-tags: life personal-growth teamwork teams
+tags: teamwork growth
 comments: true
 ---
 
