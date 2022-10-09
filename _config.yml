@@ -21,7 +21,6 @@ safe: false
 include: [_pages]
 exclude: [vendor]
 markdown: kramdown
-destination: "public/"
 permalink: /posts/:title
 collections:
   tags:
