@@ -1,11 +1,24 @@
 :root {
+  --color-background: hsl(55, 100%, 98%);
+
   --color-white: #FFF;
+  --color-black: #000;
 
   --color-accent-primary: #0067FB;
   --color-accent-primary-variant: #0029F9;
 
-  --color-text: #5C6E74;
-  --color-text-dark: #163541;
+  --color-text: hsl(195, 12%, 41%);
+  --color-text-light: hsl(195, 12%, 60%);
+  --color-text-dark: hsl(197, 49%, 17%);
 
-  --breakpoint-small: 25rem; // 450px
+  // Couldn't get these to work with media queries
+  --breakpoint-mobile: 576px;
+  --breakpoint-tablet: 768px;
+  --breakpoint-large: 992px;
+  --breakpoint-extra-large: 1200px;
 }
+
+$breakpoint-mobile: 576px;
+$breakpoint-tablet: 768px;
+$breakpoint-large: 992px;
+$breakpoint-extra-large: 1200px;

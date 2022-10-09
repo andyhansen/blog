@@ -16,7 +16,7 @@
     padding: 1.5rem 0;
     border-top: 1px solid #EFF1F3;
 
-    @media screen and (min-width: var(--breakpoint-small)) {
+    @media screen and (min-width: var($breakpoint-mobile)) {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;

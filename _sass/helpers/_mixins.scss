@@ -14,6 +14,13 @@
   }
 }
 
+@mixin background {
+  background-color: var(--color-background);
+  background-image: url("../assets/images/background/ep_naturalwhite.png");
+  background-repeat: repeat;
+  background-blend-mode: multiply;
+}
+
 // Font families
 @mixin ff--sans-serif($font-weight: normal) {
   font-family: 'Roboto', 'Helvetica Neue', Helvetica, sans-serif;
