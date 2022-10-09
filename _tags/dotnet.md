@@ -1,4 +1,4 @@
 ---
 layout: tags
-tag-name: .net
+tag-name: dotnet
 ---

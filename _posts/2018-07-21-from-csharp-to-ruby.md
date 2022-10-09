@@ -3,7 +3,7 @@ layout: post
 title: "My Transition from C# to Ruby"
 description: "from noob to rube"
 date: 2018-07-21
-tags: ruby .net
+tags: ruby dotnet
 comments: true
 ---
 
