@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Installing Ubuntu wireless drivers on an older Macbook Air - Andy Hansen</title>
+  <meta name="description" content="Whenever I reinstall Ubuntu on my laptop, I spend 15 minutes digging around the internet trying to remember how to install the wireless driver.I’ve written t...">
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:300,400,900,400italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="https://andyhansen.co.nz/posts/ubuntu-wifi-driver-macbook-air-2017">
+  <link rel="alternate" type="application/rss+xml" title="Andy Hansen" href="https://andyhansen.co.nz/feed.xml">
+</head>
+
+  <body>
+    <main class="page-wrapper">
+      <div class="page">
+  <header>
+    <h1>
+      <code>Andy Hansen</code>
+      
+    </h1>
+    <p>
+      <a href="/">Home</a><span class="u-separate"></span>
+      <a href="/about/">About</a><span class="u-separate"></span>
+      <a href="/feed.xml">RSS</a>
+    </p>
+  </header>
+
+  <main>
+    <article class="post">
+  <header>
+    <h1 class="title">
+      Installing Ubuntu wireless drivers on an older Macbook Air
+      
+    </h1>
+    <p class="time"><time datetime="2022-10-01T00:00:00+13:00" itemprop="datePublished">Oct 1, 2022</time></p>
+  </header>
+  <!-- Post Tags -->
+  <ul class="tags">
+    
+    <li class="tag">ubuntu</li>
+    
+    <li class="tag">wifi-driver</li>
+    
+  </ul>
+  <main>
+    <p>Whenever I reinstall Ubuntu on my laptop, I spend 15 minutes digging around the internet trying to remember how to install the wireless driver.
+I’ve written this down so that I don’t have to look so hard anymore.</p>
+
+<h2 id="steps">Steps</h2>
+
+<h3 id="1-check-which-device-you-have">1. Check which device you have</h3>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>lspci <span class="nt">-nn</span> | <span class="nb">grep </span>0280
+</code></pre></div></div>
+
+<p>In my case I had <code class="language-plaintext highlighter-rouge">Broadcom Inc. and subsidiaries BCM4360 802.11ac Wireless Network Adapter [14e4:43a0] (rev 03)</code>.
+I was then able to search online for the specific wireless device, which I found returned better results than searching for the type of laptop.</p>
+
+<h3 id="2-install-the-driver-for-your-device">2. Install the driver for your device</h3>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>apt <span class="nb">install </span>bcmwl-kernel-source
+</code></pre></div></div>
+
+<p>In my case, running this command was enough to get my WiFi working.
+I just had to restart my computer after the installation has completed.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>This guide probably isn’t useful unless you are exactly me trying to do this about twice a year, but that’s okay.
+Thanks for stopping by.</p>
+
+  </main>
+  <footer>
+    <!-- Previous / Next Buttons -->
+    
+      <div class="page__nav-wrapper page__nav-left">
+        <p><small><strong>Previous</strong> Sep 29, 2020</small></p>
+        <a href="/posts/stand-up-bonus-question">&laquo; Stand up bonus question</a>
+      </div>
+      
+      
+  </footer>
+  <!-- Disqus comments view -->
+
+
+</article>
+
+  </main>
+
+  <footer>
+    <p>&copy; Andy Hansen 2022</p>
+    <p>
+      
+        <a href="https://github.com/andyhansen">Github</a>
+      
+      
+      
+        <span class="u-separate"></span>
+        <a href="https://www.instagram.com/andyhansen.nz">Instagram</a>
+      
+      
+        <span class="u-separate"></span>
+        <a href="https://www.linkedin.com/in/hansenandy">LinkedIn</a>
+      
+    </p>
+  </footer>
+</div>
+
+    </main>
+    
+  </body>
+</html>

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Web.config for a Static Site - Andy Hansen</title>
+  <meta name="description" content="When I originally set up this blog, I was using a very basic web.config.I quickly found this wasn’t complete enough for my needs, so gave it a bit of an upgr...">
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:300,400,900,400italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="https://andyhansen.co.nz/posts/web-config-for-a-static-site">
+  <link rel="alternate" type="application/rss+xml" title="Andy Hansen" href="https://andyhansen.co.nz/feed.xml">
+</head>
+
+  <body>
+    <main class="page-wrapper">
+      <div class="page">
+  <header>
+    <h1>
+      <code>Andy Hansen</code>
+      
+    </h1>
+    <p>
+      <a href="/">Home</a><span class="u-separate"></span>
+      <a href="/about/">About</a><span class="u-separate"></span>
+      <a href="/feed.xml">RSS</a>
+    </p>
+  </header>
+
+  <main>
+    <article class="post">
+  <header>
+    <h1 class="title">
+      Web.config for a Static Site
+      
+    </h1>
+    <p class="time"><time datetime="2017-02-12T00:00:00+13:00" itemprop="datePublished">Feb 12, 2017</time></p>
+  </header>
+  <!-- Post Tags -->
+  <ul class="tags">
+    
+    <li class="tag">wyam</li>
+    
+    <li class="tag">iis</li>
+    
+  </ul>
+  <main>
+    <p>When I originally set up this blog, I was using a very basic web.config.
+I quickly found this wasn’t complete enough for my needs, so gave it a bit of an upgrade.</p>
+
+<p>In this post I’ll go through my the sections of my web.config and explain why they are necessary.
+At the bottom of the post you will find the config in full, so you can copy it for your own static site.
+I can only confirm that this config works with my Wyam site on Azure, but it should work with any other IIS hosted static site.</p>
+
+<h2 id="webconfig-sections">Web.config sections</h2>
+
+<p>Here I’ll go through the sections of my web.config, what they do, and why I’m using them.</p>
+
+<h3 id="error-handling">Error handling</h3>
+
+<p>I have a couple of error redirects so that the user isn’t given a blank page when something goes wrong.
+These pages cover 404 (page not found), and 500 (server) errors.
+If either of these errors occur, the user will be redirected to the specified error pages I’ve created so that they know what has gone wrong.
+In my case, the error pages are named 404.html and 500.html, but you can name yours whatever you like by changing the path.</p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;httpErrors</span> <span class="na">errorMode=</span><span class="s">"Custom"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;remove</span> <span class="na">statusCode=</span><span class="s">"500"</span> <span class="na">subStatusCode=</span><span class="s">"-1"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;remove</span> <span class="na">statusCode=</span><span class="s">"404"</span> <span class="na">subStatusCode=</span><span class="s">"-1"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;error</span> <span class="na">statusCode=</span><span class="s">"404"</span> <span class="na">prefixLanguageFilePath=</span><span class="s">""</span> <span class="na">path=</span><span class="s">"/404.html"</span> <span class="na">responseMode=</span><span class="s">"ExecuteURL"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;error</span> <span class="na">statusCode=</span><span class="s">"500"</span> <span class="na">prefixLanguageFilePath=</span><span class="s">""</span> <span class="na">path=</span><span class="s">"/500.html"</span> <span class="na">responseMode=</span><span class="s">"ExecuteURL"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;error</span> <span class="na">statusCode=</span><span class="s">"500"</span> <span class="na">subStatusCode=</span><span class="s">"100"</span> <span class="na">path=</span><span class="s">"/500.html"</span> <span class="na">responseMode=</span><span class="s">"ExecuteURL"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/httpErrors&gt;</span>
+</code></pre></div></div>
+
+<h3 id="routing-rules">Routing rules</h3>
+
+<p>I’ve got a rule set up to remove the .html from the end of the URL, making it look cleaner.</p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;rule</span> <span class="na">name=</span><span class="s">"RewriteHtml"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;match</span> <span class="na">url=</span><span class="s">"^(.*)$"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;conditions</span> <span class="na">logicalGrouping=</span><span class="s">"MatchAll"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;add</span> <span class="na">input=</span><span class="s">"{REMOTE_PORT}"</span> <span class="na">pattern=</span><span class="s">".*"</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;add</span> <span class="na">input=</span><span class="s">"{REQUEST_FILENAME}"</span> <span class="na">matchType=</span><span class="s">"IsFile"</span> <span class="na">negate=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;add</span> <span class="na">input=</span><span class="s">"{REQUEST_FILENAME}"</span> <span class="na">matchType=</span><span class="s">"IsDirectory"</span> <span class="na">negate=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;/conditions&gt;</span>
+    <span class="nt">&lt;action</span> <span class="na">type=</span><span class="s">"Rewrite"</span> <span class="na">url=</span><span class="s">"{R:1}.html"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/rule&gt;</span>
+</code></pre></div></div>
+
+<p>This rule will remove the “www.” from the URLs.
+You won’t break anything if you don’t include this rule, so you can skip it if you prefer the default behaviour. 
+I’m removing them on my site because I like to keep the URLs as short as possible.</p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;rule</span> <span class="na">name=</span><span class="s">"Remove WWW"</span> <span class="na">stopProcessing=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;match</span> <span class="na">url=</span><span class="s">"(.*)"</span> <span class="na">ignoreCase=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;conditions</span> <span class="na">logicalGrouping=</span><span class="s">"MatchAll"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;add</span> <span class="na">input=</span><span class="s">"{HTTP_HOST}"</span> <span class="na">pattern=</span><span class="s">"^www\.(.+)$"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;/conditions&gt;</span>
+    <span class="nt">&lt;action</span> <span class="na">type=</span><span class="s">"Redirect"</span> <span class="na">url=</span><span class="s">"http://{C:1}/{R:0}"</span> <span class="na">appendQueryString=</span><span class="s">"true"</span> <span class="na">redirectType=</span><span class="s">"Permanent"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/rule&gt;</span>
+</code></pre></div></div>
+
+<p>If you DON’T have SSL set up, then need to make sure you don’t include this rule.
+Though this rule is a must if you are using SSL, because it will ensure that the user is always viewing the secure version of your site.</p>
+
+<p>SSL is not as necessary for static sites, because no user data is being transferred between your servers and your users. 
+However, it is best practice to have it set up, and it will help with your <a href="https://en.wikipedia.org/wiki/Search_engine_optimization">Search Engine Optimization</a>.
+If you are interested in setting up SSL, you can get a certificate for free via <a href="https://letsencrypt.org/">Let’s Encrypt</a>.</p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;rule</span> <span class="na">name=</span><span class="s">"Redirect to HTTPS"</span> <span class="na">stopProcessing=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;match</span> <span class="na">url=</span><span class="s">"(.*)"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;conditions&gt;</span>
+        <span class="nt">&lt;add</span> <span class="na">input=</span><span class="s">"{REMOTE_PORT}"</span> <span class="na">pattern=</span><span class="s">".*"</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;add</span> <span class="na">input=</span><span class="s">"{HTTPS}"</span> <span class="na">pattern=</span><span class="s">"^OFF$"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;/conditions&gt;</span>
+    <span class="nt">&lt;action</span> <span class="na">type=</span><span class="s">"Redirect"</span> <span class="na">url=</span><span class="s">"https://{HTTP_HOST}/{R:1}"</span> <span class="na">redirectType=</span><span class="s">"Permanent"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/rule&gt;</span>
+</code></pre></div></div>
+
+<h3 id="static-content-file-types">Static content file types</h3>
+
+<p>Static content was the most important section I was missing in my original web.config.
+It tells ISS what the content type is for file extensions it doesn’t recognize.
+Before it was set up, the browser couldn’t open the RSS feed for my site, and some of my font files weren’t loading.
+IIS didn’t recognize the file extensions, so served up the files with the incorrect file type of “application”.
+So for each extension IIS doesn’t know, we tell it what the file type is.</p>
+
+<p>As you can see below, each extension is defined using the same pattern.
+We tell IIS to forget everything it knows about a particular file extension, and then we tell it what the file type should be.
+I’ve got a bit of future proofing in my web.config, so you may want to only include extensions you are using now.
+I didn’t see the harm of adding more now, I don’t want to edit my web.config each time I use a new file type on my blog.</p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;staticContent&gt;</span>
+    <span class="nt">&lt;remove</span> <span class="na">fileExtension=</span><span class="s">".mp4"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;mimeMap</span> <span class="na">fileExtension=</span><span class="s">".mp4"</span> <span class="na">mimeType=</span><span class="s">"video/mp4"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;remove</span> <span class="na">fileExtension=</span><span class="s">".m4v"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;mimeMap</span> <span class="na">fileExtension=</span><span class="s">".m4v"</span> <span class="na">mimeType=</span><span class="s">"video/m4v"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;remove</span> <span class="na">fileExtension=</span><span class="s">".ogg"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;mimeMap</span> <span class="na">fileExtension=</span><span class="s">".ogg"</span> <span class="na">mimeType=</span><span class="s">"video/ogg"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;remove</span> <span class="na">fileExtension=</span><span class="s">".ogv"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;mimeMap</span> <span class="na">fileExtension=</span><span class="s">".ogv"</span> <span class="na">mimeType=</span><span class="s">"video/ogg"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;remove</span> <span class="na">fileExtension=</span><span class="s">".webm"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;mimeMap</span> <span class="na">fileExtension=</span><span class="s">".webm"</span> <span class="na">mimeType=</span><span class="s">"video/webm"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;remove</span> <span class="na">fileExtension=</span><span class="s">".oga"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;mimeMap</span> <span class="na">fileExtension=</span><span class="s">".oga"</span> <span class="na">mimeType=</span><span class="s">"audio/ogg"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;remove</span> <span class="na">fileExtension=</span><span class="s">".spx"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;mimeMap</span> <span class="na">fileExtension=</span><span class="s">".spx"</span> <span class="na">mimeType=</span><span class="s">"audio/ogg"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;remove</span> <span class="na">fileExtension=</span><span class="s">".svg"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;mimeMap</span> <span class="na">fileExtension=</span><span class="s">".svg"</span> <span class="na">mimeType=</span><span class="s">"image/svg+xml"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;remove</span> <span class="na">fileExtension=</span><span class="s">".svgz"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;mimeMap</span> <span class="na">fileExtension=</span><span class="s">".svgz"</span> <span class="na">mimeType=</span><span class="s">"image/svg+xml"</span> <span class="nt">/&gt;</span>
+
+    <span class="c">&lt;!-- fonts --&gt;</span>
+    <span class="nt">&lt;remove</span> <span class="na">fileExtension=</span><span class="s">".otf"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;mimeMap</span> <span class="na">fileExtension=</span><span class="s">".otf"</span> <span class="na">mimeType=</span><span class="s">"font/otf"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;remove</span> <span class="na">fileExtension=</span><span class="s">".eot"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;mimeMap</span> <span class="na">fileExtension=</span><span class="s">".eot"</span> <span class="na">mimeType=</span><span class="s">"application/vnd.ms-fontobject"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;remove</span> <span class="na">fileExtension=</span><span class="s">".ttf"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;mimeMap</span> <span class="na">fileExtension=</span><span class="s">".ttf"</span> <span class="na">mimeType=</span><span class="s">"application/octet-stream"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;remove</span> <span class="na">fileExtension=</span><span class="s">".woff"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;mimeMap</span> <span class="na">fileExtension=</span><span class="s">".woff"</span> <span class="na">mimeType=</span><span class="s">"application/font-woff"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;remove</span> <span class="na">fileExtension=</span><span class="s">".woff2"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;mimeMap</span> <span class="na">fileExtension=</span><span class="s">".woff2"</span> <span class="na">mimeType=</span><span class="s">"application/font-woff2"</span> <span class="nt">/&gt;</span>
+
+    <span class="c">&lt;!-- feeds --&gt;</span>
+    <span class="nt">&lt;remove</span> <span class="na">fileExtension=</span><span class="s">".rss"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;mimeMap</span> <span class="na">fileExtension=</span><span class="s">".rss"</span> <span class="na">mimeType=</span><span class="s">"application/rss+xml"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;remove</span> <span class="na">fileExtension=</span><span class="s">".atom"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;mimeMap</span> <span class="na">fileExtension=</span><span class="s">".atom"</span> <span class="na">mimeType=</span><span class="s">"application/atom+xml"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/staticContent&gt;</span>
+</code></pre></div></div>
+
+<h2 id="full-webconfig">Full web.config</h2>
+
+<p>So there we have it. Hopefully my explanations all made sense, and if not, leave a comment and let me know how I can make the post better.
+Below is the full contents of my web.config.</p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0"?&gt;</span>
+<span class="nt">&lt;configuration&gt;</span>
+    <span class="nt">&lt;system.webServer&gt;</span>
+        <span class="nt">&lt;httpErrors</span> <span class="na">errorMode=</span><span class="s">"Custom"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;remove</span> <span class="na">statusCode=</span><span class="s">"500"</span> <span class="na">subStatusCode=</span><span class="s">"-1"</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;remove</span> <span class="na">statusCode=</span><span class="s">"404"</span> <span class="na">subStatusCode=</span><span class="s">"-1"</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;error</span> <span class="na">statusCode=</span><span class="s">"404"</span> <span class="na">prefixLanguageFilePath=</span><span class="s">""</span> <span class="na">path=</span><span class="s">"/404.html"</span> <span class="na">responseMode=</span><span class="s">"ExecuteURL"</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;error</span> <span class="na">statusCode=</span><span class="s">"500"</span> <span class="na">prefixLanguageFilePath=</span><span class="s">""</span> <span class="na">path=</span><span class="s">"/500.html"</span> <span class="na">responseMode=</span><span class="s">"ExecuteURL"</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;error</span> <span class="na">statusCode=</span><span class="s">"500"</span> <span class="na">subStatusCode=</span><span class="s">"100"</span> <span class="na">path=</span><span class="s">"/500.html"</span> <span class="na">responseMode=</span><span class="s">"ExecuteURL"</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;/httpErrors&gt;</span>
+        <span class="nt">&lt;rewrite&gt;</span>
+            <span class="nt">&lt;rules&gt;</span>
+                <span class="nt">&lt;rule</span> <span class="na">name=</span><span class="s">"Redirect to HTTPS"</span> <span class="na">stopProcessing=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;match</span> <span class="na">url=</span><span class="s">"(.*)"</span> <span class="nt">/&gt;</span>
+                    <span class="nt">&lt;conditions&gt;</span>
+                        <span class="nt">&lt;add</span> <span class="na">input=</span><span class="s">"{REMOTE_PORT}"</span> <span class="na">pattern=</span><span class="s">".*"</span> <span class="nt">/&gt;</span>
+                        <span class="nt">&lt;add</span> <span class="na">input=</span><span class="s">"{HTTPS}"</span> <span class="na">pattern=</span><span class="s">"^OFF$"</span> <span class="nt">/&gt;</span>
+                    <span class="nt">&lt;/conditions&gt;</span>
+                    <span class="nt">&lt;action</span> <span class="na">type=</span><span class="s">"Redirect"</span> <span class="na">url=</span><span class="s">"https://{HTTP_HOST}/{R:1}"</span> <span class="na">redirectType=</span><span class="s">"Permanent"</span> <span class="nt">/&gt;</span>
+                <span class="nt">&lt;/rule&gt;</span>
+                <span class="nt">&lt;rule</span> <span class="na">name=</span><span class="s">"RewriteHtml"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;match</span> <span class="na">url=</span><span class="s">"^(.*)$"</span> <span class="nt">/&gt;</span>
+                    <span class="nt">&lt;conditions</span> <span class="na">logicalGrouping=</span><span class="s">"MatchAll"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;add</span> <span class="na">input=</span><span class="s">"{REMOTE_PORT}"</span> <span class="na">pattern=</span><span class="s">".*"</span> <span class="nt">/&gt;</span>
+                        <span class="nt">&lt;add</span> <span class="na">input=</span><span class="s">"{REQUEST_FILENAME}"</span> <span class="na">matchType=</span><span class="s">"IsFile"</span> <span class="na">negate=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
+                        <span class="nt">&lt;add</span> <span class="na">input=</span><span class="s">"{REQUEST_FILENAME}"</span> <span class="na">matchType=</span><span class="s">"IsDirectory"</span> <span class="na">negate=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
+                    <span class="nt">&lt;/conditions&gt;</span>
+                    <span class="nt">&lt;action</span> <span class="na">type=</span><span class="s">"Rewrite"</span> <span class="na">url=</span><span class="s">"{R:1}.html"</span> <span class="nt">/&gt;</span>
+                <span class="nt">&lt;/rule&gt;</span>
+                <span class="nt">&lt;rule</span> <span class="na">name=</span><span class="s">"Remove WWW"</span> <span class="na">stopProcessing=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;match</span> <span class="na">url=</span><span class="s">"(.*)"</span> <span class="na">ignoreCase=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
+                    <span class="nt">&lt;conditions</span> <span class="na">logicalGrouping=</span><span class="s">"MatchAll"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;add</span> <span class="na">input=</span><span class="s">"{HTTP_HOST}"</span> <span class="na">pattern=</span><span class="s">"^www\.(.+)$"</span> <span class="nt">/&gt;</span>
+                    <span class="nt">&lt;/conditions&gt;</span>
+                    <span class="nt">&lt;action</span> <span class="na">type=</span><span class="s">"Redirect"</span> <span class="na">url=</span><span class="s">"http://{C:1}/{R:0}"</span> <span class="na">appendQueryString=</span><span class="s">"true"</span> <span class="na">redirectType=</span><span class="s">"Permanent"</span> <span class="nt">/&gt;</span>
+                <span class="nt">&lt;/rule&gt;</span>
+            <span class="nt">&lt;/rules&gt;</span>
+        <span class="nt">&lt;/rewrite&gt;</span>
+        <span class="nt">&lt;staticContent&gt;</span>
+            <span class="nt">&lt;remove</span> <span class="na">fileExtension=</span><span class="s">".mp4"</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;mimeMap</span> <span class="na">fileExtension=</span><span class="s">".mp4"</span> <span class="na">mimeType=</span><span class="s">"video/mp4"</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;remove</span> <span class="na">fileExtension=</span><span class="s">".m4v"</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;mimeMap</span> <span class="na">fileExtension=</span><span class="s">".m4v"</span> <span class="na">mimeType=</span><span class="s">"video/m4v"</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;remove</span> <span class="na">fileExtension=</span><span class="s">".ogg"</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;mimeMap</span> <span class="na">fileExtension=</span><span class="s">".ogg"</span> <span class="na">mimeType=</span><span class="s">"video/ogg"</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;remove</span> <span class="na">fileExtension=</span><span class="s">".ogv"</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;mimeMap</span> <span class="na">fileExtension=</span><span class="s">".ogv"</span> <span class="na">mimeType=</span><span class="s">"video/ogg"</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;remove</span> <span class="na">fileExtension=</span><span class="s">".webm"</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;mimeMap</span> <span class="na">fileExtension=</span><span class="s">".webm"</span> <span class="na">mimeType=</span><span class="s">"video/webm"</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;remove</span> <span class="na">fileExtension=</span><span class="s">".oga"</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;mimeMap</span> <span class="na">fileExtension=</span><span class="s">".oga"</span> <span class="na">mimeType=</span><span class="s">"audio/ogg"</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;remove</span> <span class="na">fileExtension=</span><span class="s">".spx"</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;mimeMap</span> <span class="na">fileExtension=</span><span class="s">".spx"</span> <span class="na">mimeType=</span><span class="s">"audio/ogg"</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;remove</span> <span class="na">fileExtension=</span><span class="s">".svg"</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;mimeMap</span> <span class="na">fileExtension=</span><span class="s">".svg"</span> <span class="na">mimeType=</span><span class="s">"image/svg+xml"</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;remove</span> <span class="na">fileExtension=</span><span class="s">".svgz"</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;mimeMap</span> <span class="na">fileExtension=</span><span class="s">".svgz"</span> <span class="na">mimeType=</span><span class="s">"image/svg+xml"</span> <span class="nt">/&gt;</span>
+
+            <span class="c">&lt;!-- fonts --&gt;</span>
+            <span class="nt">&lt;remove</span> <span class="na">fileExtension=</span><span class="s">".otf"</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;mimeMap</span> <span class="na">fileExtension=</span><span class="s">".otf"</span> <span class="na">mimeType=</span><span class="s">"font/otf"</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;remove</span> <span class="na">fileExtension=</span><span class="s">".eot"</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;mimeMap</span> <span class="na">fileExtension=</span><span class="s">".eot"</span> <span class="na">mimeType=</span><span class="s">"application/vnd.ms-fontobject"</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;remove</span> <span class="na">fileExtension=</span><span class="s">".ttf"</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;mimeMap</span> <span class="na">fileExtension=</span><span class="s">".ttf"</span> <span class="na">mimeType=</span><span class="s">"application/octet-stream"</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;remove</span> <span class="na">fileExtension=</span><span class="s">".woff"</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;mimeMap</span> <span class="na">fileExtension=</span><span class="s">".woff"</span> <span class="na">mimeType=</span><span class="s">"application/font-woff"</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;remove</span> <span class="na">fileExtension=</span><span class="s">".woff2"</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;mimeMap</span> <span class="na">fileExtension=</span><span class="s">".woff2"</span> <span class="na">mimeType=</span><span class="s">"application/font-woff2"</span> <span class="nt">/&gt;</span>
+
+            <span class="c">&lt;!-- feeds --&gt;</span>
+            <span class="nt">&lt;remove</span> <span class="na">fileExtension=</span><span class="s">".rss"</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;mimeMap</span> <span class="na">fileExtension=</span><span class="s">".rss"</span> <span class="na">mimeType=</span><span class="s">"application/rss+xml"</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;remove</span> <span class="na">fileExtension=</span><span class="s">".atom"</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;mimeMap</span> <span class="na">fileExtension=</span><span class="s">".atom"</span> <span class="na">mimeType=</span><span class="s">"application/atom+xml"</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;/staticContent&gt;</span>
+    <span class="nt">&lt;/system.webServer&gt;</span>
+<span class="nt">&lt;/configuration&gt;</span>
+</code></pre></div></div>
+
+  </main>
+  <footer>
+    <!-- Previous / Next Buttons -->
+    
+      <div class="page__nav-wrapper page__nav-left">
+        <p><small><strong>Previous</strong> Feb 7, 2017</small></p>
+        <a href="/posts/tips-to-improve-your-scrum-team">&laquo; Improving Your Scrum Team</a>
+      </div>
+      
+      
+      <div class="page__nav-wrapper page__nav-right">
+        <a href="/posts/programming-podcasts-to-check-out">Programming Podcasts to Check Out &raquo;</a>
+        <p><small>Mar 21, 2017 <strong>Next</strong></small></p>
+      </div>
+      
+  </footer>
+  <!-- Disqus comments view -->
+
+
+</article>
+
+  </main>
+
+  <footer>
+    <p>&copy; Andy Hansen 2022</p>
+    <p>
+      
+        <a href="https://github.com/andyhansen">Github</a>
+      
+      
+      
+        <span class="u-separate"></span>
+        <a href="https://www.instagram.com/andyhansen.nz">Instagram</a>
+      
+      
+        <span class="u-separate"></span>
+        <a href="https://www.linkedin.com/in/hansenandy">LinkedIn</a>
+      
+    </p>
+  </footer>
+</div>
+
+    </main>
+    
+  </body>
+</html>

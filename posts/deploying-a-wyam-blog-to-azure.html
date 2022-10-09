@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Deploying a Wyam Blog to Azure - Andy Hansen</title>
+  <meta name="description" content="I thought I better write an article about how I’ve put this blog together.I’ll give a brief summary of the technologies I use, why I use them, and then go th...">
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:300,400,900,400italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="https://andyhansen.co.nz/posts/deploying-a-wyam-blog-to-azure">
+  <link rel="alternate" type="application/rss+xml" title="Andy Hansen" href="https://andyhansen.co.nz/feed.xml">
+</head>
+
+  <body>
+    <main class="page-wrapper">
+      <div class="page">
+  <header>
+    <h1>
+      <code>Andy Hansen</code>
+      
+    </h1>
+    <p>
+      <a href="/">Home</a><span class="u-separate"></span>
+      <a href="/about/">About</a><span class="u-separate"></span>
+      <a href="/feed.xml">RSS</a>
+    </p>
+  </header>
+
+  <main>
+    <article class="post">
+  <header>
+    <h1 class="title">
+      Deploying a Wyam Blog to Azure
+      
+    </h1>
+    <p class="time"><time datetime="2017-01-29T00:00:00+13:00" itemprop="datePublished">Jan 29, 2017</time></p>
+  </header>
+  <!-- Post Tags -->
+  <ul class="tags">
+    
+    <li class="tag">wyam</li>
+    
+    <li class="tag">devops</li>
+    
+    <li class="tag">azure</li>
+    
+  </ul>
+  <main>
+    <p>I thought I better write an article about how I’ve put this blog together.
+I’ll give a brief summary of the technologies I use, why I use them, and then go through the basic steps I’ve followed to put it all together.</p>
+
+<h2 id="technologies">Technologies</h2>
+<p>I’m using Wyam to generate the blog because there is a lot of positive buzz around it, and I was interested in using a static site generator built in C#.
+Since I am comfortable in C#, and Wyam is still a young project it felt like a good opportunity for me to start contributing to the open source community.</p>
+
+<p>For source control I’m using Visual Studio Team Services, because they offer unlimited free private repositories.</p>
+
+<p>Everything is hosted in Azure because I get so many Azure credits through work that I don’t know what to do with them.
+There are plenty of other options such as Github Pages, but chances are if you are checking out this blog post you are in the same boat as me.</p>
+
+<h2 id="steps">Steps</h2>
+<p>Now I’ll go through the process of creating and deploying the blog. Some aspects of the process are covered much better by other articles, and in those cases I’ll be linking you in that direction.</p>
+
+<h3 id="create-the-wyam-site">Create the Wyam site</h3>
+<p>Wyam can be downloaded from the <a href="https://wyam.io/">Wyam site</a>.
+I highly suggest following the instructions under <a href="https://wyam.io/docs/usage/obtaining">“Obtaining” in the “Usage” section</a>.
+With Wyam installed, navigate a local directory for your blog and run the following command:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wyam new -r Blog
+</code></pre></div></div>
+
+<p>This tells Wyam to create a new blog in the current directory using the blog template.
+Blog posts themselves are stored in the <code class="language-plaintext highlighter-rouge">input/posts/</code> directory, and are created using markdown.
+The way to learn how to set up your site will be checking out some <a href="https://wyam.io/docs/resources/built-with-wyam">open source blogs written in Wyam</a>, or to check some <a href="https://github.com/Wyamio/Wyam/tree/master/example">examples</a> put together by <a href="https://daveaglick.com/">Dave Glick</a></p>
+
+<p>You can compile your blog by running the following command:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wyam -r Blog -t CleanBlog -p -w
+</code></pre></div></div>
+
+<p>I’ll now quickly explain the parameters. <code class="language-plaintext highlighter-rouge">-r</code> tells it to use the Blog recipe. <code class="language-plaintext highlighter-rouge">-t</code> tells it which theme to use. In this case, I’m using CleanBlog.
+The <code class="language-plaintext highlighter-rouge">-p</code> tells it to host it locally where it can be found at <a href="http://localhost:5080/">http://localhost:5080/</a> by default.
+Lastly <code class="language-plaintext highlighter-rouge">-w</code> tells it to watch for any changes in the posts directory, or the <code class="language-plaintext highlighter-rouge">config.wyam</code> file, when a change occurs it will compile everything again.</p>
+
+<p>Create a file in the base of the directory and call it <code class="language-plaintext highlighter-rouge">config.wyam</code>.
+In this file you put the following:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GlobalMetadata["Title"] = "&lt;Your blogs title&gt;";
+GlobalMetadata["Description"] = "&lt;You blog's description&gt;";
+GlobalMetadata["Intro"] = "&lt;Small blurb about your blog&gt;";
+</code></pre></div></div>
+
+<p>When your blog re-compiles you should see the changes appear on the main page.</p>
+
+<p>Those were the basics for setting up the blog itself, now lets improve our workflow by adding a build tool.</p>
+
+<h3 id="set-up-cake">Set up Cake</h3>
+<p><a href="http://cakebuild.net/">Cake</a> is an automation build tool, we are able to use it to build our blog from the command-line using simple commands.
+In the future we are going to be able to use these same commands to get our blog compiled and ready for Azure from source control.
+If you feel more comfortable you can follow the official <a href="http://cakebuild.net/docs/tutorials/getting-started">Cake tutorial</a>, but some of my later steps will assume you have a build.cake file looking like mine bellow.</p>
+
+<p>We need two files to get Cake up and running, the first is <code class="language-plaintext highlighter-rouge">build.cake</code>.
+Create this file in the root directory of your blog, and put the following code into it:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#tool nuget:?package=Wyam&amp;prerelease
+#addin nuget:?package=Cake.Wyam&amp;prerelease
+
+//////////////////////////////////////////////////////////////////////
+// ARGUMENTS
+//////////////////////////////////////////////////////////////////////
+
+var target = Argument("target", "Default");
+
+//////////////////////////////////////////////////////////////////////
+// TASKS
+//////////////////////////////////////////////////////////////////////
+
+Task("Build")
+    .Does(() =&gt;
+    {
+        Wyam(new WyamSettings
+        {
+            Recipe = "Blog",
+            Theme = "CleanBlog",
+            UpdatePackages = true
+        });
+    });
+    
+Task("Preview")
+    .Does(() =&gt;
+    {
+        Wyam(new WyamSettings
+        {
+            Recipe = "Blog",
+            Theme = "CleanBlog",
+            UpdatePackages = true,
+            Preview = true,
+            Watch = true
+        });        
+    });
+
+//////////////////////////////////////////////////////////////////////
+// TASK TARGETS
+//////////////////////////////////////////////////////////////////////
+
+Task("Default")
+    .IsDependentOn("Preview");    
+    
+//////////////////////////////////////////////////////////////////////
+// EXECUTION
+//////////////////////////////////////////////////////////////////////
+
+RunTarget(target);
+</code></pre></div></div>
+
+<p>This sets us up with two basic tasks. Our Build task will just build the blog using the CleanBlog theme.
+The Preview task will build the blog, watch the files, and create a localhost instance for you to view it in.
+By default it runs the “Preview” task.
+The code I’m using is this file is a striped down version of the one used for <a href="https://github.com/daveaglick/daveaglick/blob/master/build.cake">Dave Glick’s blog</a>.</p>
+
+<p>Next you will need to download the powershell file <code class="language-plaintext highlighter-rouge">build.ps1</code> from the <a href="https://github.com/cake-build/example">example repository</a>.
+If you are getting stuck I recommend checking out the <a href="http://cakebuild.net/docs/tutorials/getting-started">Cake getting started</a> page now.</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">build.ps1</code> powershell file is a way of interfacing with Cake in a clean way. It will make sure we have Cake downloaded and then run the default task set up in your <code class="language-plaintext highlighter-rouge">build.cake</code> file.
+If you want to run the “Build” task you can do so by running <code class="language-plaintext highlighter-rouge">.\build.ps1 -target Build</code> instead.</p>
+
+<p>So now we have some build automation set up, lets get this all into source control.</p>
+
+<h3 id="commit-it-to-source-control">Commit it to source control</h3>
+<p>If you haven’t already, you now want to <a href="https://www.visualstudio.com/en-us/docs/setup-admin/team-services/sign-up-for-visual-studio-team-services">create a Visual Studio Team Services account</a>, and a <a href="https://www.visualstudio.com/en-us/docs/setup-admin/create-team-project">a Visual Studio Team Services project</a>.
+Create a new git repository in this project, and commit your code to it.
+There are some great git tutorials made by both <a href="https://www.atlassian.com/git/tutorials">Atlassian</a> and <a href="https://try.github.io/levels/1/challenges/1">GitHub</a>.
+VSTS can integrate with many source control providers, but for the sake of having everything in one place I’m storing mine here.</p>
+
+<p>You want to avoid committing anything in the output or tools directories to source control.
+Files in these folders are downloaded or generated automatically, which means we gain very little by tracking their changes, because any changes to these files will be the result of changes in our source files.
+You can create a <code class="language-plaintext highlighter-rouge">.gitignore</code> file and give it the following contents to tell it not to track those folders:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#Ignore tools
+tools/*
+#Ignore output files
+output/*
+</code></pre></div></div>
+
+<p>Your source control now look similar to below, which means it’s time to set up continuous integration!</p>
+
+<p><img src="/assets/images/deploying-a-wyam-blog-to-azure/source-control.png" alt="How source control should be looking" /></p>
+
+<h3 id="set-up-continuous-integration">Set up continuous integration</h3>
+<p>Navigate to the build tab of your VSTS project and click the “+ New” button in the top right hand corner.
+This will create a pop up with a range of pre-set build options.
+We are going to be creating our own from scratch, so double click the “Empty” option at the bottom of the pop-up.
+This will bring you to the following screen, here you want to select your project in source control, and tick the continuous integration box.</p>
+
+<p><img src="/assets/images/deploying-a-wyam-blog-to-azure/build-definition-screen.png" alt="The create build definition screen" /></p>
+
+<p>When you click create you will be greeted with a fairly blank looking screen with the option to add build steps.
+We will be added two build steps here:</p>
+
+<ol>
+  <li>Compile our blog using Cake</li>
+  <li>Take the output and store it in a shared place where it can be picked up for release</li>
+</ol>
+
+<p>Cake is not a default option in the task catalog, so we need to add it by clicking the “Add build step” button, and then clicking the link at the bottom prompting you to check out the market place.
+Here you want to search for Cake, open it up, and click install.
+Now when we go back to the new build step screen, you can select Cake as an build step option.
+After selecting Cake you want to change the target from “Default” to “Build”.
+Our default option is perfect when we are developing our blog, but when it comes to CI, all we eed is for it to be built.</p>
+
+<p>You now want to add the “Publish Build Artifacts” build step, which can be found in the “Utility” section of the “Add build step” pop-up.
+Get your input looking like the image below and you will be ready to go.</p>
+
+<p><img src="/assets/images/deploying-a-wyam-blog-to-azure/publish-build-step.jpg" alt="Input for the publish artifact step" /></p>
+
+<p>Click the “Queue new build” button at the top left of the screen, and it will run through these newly created steps on the source code.
+Now that we’ve got this set up, you will need to create an Azure instance for you to deploy to.</p>
+
+<h3 id="create-an-azure-instance">Create an Azure instance</h3>
+<p>Microsoft have great documentation on how to <a href="https://docs.microsoft.com/en-us/azure/app-service-web/app-service-web-how-to-create-a-web-app-in-an-ase">creating an Azure App Service</a>.
+Make sure that you <a href="https://blog.kloud.com.au/2014/01/06/how-to-link-existing-visual-studio-online-with-windows-azure">link your VSTS account and Azure account</a>, so that they can find each other.</p>
+
+<h3 id="set-up-continuous-deployment">Set up continuous deployment</h3>
+<p>Last of all we create the Release definition. Navigate to the Releases tab of the “Build and Releases” screen, click the little green plus you can see in the top left, and “Create release definition”. We are deploying to an Azure App Service instance, so we can just select the top open in the pop-up.
+On the following screen, select our build definition like the image below.
+Make sure that you check the “Continuous deployment” checkbox. By doing this, our blog will always have the latest changes.</p>
+
+<p><img src="/assets/images/deploying-a-wyam-blog-to-azure/create-release-definition.jpg" alt="Release configuration screen" /></p>
+
+<p>Hit create and fill out the details on the screen to the right.
+If your VSTS and Azure account are linked correctly, you will be able to select your subscription and service name from the top two dropdowns.
+If they do not appear, then revisit the information I’ve put into the “Create an Azure instance section”.
+You will need to change the value of “Package or folder” to be the output folder created by our build definition.
+Click the button with the ellipses in it beside the field, and select out “CompiledBlogFiles” folder.</p>
+
+<p>Your screen should now be looking like the image below.</p>
+
+<p><img src="/assets/images/deploying-a-wyam-blog-to-azure/release-definition.jpg" alt="Release definition screen" /></p>
+
+<p>Now that everything is set up, you can queue up a new release by clicking the “+ Release” button, then clicking on the Create button on the pop-up.
+This will build your blog with the current source code, and release it to your selected Azure environment.
+We’ve told the release definition to use continuous deployment, and our build definition to use continuous integration, so anytime we commit new content to our blog it will be deployed to Azure.
+If this doesn’t sound ideal, you can always go back into those definition and uncheck those options.</p>
+
+<h3 id="done">Done!</h3>
+<p>That’s a wrap!
+I’m still very much learning this blogging thing, so any comments would be greatly appreciated.
+I realise there is plenty of improvements to be made, and I’d love to get your input on where I can make the most impact.
+Cheers!</p>
+
+  </main>
+  <footer>
+    <!-- Previous / Next Buttons -->
+    
+      <div class="page__nav-wrapper page__nav-left">
+        <p><small><strong>Previous</strong> Jan 23, 2017</small></p>
+        <a href="/posts/hello-world">&laquo; Hello World</a>
+      </div>
+      
+      
+      <div class="page__nav-wrapper page__nav-right">
+        <a href="/posts/tips-to-improve-your-scrum-team">Improving Your Scrum Team &raquo;</a>
+        <p><small>Feb 7, 2017 <strong>Next</strong></small></p>
+      </div>
+      
+  </footer>
+  <!-- Disqus comments view -->
+
+
+</article>
+
+  </main>
+
+  <footer>
+    <p>&copy; Andy Hansen 2022</p>
+    <p>
+      
+        <a href="https://github.com/andyhansen">Github</a>
+      
+      
+      
+        <span class="u-separate"></span>
+        <a href="https://www.instagram.com/andyhansen.nz">Instagram</a>
+      
+      
+        <span class="u-separate"></span>
+        <a href="https://www.linkedin.com/in/hansenandy">LinkedIn</a>
+      
+    </p>
+  </footer>
+</div>
+
+    </main>
+    
+  </body>
+</html>

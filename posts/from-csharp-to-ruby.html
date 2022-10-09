@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Transition from C# to Ruby - Andy Hansen</title>
+  <meta name="description" content="Late last year, I made the switch from C# to Ruby as my server-side language.I’ve put together some details of my experience for anyone thinking of doing the...">
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:300,400,900,400italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="https://andyhansen.co.nz/posts/from-csharp-to-ruby">
+  <link rel="alternate" type="application/rss+xml" title="Andy Hansen" href="https://andyhansen.co.nz/feed.xml">
+</head>
+
+  <body>
+    <main class="page-wrapper">
+      <div class="page">
+  <header>
+    <h1>
+      <code>Andy Hansen</code>
+      
+    </h1>
+    <p>
+      <a href="/">Home</a><span class="u-separate"></span>
+      <a href="/about/">About</a><span class="u-separate"></span>
+      <a href="/feed.xml">RSS</a>
+    </p>
+  </header>
+
+  <main>
+    <article class="post">
+  <header>
+    <h1 class="title">
+      My Transition from C# to Ruby
+      
+    </h1>
+    <p class="time"><time datetime="2018-07-21T00:00:00+12:00" itemprop="datePublished">Jul 21, 2018</time></p>
+  </header>
+  <!-- Post Tags -->
+  <ul class="tags">
+    
+    <li class="tag">ruby</li>
+    
+    <li class="tag">.net</li>
+    
+  </ul>
+  <main>
+    <p>Late last year, I made the switch from C# to Ruby as my server-side language.
+I’ve put together some details of my experience for anyone thinking of doing the same.</p>
+
+<h2 id="from-the-ide-to-the-text-editors">From the IDE to the text editors</h2>
+
+<p>The C#/.NET development environment comes in a pretty standard package.
+You’ll probably be using Windows, and you’ll probably be using Visual Studio.
+Out of the box this gives you most of the tools you need.
+Code generation, code completion, error checking, and unit test runners.</p>
+
+<p>Setups for Ruby/Rails are a lot more varied, most people seem to be using either <a href="https://www.vim.org/">Vim</a>, <a href="https://code.visualstudio.com/">VSCode</a>, or <a href="https://atom.io/">Atom</a> as a base.
+Unlike Visual Studio, your editor text editor won’t have all the bells and whistles out the gate.
+However, they each have a rich ecosystem of extensions to tweak them to your specific needs.
+I’ve found the process of building up my development environment to be a slow but rewarding process, with a bit of the <a href="https://en.wikipedia.org/wiki/IKEA_effect">IKEA effect</a> sprinkled in for good measure.</p>
+
+<p>The command-line also becomes core to your daily workflow, and you’ll find it used in even <a href="https://www.ruby-lang.org/en/documentation/quickstart">basic Ruby tutorials</a>.
+Heavy use of the command-line can take a bit of getting used to, but will prove to be both a powerful and satisfying development tool.</p>
+
+<h2 id="learning-ruby">Learning Ruby</h2>
+
+<p>A few months had passed before I really started feeling comfortable in Ruby.
+It sat firmly at the opposite end of my comfort zone, as a dynamic scripting language.
+My statically typed, compiled, safety net provided by C# was gone.</p>
+
+<p>Now that I’ve got more of a handle on the language, I’m starting to feel the benefit of it’s flexibility.
+It’s a lot easier to test an idea, and the code is putty in your hands as you try different variations of the same thought.
+Compile time is gone, which is especially handy on larger projects where even the smallest change could involve an <a href="https://xkcd.com/303/">intolerably long wait</a>.
+A few compile-like checks can be gained back with <a href="https://en.wikipedia.org/wiki/Static_program_analysis">static code analysis tools</a> like <a href="https://github.com/rubocop-hq/rubocop">Rubocop</a>.
+These will pick up low hanging errors like unused variables, and help you catch mistakes as early as possible.</p>
+
+<p>Ruby also comes with some interesting language tools, such as <a href="https://ruby-doc.org/core-2.2.0/Symbol.html">symbols</a>, and <a href="https://www.natashatherobot.com/ruby-shorthands-if-then-else/">shorthand if statements</a>.
+It doesn’t look like much, but the combination of many little tools like these can make code very pleasant to write.</p>
+
+<p>Debugging has taken some getting used to, but I’ve finally got a pretty good <a href="https://code.visualstudio.com/docs/editor/debugging">debugging setup with VSCode</a>.
+There are also some great tools like <a href="http://pryrepl.org/">Pry</a>, which gives you a developer console wherever you put <code class="language-plaintext highlighter-rouge">binding.pry</code> in your code.</p>
+
+<h2 id="the-ruby-community-is-fantastic">The Ruby community is fantastic</h2>
+
+<p>I believe the major strength of Ruby is in it’s community.
+Events like <a href="http://www.railsbridge.org/">RailsBridge</a> and <a href="https://www.meetup.com/WellingtonRailsn00bs/">Railsn00bs</a> provide a supportive environment to learn how to program.
+The New Zealand Ruby Slack channel as also proved to be an extremely valuable resource.
+Feeling connected to such a knowledgable community has inspired me to become a better programmer than I’ve ever been before, and this supportive combination of elements makes it an excellent place to start as a new programmer.</p>
+
+<h2 id="time-away-from-the-microsoft-ecosystem">Time away from the Microsoft ecosystem</h2>
+
+<p>Microsoft does a great job at gluing all their offerings together, but this often means that it’s all you end up using.
+Your database is probably <a href="https://www.microsoft.com/en-us/sql-server/sql-server-2016">SQL Server</a>, and your site is probably hosted on <a href="https://azure.microsoft.com/en-us/">Azure</a>.
+Thinking of trying bots? Well the Microsoft’s <a href="https://dev.botframework.com/">Bot Framework</a> is right there.
+Don’t get me wrong, these are all great products, but I was starting to feel like Microsoft is all I knew.
+I could see the thriving world of open source through my window, and I had major <a href="https://en.wikipedia.org/wiki/Fear_of_missing_out">FOMO</a>.</p>
+
+<p>Switching to Ruby was a chance to see just how green this other grass was.
+Both <a href="https://github.com/rails/rails">Rails</a>, and <a href="https://github.com/ruby/ruby">Ruby</a> are open source, and leverage open source technologies such as <a href="https://github.com/postgres/postgres">PostgreSQL</a>.
+Occasionally I’ll bump into an integration issue, but for now the beaten path has been kind to a newcomer like me.</p>
+
+<h2 id="will-i-be-back">Will I be back?</h2>
+
+<p>During my stay in Ruby land, Microsoft has continued to improve their commitment to open source.
+Their new version of .NET, <a href="https://github.com/dotnet/core">.NET Core</a> is open source, and can even be <a href="https://www.microsoft.com/net/learn/get-started/linux/">setup on any platform</a>.
+I still really love C#/.NET, and plan to pick it up for a side project at some stage in the future, but I’ll be trying my best to keep the stack as open source as possible.</p>
+
+<p>Until then, I’m absolutely loving Ruby, and the open source ecosystem that surrounds it.
+Even in this short time I’ve learned so much, and it’s amazing to have such a new world of technology to explore.
+I can absolutely recommend jumping over the fence to try it out, even if it’s just for a while.</p>
+
+  </main>
+  <footer>
+    <!-- Previous / Next Buttons -->
+    
+      <div class="page__nav-wrapper page__nav-left">
+        <p><small><strong>Previous</strong> Jul 16, 2017</small></p>
+        <a href="/posts/starting-your-teams-agile-transformation">&laquo; Starting Your Team's Agile Transformation</a>
+      </div>
+      
+      
+      <div class="page__nav-wrapper page__nav-right">
+        <a href="/posts/being-a-good-listener">Being a Good Listener - The School of Life &raquo;</a>
+        <p><small>Jul 26, 2018 <strong>Next</strong></small></p>
+      </div>
+      
+  </footer>
+  <!-- Disqus comments view -->
+
+
+</article>
+
+  </main>
+
+  <footer>
+    <p>&copy; Andy Hansen 2022</p>
+    <p>
+      
+        <a href="https://github.com/andyhansen">Github</a>
+      
+      
+      
+        <span class="u-separate"></span>
+        <a href="https://www.instagram.com/andyhansen.nz">Instagram</a>
+      
+      
+        <span class="u-separate"></span>
+        <a href="https://www.linkedin.com/in/hansenandy">LinkedIn</a>
+      
+    </p>
+  </footer>
+</div>
+
+    </main>
+    
+  </body>
+</html>

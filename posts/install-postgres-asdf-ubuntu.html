@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Installing PostgreSQL with UUID on Ubuntu - Andy Hansen</title>
+  <meta name="description" content="I’ve recently moved to Ubuntu for my work machine, and wanted to set up PostgreSQL using the asdf version manager. As it turns out, it is not installed with ...">
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:300,400,900,400italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="https://andyhansen.co.nz/posts/install-postgres-asdf-ubuntu">
+  <link rel="alternate" type="application/rss+xml" title="Andy Hansen" href="https://andyhansen.co.nz/feed.xml">
+</head>
+
+  <body>
+    <main class="page-wrapper">
+      <div class="page">
+  <header>
+    <h1>
+      <code>Andy Hansen</code>
+      
+    </h1>
+    <p>
+      <a href="/">Home</a><span class="u-separate"></span>
+      <a href="/about/">About</a><span class="u-separate"></span>
+      <a href="/feed.xml">RSS</a>
+    </p>
+  </header>
+
+  <main>
+    <article class="post">
+  <header>
+    <h1 class="title">
+      Installing PostgreSQL with UUID on Ubuntu
+      
+    </h1>
+    <p class="time"><time datetime="2019-04-23T00:00:00+12:00" itemprop="datePublished">Apr 23, 2019</time></p>
+  </header>
+  <!-- Post Tags -->
+  <ul class="tags">
+    
+    <li class="tag">postgres</li>
+    
+    <li class="tag">uuid</li>
+    
+    <li class="tag">asdf</li>
+    
+    <li class="tag">ubuntu</li>
+    
+  </ul>
+  <main>
+    <p>I’ve recently moved to Ubuntu for my work machine, and wanted to set up PostgreSQL using the <a href="https://github.com/asdf-vm/asdf">asdf</a> version manager. As it turns out, it is not installed with UUID support out the box, so extra options need to be passed in.</p>
+
+<p>This guide is for PostgreSQL version <code class="language-plaintext highlighter-rouge">9.6.12</code> with this <a href="https://github.com/smashedtoatoms/asdf-postgres">postgres plugin</a> for <a href="https://github.com/asdf-vm/asdf">asdf</a>, on Ubuntu 19.04.</p>
+
+<p>In short, the steps are:</p>
+
+<ol>
+  <li><a href="https://asdf-vm.com/#/core-manage-asdf-vm">Install asdf</a></li>
+  <li><a href="https://github.com/smashedtoatoms/asdf-postgres#install">Install the postgres plugin</a></li>
+  <li>Install UUID dependencies with <code class="language-plaintext highlighter-rouge">sudo apt-get install uuid-dev</code></li>
+  <li>Run the command below to install</li>
+</ol>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">POSTGRES_EXTRA_CONFIGURE_OPTIONS</span><span class="o">=</span><span class="s2">"--with-uuid=e2fs"</span> asdf <span class="nb">install </span>posgres 9.6.12
+</code></pre></div></div>
+
+<p>Once installed, follow <a href="https://github.com/smashedtoatoms/asdf-postgres#run">the steps in the plugin’s readme</a> to start postgres.</p>
+
+<h3 id="save-these-options">Save these options</h3>
+<p>If you don’t want to have to search for this blog post to copy paste these options every time, you can store the options in your <code class="language-plaintext highlighter-rouge">~/.asdf-postgres-configure-options</code> file. The contents will look like the following:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">POSTGRES_EXTRA_CONFIGURE_OPTIONS</span><span class="o">=</span><span class="s2">"--with-uuid=e2fs"</span>
+</code></pre></div></div>
+
+<p>With you options in this file, you can simply run <code class="language-plaintext highlighter-rouge">asdf install postgres &lt;version&gt;</code>, and it is automatically installed with UUID support.</p>
+
+<h4 id="datadog-support">Datadog support</h4>
+
+<p>If <a href="https://www.datadoghq.com/">Datadog</a> support is helpful, I’d recommend adding one more option to your install. My <code class="language-plaintext highlighter-rouge">~/.asdf-postgres-configure-options</code> looks like this:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">POSTGRES_EXTRA_CONFIGURE_OPTIONS</span><span class="o">=</span><span class="s2">"--enable-dtrace --with-uuid=e2fs"</span>
+</code></pre></div></div>
+
+
+  </main>
+  <footer>
+    <!-- Previous / Next Buttons -->
+    
+      <div class="page__nav-wrapper page__nav-left">
+        <p><small><strong>Previous</strong> Aug 17, 2018</small></p>
+        <a href="/posts/writing-down-words">&laquo; Writing Down Words</a>
+      </div>
+      
+      
+      <div class="page__nav-wrapper page__nav-right">
+        <a href="/posts/what-ive-learned-so-far">What I've Learned So Far &raquo;</a>
+        <p><small>May 21, 2019 <strong>Next</strong></small></p>
+      </div>
+      
+  </footer>
+  <!-- Disqus comments view -->
+
+
+</article>
+
+  </main>
+
+  <footer>
+    <p>&copy; Andy Hansen 2022</p>
+    <p>
+      
+        <a href="https://github.com/andyhansen">Github</a>
+      
+      
+      
+        <span class="u-separate"></span>
+        <a href="https://www.instagram.com/andyhansen.nz">Instagram</a>
+      
+      
+        <span class="u-separate"></span>
+        <a href="https://www.linkedin.com/in/hansenandy">LinkedIn</a>
+      
+    </p>
+  </footer>
+</div>
+
+    </main>
+    
+  </body>
+</html>

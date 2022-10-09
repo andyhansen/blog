@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Andy Hansen</title>
+    <description>A jumbled collection of thoughts
+</description>
+    <link>https://andyhansen.co.nz/</link>
+    <atom:link href="https://andyhansen.co.nz/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 09 Oct 2022 15:49:58 +1300</pubDate>
+    <lastBuildDate>Sun, 09 Oct 2022 15:49:58 +1300</lastBuildDate>
+    <generator>Jekyll v3.9.2</generator>
+    
+      <item>
+        <title>Installing Ubuntu wireless drivers on an older Macbook Air</title>
+        <description>&lt;p&gt;Whenever I reinstall Ubuntu on my laptop, I spend 15 minutes digging around the internet trying to remember how to install the wireless driver.
+I’ve written this down so that I don’t have to look so hard anymore.&lt;/p&gt;
+
+&lt;h2 id=&quot;steps&quot;&gt;Steps&lt;/h2&gt;
+
+&lt;h3 id=&quot;1-check-which-device-you-have&quot;&gt;1. Check which device you have&lt;/h3&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;lspci &lt;span class=&quot;nt&quot;&gt;-nn&lt;/span&gt; | &lt;span class=&quot;nb&quot;&gt;grep &lt;/span&gt;0280
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;In my case I had &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Broadcom Inc. and subsidiaries BCM4360 802.11ac Wireless Network Adapter [14e4:43a0] (rev 03)&lt;/code&gt;.
+I was then able to search online for the specific wireless device, which I found returned better results than searching for the type of laptop.&lt;/p&gt;
+
+&lt;h3 id=&quot;2-install-the-driver-for-your-device&quot;&gt;2. Install the driver for your device&lt;/h3&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;bcmwl-kernel-source
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;In my case, running this command was enough to get my WiFi working.
+I just had to restart my computer after the installation has completed.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;This guide probably isn’t useful unless you are exactly me trying to do this about twice a year, but that’s okay.
+Thanks for stopping by.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 01 Oct 2022 00:00:00 +1300</pubDate>
+        <link>https://andyhansen.co.nz/posts/ubuntu-wifi-driver-macbook-air-2017</link>
+        <guid isPermaLink="true">https://andyhansen.co.nz/posts/ubuntu-wifi-driver-macbook-air-2017</guid>
+        
+        <category>ubuntu</category>
+        
+        <category>wifi-driver</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Stand up bonus question</title>
+        <description>&lt;p&gt;In my team, we take turns running stand up.
+When you run the stand up you have to make sure it’s staying on track, but you also get to come up with the bonus question of the day.
+There aren’t limits on what this question is, but it should of course be work appropriate.&lt;/p&gt;
+
+&lt;p&gt;If this sounds like something you would like to try out in your stand ups.. I’ve been keeping  a smaaaall list of questions which have been asked over the years. You are welcome to pick and choose any to try at your own stand up. I have not ordered of them in any way, because there are way too many.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;What did you want to be when you grew up? Would you still want to try it?&lt;/li&gt;
+  &lt;li&gt;What weird combination of two flavours have you tried? Did you like it?&lt;/li&gt;
+  &lt;li&gt;In what ways are you similar your parents?&lt;/li&gt;
+  &lt;li&gt;In what ways are you different from your parents?&lt;/li&gt;
+  &lt;li&gt;Would you rather have bionic arms or bionic legs?&lt;/li&gt;
+  &lt;li&gt;Cats with human faces, or dogs with an extra set of human hands?&lt;/li&gt;
+  &lt;li&gt;If you were a C-grade super hero, what would your power be?&lt;/li&gt;
+  &lt;li&gt;What if you were a C-grade villain, what would your scheme be?&lt;/li&gt;
+  &lt;li&gt;What is your go to karaoke song?&lt;/li&gt;
+  &lt;li&gt;A time when you felt like you could have died.&lt;/li&gt;
+  &lt;li&gt;What’s an example of some dumb logic you had as a kid?&lt;/li&gt;
+  &lt;li&gt;What is something you thought you’d grow out of, but haven’t?&lt;/li&gt;
+  &lt;li&gt;What is something you did as a kid that you’ve now grown out of?&lt;/li&gt;
+  &lt;li&gt;What is something you did as a kid, that you now want to do again?&lt;/li&gt;
+  &lt;li&gt;What is your favourite “bad” movie?&lt;/li&gt;
+  &lt;li&gt;Would you rather be trapped in space or under the ocean?&lt;/li&gt;
+  &lt;li&gt;What minor annoyance would you inflict on your enemies?&lt;/li&gt;
+  &lt;li&gt;Which item at the supermarket do you think would be a good friend?&lt;/li&gt;
+  &lt;li&gt;If you had an ice-cream company, what flavour ice-cream would you specialise in?&lt;/li&gt;
+  &lt;li&gt;If you were a super hero what would your signature move be? What would your super suit look like?&lt;/li&gt;
+  &lt;li&gt;If you could do an extreme stunt or trick without fear of being hurt, what would it be?&lt;/li&gt;
+  &lt;li&gt;How are you similar to your siblings, how are you different?&lt;/li&gt;
+  &lt;li&gt;What hobbies do you have from when you were a child?&lt;/li&gt;
+  &lt;li&gt;What hobbies don’t you have any more?&lt;/li&gt;
+  &lt;li&gt;If you had to lose a limb, which limb would you choose?&lt;/li&gt;
+  &lt;li&gt;What was the most recent movie you’ve seen? Would you recommend it?&lt;/li&gt;
+  &lt;li&gt;What would you like to have an infinite amount of? (has to be something selfish) What would you use it for?&lt;/li&gt;
+  &lt;li&gt;What’s the most extreme thing you have ever done?&lt;/li&gt;
+  &lt;li&gt;What is the most lost you’ve ever been? How did you get un-lost?&lt;/li&gt;
+  &lt;li&gt;What is your unique family tradition?&lt;/li&gt;
+  &lt;li&gt;What new skill are you currently learning?&lt;/li&gt;
+  &lt;li&gt;If you had a signature dish, what would the secret ingredient be?&lt;/li&gt;
+  &lt;li&gt;What is one of your favourite childhood memories?&lt;/li&gt;
+  &lt;li&gt;What is your public transport horror story?&lt;/li&gt;
+  &lt;li&gt;What are you currently looking forward to this weekend? What are you looking forward to this month?&lt;/li&gt;
+  &lt;li&gt;What is your go to dance move?&lt;/li&gt;
+  &lt;li&gt;What time have you been caught in the rain?&lt;/li&gt;
+  &lt;li&gt;Would you rather meet your great grandparents, or your great grandchildren?&lt;/li&gt;
+  &lt;li&gt;What is one small or large way you’ve recently changed your life for the better?&lt;/li&gt;
+  &lt;li&gt;Describe a drawing you remember making as a kid?&lt;/li&gt;
+  &lt;li&gt;Which fictional universe would you like to live in?&lt;/li&gt;
+  &lt;li&gt;Which fictional universe would you absolutely not want to live in?&lt;/li&gt;
+  &lt;li&gt;What would the you of 10 years ago be surprised to know about the you of today?&lt;/li&gt;
+  &lt;li&gt;If you had to drink a litre of one condiment, which one would you pick?&lt;/li&gt;
+  &lt;li&gt;If you had a boat, what would you name it?&lt;/li&gt;
+  &lt;li&gt;If you were a video game character, what would be your voice line for moving around?&lt;/li&gt;
+  &lt;li&gt;If you were the star of a movie, what genre would it be?&lt;/li&gt;
+  &lt;li&gt;If you created a unique burger, what would the key ingredient be?&lt;/li&gt;
+  &lt;li&gt;What is your biggest purchasing regret?&lt;/li&gt;
+  &lt;li&gt;What was your best purchasing decision?&lt;/li&gt;
+  &lt;li&gt;What is your favourite bird memory?&lt;/li&gt;
+  &lt;li&gt;What do you remember about learning to ride a bike?&lt;/li&gt;
+  &lt;li&gt;If you were in a horror movie how would you die?&lt;/li&gt;
+  &lt;li&gt;If you were in a romantic movie how would you fall in love?&lt;/li&gt;
+  &lt;li&gt;What would be the theme of your comedy movie?&lt;/li&gt;
+  &lt;li&gt;Who is your most interesting family member?&lt;/li&gt;
+  &lt;li&gt;If you were a druid who could turn into an animal, what animal would you turn into?&lt;/li&gt;
+  &lt;li&gt;What is a rule for ghosts?&lt;/li&gt;
+  &lt;li&gt;You have a devil’s trinket which does something good, the next person gets to choose a way to corrupt it.&lt;/li&gt;
+  &lt;li&gt;If you were turned into a house hold item like in beauty and the beast, which item would you be?&lt;/li&gt;
+  &lt;li&gt;What is your oldest item of clothing?&lt;/li&gt;
+  &lt;li&gt;What was something you once disliked that you now don’t mind?&lt;/li&gt;
+  &lt;li&gt;Favourite theme park ride?&lt;/li&gt;
+  &lt;li&gt;What extreme sport are you most likely to die doing?&lt;/li&gt;
+  &lt;li&gt;Where would you like to go in a hot air balloon?&lt;/li&gt;
+  &lt;li&gt;When you hear breakfast of champions what do you see in your minds eye?&lt;/li&gt;
+  &lt;li&gt;What is some junk you own which you can’t bare to throw out?&lt;/li&gt;
+  &lt;li&gt;What is the dumbest way you’ve been injured?&lt;/li&gt;
+  &lt;li&gt;What animal would be the most terrifying if it could speak?&lt;/li&gt;
+  &lt;li&gt;If you could breed two animals together to defy the laws of nature what new animal would you create?&lt;/li&gt;
+  &lt;li&gt;At what age did you become an adult?&lt;/li&gt;
+  &lt;li&gt;When you have 30 minutes of free-time, how do you pass the time?&lt;/li&gt;
+  &lt;li&gt;What was your favourite food when you were a child?&lt;/li&gt;
+  &lt;li&gt;What is your guilty pleasure?&lt;/li&gt;
+  &lt;li&gt;Favourite cereal? Least favourite cereal?&lt;/li&gt;
+  &lt;li&gt;What is your way of relieving stress?&lt;/li&gt;
+  &lt;li&gt;So tandem bikes already exist, what tandem would you invent? Can be great, or terrible.&lt;/li&gt;
+  &lt;li&gt;Do you have a prised childhood possession you are embarrassed about now?&lt;/li&gt;
+  &lt;li&gt;If you were to make a fast food restaurant based on yourself, what would you call it? What would it sell?&lt;/li&gt;
+  &lt;li&gt;If you worked in one of those horror houses, what kind of spooker would you be?&lt;/li&gt;
+  &lt;li&gt;If you were a machine, what type of machine would you be?&lt;/li&gt;
+  &lt;li&gt;If you ran away and joined the circus, what would your act be?&lt;/li&gt;
+  &lt;li&gt;What is your favourite niche museum? Or which museum would you make?&lt;/li&gt;
+  &lt;li&gt;What if your favourite shit town you’ve stayed at?&lt;/li&gt;
+  &lt;li&gt;Would you are rather be on Dr Phil, Jeremy Kyle, or Judge Judy?&lt;/li&gt;
+  &lt;li&gt;When you were a child, what did you think you understood, but as an adult you realised you had no idea?&lt;/li&gt;
+  &lt;li&gt;If we were starting to live on other planets, at what point could you feel comfortable going to one?&lt;/li&gt;
+  &lt;li&gt;What fashion trend would you like to bring back instantly?&lt;/li&gt;
+  &lt;li&gt;What is a topic you are quite interested in now, and what made that topic so interesting to you?&lt;/li&gt;
+  &lt;li&gt;Would you rather have leg length fingers, or finger length legs?&lt;/li&gt;
+  &lt;li&gt;If you could hack anyone’s computer, who’s computer would you choose?&lt;/li&gt;
+  &lt;li&gt;If you had to leave New Zealand forever, where would you choose to live?&lt;/li&gt;
+  &lt;li&gt;If you had a large plot of land, what would you do with it?&lt;/li&gt;
+  &lt;li&gt;What, if anything, have you re-gifted? Or what is a bad gift you’ve been given in the past?&lt;/li&gt;
+  &lt;li&gt;What is a great gift you’ve been given in the past?&lt;/li&gt;
+  &lt;li&gt;What is your “dork”-est secret?&lt;/li&gt;
+  &lt;li&gt;What is your current creative outlet?&lt;/li&gt;
+  &lt;li&gt;Do you have a memory from when you spilt food all over yourself?&lt;/li&gt;
+  &lt;li&gt;What is something interesting you’ve been enjoying recently? (book, movie, game, tv series)&lt;/li&gt;
+  &lt;li&gt;What celebrity have you tangentially interacted with?&lt;/li&gt;
+  &lt;li&gt;If you were victim to Ground Hog day, what lesson would you have to learn for it to stop?&lt;/li&gt;
+  &lt;li&gt;What are you up to this weekend?&lt;/li&gt;
+  &lt;li&gt;What if your favourite piece of technology?&lt;/li&gt;
+  &lt;li&gt;If you were a bird, what type of bird activities would you get up to?&lt;/li&gt;
+  &lt;li&gt;What was a documentary you enjoyed?&lt;/li&gt;
+  &lt;li&gt;What do you do when you are stuck on a problem?&lt;/li&gt;
+  &lt;li&gt;What is the most tired you’ve ever been?&lt;/li&gt;
+  &lt;li&gt;When you were a kid, what was the weirdest lie a kid every told you?&lt;/li&gt;
+  &lt;li&gt;If you were an alien in a person suit, what would your alien look like?&lt;/li&gt;
+  &lt;li&gt;What do you wish you knew more about?&lt;/li&gt;
+  &lt;li&gt;If you were a master of woodworking, what would you make?&lt;/li&gt;
+  &lt;li&gt;What is the most boring superpower you can think of?&lt;/li&gt;
+  &lt;li&gt;What has someone borrowed from you, but never given back?&lt;/li&gt;
+  &lt;li&gt;What is the most uncomfortable place you’ve had to sleep?&lt;/li&gt;
+  &lt;li&gt;What is something simple that you really enjoy?&lt;/li&gt;
+  &lt;li&gt;Would you give up autonomy if it meant that you would get more done?&lt;/li&gt;
+  &lt;li&gt;What animals would you combine together to defeat a Gorilla Horse?&lt;/li&gt;
+  &lt;li&gt;What great structure would you be? (e.g. leaning tower of pisa)&lt;/li&gt;
+  &lt;li&gt;If you could hang out with one famous person for a day, who would you choose?&lt;/li&gt;
+  &lt;li&gt;If you were in a fighting game, what would be your winning voice line?&lt;/li&gt;
+  &lt;li&gt;If you lived in medieval times, who would you be?&lt;/li&gt;
+  &lt;li&gt;If you were in the wild west, who would you be?&lt;/li&gt;
+  &lt;li&gt;If you could, which animal would you shrink to be your pet?&lt;/li&gt;
+  &lt;li&gt;If you were in the Teenage Mutant Ninja “Somethings”, what would you be?&lt;/li&gt;
+  &lt;li&gt;If you could make a custom game for a carnival, what would it be?&lt;/li&gt;
+  &lt;li&gt;What do you like about yourself?&lt;/li&gt;
+  &lt;li&gt;If you could turn 15 minutes of your day into a musical, what would it look like?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Let me know if you love any, hate any, or have any of your own!&lt;/p&gt;
+</description>
+        <pubDate>Tue, 29 Sep 2020 00:00:00 +1300</pubDate>
+        <link>https://andyhansen.co.nz/posts/stand-up-bonus-question</link>
+        <guid isPermaLink="true">https://andyhansen.co.nz/posts/stand-up-bonus-question</guid>
+        
+        <category>stand-up</category>
+        
+        <category>agile</category>
+        
+        <category>team-work</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>George Porter Towers</title>
+        <description>&lt;p&gt;&lt;em&gt;NOTE: Photos to come. I’m sorry!&lt;/em&gt;&lt;/p&gt;
+
+&lt;!-- Photo of the tower --&gt;
+
+&lt;p&gt;When I first moved to Wellington, I lived down the road from the &lt;a href=&quot;http://betonbrut.net/george-porter-towers/&quot;&gt;George Porter Towers&lt;/a&gt;.
+A bizarre building in many ways: barred windows, glasshouse laundromats, and of course, the giant tower.
+I was transfixed.
+Why does this building exist?
+Designed by &lt;a href=&quot;https://www.thearts.co.nz/artists/sir-ian-athfield&quot;&gt;Sir Ian Athfield&lt;/a&gt;, and built when &lt;a href=&quot;https://www.designingbuildings.co.uk/wiki/Brutalism&quot;&gt;brutalism&lt;/a&gt; was popular, it is supposed to look rough, unfinished, and unusual.
+Originally created for a socially progressive future, it now looks like a great setting for a dystopian story.
+Unfortunately, cool dystopian looking buildings are not a good fit for social housing.&lt;/p&gt;
+
+&lt;p&gt;I think that’s part of what makes it so fascinating.
+Designed for good, but genuinely terrifying.
+I’ve taken some photos of my favourite features.&lt;/p&gt;
+
+&lt;!-- Photo of the tower + stairs --&gt;
+
+&lt;p&gt;The stairs which wind around to the top of the tower; looking so rickety it’s almost surreal.
+I’ve got no idea how often they were used, but I hope it wasn’t frequent.&lt;/p&gt;
+
+&lt;!-- Photo of the bars --&gt;
+
+&lt;p&gt;The bars on the windows make it look like a prison staircase.&lt;/p&gt;
+
+&lt;!-- Photo of the laundry --&gt;
+
+&lt;p&gt;The laundries, which hang precariously off the building.&lt;/p&gt;
+
+&lt;!-- Photo of the building as it is now --&gt;
+
+&lt;p&gt;After sustaining earthquake damage, it’s been empty for about a year, and &lt;a href=&quot;https://www.nzherald.co.nz/nz/news/article.cfm?c_id=1&amp;amp;objectid=12260331&quot;&gt;the Wellington council has made the decision to demolish it&lt;/a&gt;.
+As much as I’d love to see it restored, it doesn’t feel responsible.
+It doesn’t look like an inviting building to live it, even less so with age.
+No doubt what replaces it will for the greater good, but it’s sad to see it go all the same.&lt;/p&gt;
+
+&lt;!-- Photo of the tower from afar --&gt;
+
+&lt;!-- Photo of penthouse part of the day --&gt;
+
+&lt;!-- Photo of the firehose --&gt;
+</description>
+        <pubDate>Sun, 17 May 2020 00:00:00 +1200</pubDate>
+        <link>https://andyhansen.co.nz/posts/george-porter-towers</link>
+        <guid isPermaLink="true">https://andyhansen.co.nz/posts/george-porter-towers</guid>
+        
+        <category>architecture</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Giving effective feedback</title>
+        <description>&lt;p&gt;Being unable to give feedback is a common trait in the software industry.
+We learn how to talk to a computer, but we end up in a team with a bunch of people, so it’s unsurprising that the majority of issues teams have are with people.&lt;/p&gt;
+
+&lt;p&gt;In this post I’m going to outline what effective feedback looks like, and how to harness it by creating a culture of feedback.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-anatomy-of-effective-feedback&quot;&gt;The anatomy of effective feedback&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://medium.com/unsupervised-learning/giving-actionable-specific-and-kind-feedback-6fc83eb04a65&quot;&gt;A.S.K. is the best feedback framework I’ve found for getting started&lt;/a&gt;, because it’s simple.
+Give feedback which is &lt;em&gt;actionable&lt;/em&gt;, &lt;em&gt;specific&lt;/em&gt;, and &lt;em&gt;kind&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Creating bad feedback is easy.
+&lt;em&gt;“I really hate when you show up to stand up late”&lt;/em&gt;.
+This certainly tells someone that you are frustrated when they are late, but it is unkind, and they probably won’t take initiative on the implied action of “showing up to stand up on time”.&lt;/p&gt;
+
+&lt;p&gt;Better feedback looks something like &lt;em&gt;“I appreciate mornings can be busy, but it’s important that everyone in this team respects each others time. Can you please show up to stand up at 10am?”&lt;/em&gt;.
+Within this feedback you are giving them an excuse, and telling them directly what you need from them.&lt;/p&gt;
+
+&lt;p&gt;Taking the time to give feedback is useful for everyone.
+It’s clear to the person receiving the feedback what they can improve on, and keeps the focus on the behaviour which needs to change, rather than disliking the person.&lt;/p&gt;
+
+&lt;p&gt;Of course, giving feedback does not guarantee it will be acted upon, but it’s in your best interest to make is as likely as possible.&lt;/p&gt;
+
+&lt;h2 id=&quot;when-to-give-feedback&quot;&gt;When to give feedback&lt;/h2&gt;
+
+&lt;p&gt;Constructive feedback early and often is one of the best indicators of a healthy team.
+It means minor issues are being dealt with before they become a problem.
+When I get feedback it’s a massive relief, because it’s an opportunity for me to become a better teammate.
+It’s also incredibly empowering to be a part of a team which is looking out for each other in this way.
+You can feel safe knowing that you are a valued member of the team, because any issue you are causing are open for discussion.&lt;/p&gt;
+
+&lt;p&gt;Early feedback does not mean instant, I generally recommend it giving it privately afterwards.
+Public feedback is kept for particularly bad behaviour which needs to be stopped immediately.&lt;/p&gt;
+
+&lt;p&gt;But how do you create a culture of feedback?&lt;/p&gt;
+
+&lt;h2 id=&quot;creating-a-culture-of-feedback&quot;&gt;Creating a culture of feedback&lt;/h2&gt;
+
+&lt;p&gt;It’s not going to be a short process, but you will see the benefits at every step along the way.
+Feedback needs to be supported by a culture which allows failure.
+Getting feedback can mean you are failing in some (often minor) way.
+A culture of feedback where it is not safe to fail is a hostile environment, and will not last long.
+Your motivation when responding to feedback should be to become a better teammate, not to avoid punishment.&lt;/p&gt;
+
+&lt;p&gt;The best way to kick start a culture of feedback is to give everyone the tools they need.
+Run small sessions (no more than 6ish) with each of your teams, giving them the fundamentals of feedback, and explaining why it’s important.
+Use this session as a discussion, giving participants the opportunity to talk about what they think makes good or bad feedback.
+Over the next few weeks, the participants have a bit of homework: one positive, and one constructive piece of feedback for each member of their team.
+This is best done face-to-face, but over messages can work as well if the team is very new to this.
+In my experience, these sessions work as a great ice-breaker to the idea of feedback.
+To maintain that momentum, you can run these feedback sessions a few times each year.&lt;/p&gt;
+
+&lt;p&gt;If you don’t feel confident running a session of feedback, but still want to make a difference, the best place to start is through positive feedback.
+It gets people used to hearing feedback, and it starts to build those habits of acknowledging teammates behaviour.
+A genuine complement can go a long way, it makes someone feel valued.
+Someone who feels valued, is also more likely to take constructive feedback on-board.&lt;/p&gt;
+
+&lt;h2 id=&quot;closing&quot;&gt;Closing&lt;/h2&gt;
+
+&lt;p&gt;I hope you’ve found something useful in those blog post.
+The plan is to create many more in the future.
+If you have any feedback, I’d love to hear it in the comments.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 03 May 2020 00:00:00 +1200</pubDate>
+        <link>https://andyhansen.co.nz/posts/how-to-give-feedback</link>
+        <guid isPermaLink="true">https://andyhansen.co.nz/posts/how-to-give-feedback</guid>
+        
+        <category>teamwork</category>
+        
+        <category>teams</category>
+        
+        <category>feedback</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>The virtues of working with difficult people</title>
+        <description>&lt;p&gt;“How do I work with people I don’t like?” came up during a Lean Coffee, and I was surprised how much I had to say about it.
+So much to say, that I thought it would be a good idea to write it down!
+Working with difficult people is inevitable, but there is plenty you can do to learn how to manage the relationship, and use that to grow yourself as a person.&lt;/p&gt;
+
+&lt;p&gt;They are brilliant test cases for finding out what a personality trait looks like when it’s dialed up to 11.
+You can use this information to know if you want to be more or less like them in the future.
+For example, having a colleague who refuses to do anything outside of their role, can remind you how great a bit of flexibility can be.&lt;/p&gt;
+
+&lt;p&gt;A diverse team will have people with different views and experiences, but at times those differences can cause tension.
+Use this as an opportunity to go away and research your position, you will be much better at explaining it in the future, and you may end up updating your views for the better.
+Through contrarian people I’ve gotten better at explaining what I think is important, ranging from unit tests, to diversity.&lt;/p&gt;
+
+&lt;p&gt;You will realise how much impact a bit of empathy can have.
+Invite them out for coffee, and ask them a bit about themselves.
+You’ll get a better insight into who they are as a person, and why they may be acting the way they are.
+Though it rarely ends up in a complete transformation of the relationship, it can help to make interactions more constructive.&lt;/p&gt;
+
+&lt;p&gt;Understand the difference between people you don’t like, and people you don’t work well with.
+They can be quite different problems to deal with.
+Someone’s working style may not be to your liking, but could be a great fit for another team.
+Keep that in mind, as it can work out well for everyone if you are able to identify and suggest a team they can be more productive in.
+If you find you are the odd one out, then you may be the one better placed in another team.&lt;/p&gt;
+
+&lt;p&gt;Negative behaviour isn’t going to change if they aren’t aware it’s a problem.
+It’s not easy, but learning how to give effective feedback is a tool which will go on to benefit everyone you work with.
+If you are new to giving feedback, I’d recommend starting with the ASK (actionable, specific, kind) Framework, and checking with someone else to make sure the feedback is valid.
+If you aren’t comfortable delivering the feedback directly, then I recommend giving it to either your manager, or their manager.&lt;/p&gt;
+
+&lt;p&gt;Working with people you don’t like is not ideal, but I find it’s much better to be proactive, rather than just tolerate it.
+It can take a lot of energy, but it’s generally worth the effort.
+If you’ve been reading this and realising how much work you have ahead of you, find someone you trust and try to work through it together.
+Chances are if you are finding someone difficult, then there are others out there who feel the exact same way.&lt;/p&gt;
+
+&lt;p&gt;If you have any tips of your own, I’d love to hear them in the comments below.&lt;/p&gt;
+
+&lt;p&gt;Godspeed!&lt;/p&gt;
+</description>
+        <pubDate>Wed, 11 Mar 2020 00:00:00 +1300</pubDate>
+        <link>https://andyhansen.co.nz/posts/the-virtues-of-working-with-difficult-people</link>
+        <guid isPermaLink="true">https://andyhansen.co.nz/posts/the-virtues-of-working-with-difficult-people</guid>
+        
+        <category>life</category>
+        
+        <category>personal-growth</category>
+        
+        <category>teamwork</category>
+        
+        <category>teams</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>What I&apos;ve Learned So Far</title>
+        <description>&lt;p&gt;Over the last 4 years I’ve been working I’ve picked up a few knowledge nuggets along the way. I thought now would be a great chance to deep dive on some of those so that they aren’t forgotten (by me).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;It’s better to let people know that your project is not going to plan early, rather than overworking to get it over the line.&lt;/strong&gt; I’ve seen this done countless times, by myself and others. Pretending a project is getting along fine, and secretly dying inside because there is so much work to do. You are much better off just being upfront about where a project is at, and letting them know that you understand where you think it will end up, what might be missing, and how you plan to get the rest done on a more manageable timeline. Tricking yourself into thinking that it’s all going to work out is just going to result in a low quality rushed project, which likely isn’t finished.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Know what you want to learn next.&lt;/strong&gt; At any one time, you should know what it is you want it is you want to learn next. You don’t have to have a month long learning plan mapped out, but if someone was to give you time to study out of no where, then you should at least know what topics you’d like to start on. By constantly being mindful of what to learn next, you are constantly thinking forwards about where you may want to be growing.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;You are going to be have a lot of “solved” problems.&lt;/strong&gt; Without knowing what the problem might be, I can almost guarantee that you aren’t the only person who has struggled with it. Have a think about how you’d solve your problem, then jump on the internet and find out how this problem has been solved before. I’ve found the &lt;a href=&quot;https://hbr.org/2018/01/podcast-dear-hbr&quot;&gt;“Dear HBR” podcast&lt;/a&gt; a great resource on how to tackle common workplace problems, and &lt;a href=&quot;https://www.npr.org/podcasts/469249288/dear-sugar-radio&quot;&gt;Dear Sugar Radio&lt;/a&gt; as a great resource on how to tackle personal problems.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Find a mentor (or two (or three)).&lt;/strong&gt; This one is much easier said that done. There is an awful lot of hard lessons to learn in the world of software. Having an experienced wall to bounce your problems off will allow you to solve them much faster than you otherwise could. If you work for a large company then you will probably be assigned a mentor or coach when you start, but even in a smaller company there should be plenty of people willing to help you out.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Build a life outside of software.&lt;/strong&gt; When you are only good at one thing, then a lot of your self esteem begins to get tied to how well you are currently doing at it. Build a life where you a range of things which make you feel fulfilled. I’ve found group classes to be a great way of gaining a skill, and meeting new people.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;You don’t need to spend all your free time developing software.&lt;/strong&gt; When I was first starting out, I had the impression that a “true” developers are always writing software in their spare time. It was a depressing situation, because as much as I liked the occasional extracurricular programming that I was doing, it never felt like it was enough.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;To be a good developer, you need to be a good person.&lt;/strong&gt; I’ve seen a lot of teams suffer at the hands of someone who is technically proficient, but difficult to work with. It’s a chore to get them to change their opinions, they generally spend their energy making the team work in a way that suits themselves, rather than anyone else. They can be a proficient developer, but they slow everyone around them down.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Break down your work small to keep yourself engaged.&lt;/strong&gt; The times in my career that I’ve found myself the least engaged have been when I have a massive task with no achievement checkpoints a long the way. After about a week on one task, I find it gets harder to stay on task, and I’m less engaged. I now try to avoid that situation for myself, and anyone else, by helping them break down stories small. Not only is value getting delivered earlier, but you are also clearing space in your head every time you complete a task.&lt;/p&gt;
+
+&lt;p&gt;I think that might be all I’ve got so far, but no doubt there is plenty more. I’ll likely expand on these theme over the next year, or write more detailed posts on some of the points here.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 21 May 2019 00:00:00 +1200</pubDate>
+        <link>https://andyhansen.co.nz/posts/what-ive-learned-so-far</link>
+        <guid isPermaLink="true">https://andyhansen.co.nz/posts/what-ive-learned-so-far</guid>
+        
+        <category>life</category>
+        
+        <category>personal-growth</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Installing PostgreSQL with UUID on Ubuntu</title>
+        <description>&lt;p&gt;I’ve recently moved to Ubuntu for my work machine, and wanted to set up PostgreSQL using the &lt;a href=&quot;https://github.com/asdf-vm/asdf&quot;&gt;asdf&lt;/a&gt; version manager. As it turns out, it is not installed with UUID support out the box, so extra options need to be passed in.&lt;/p&gt;
+
+&lt;p&gt;This guide is for PostgreSQL version &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;9.6.12&lt;/code&gt; with this &lt;a href=&quot;https://github.com/smashedtoatoms/asdf-postgres&quot;&gt;postgres plugin&lt;/a&gt; for &lt;a href=&quot;https://github.com/asdf-vm/asdf&quot;&gt;asdf&lt;/a&gt;, on Ubuntu 19.04.&lt;/p&gt;
+
+&lt;p&gt;In short, the steps are:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://asdf-vm.com/#/core-manage-asdf-vm&quot;&gt;Install asdf&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/smashedtoatoms/asdf-postgres#install&quot;&gt;Install the postgres plugin&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Install UUID dependencies with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo apt-get install uuid-dev&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Run the command below to install&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;POSTGRES_EXTRA_CONFIGURE_OPTIONS&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;--with-uuid=e2fs&quot;&lt;/span&gt; asdf &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;posgres 9.6.12
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Once installed, follow &lt;a href=&quot;https://github.com/smashedtoatoms/asdf-postgres#run&quot;&gt;the steps in the plugin’s readme&lt;/a&gt; to start postgres.&lt;/p&gt;
+
+&lt;h3 id=&quot;save-these-options&quot;&gt;Save these options&lt;/h3&gt;
+&lt;p&gt;If you don’t want to have to search for this blog post to copy paste these options every time, you can store the options in your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~/.asdf-postgres-configure-options&lt;/code&gt; file. The contents will look like the following:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;POSTGRES_EXTRA_CONFIGURE_OPTIONS&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;--with-uuid=e2fs&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;With you options in this file, you can simply run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;asdf install postgres &amp;lt;version&amp;gt;&lt;/code&gt;, and it is automatically installed with UUID support.&lt;/p&gt;
+
+&lt;h4 id=&quot;datadog-support&quot;&gt;Datadog support&lt;/h4&gt;
+
+&lt;p&gt;If &lt;a href=&quot;https://www.datadoghq.com/&quot;&gt;Datadog&lt;/a&gt; support is helpful, I’d recommend adding one more option to your install. My &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~/.asdf-postgres-configure-options&lt;/code&gt; looks like this:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;POSTGRES_EXTRA_CONFIGURE_OPTIONS&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;--enable-dtrace --with-uuid=e2fs&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+</description>
+        <pubDate>Tue, 23 Apr 2019 00:00:00 +1200</pubDate>
+        <link>https://andyhansen.co.nz/posts/install-postgres-asdf-ubuntu</link>
+        <guid isPermaLink="true">https://andyhansen.co.nz/posts/install-postgres-asdf-ubuntu</guid>
+        
+        <category>postgres</category>
+        
+        <category>uuid</category>
+        
+        <category>asdf</category>
+        
+        <category>ubuntu</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Writing Down Words</title>
+        <description>&lt;p&gt;A major reason for even starting this blog was to get better at writing.
+Converting thoughts to spoken word feels very natural.
+It’s something we do every day, and we do it directly to a person, which gives us a tight feedback loop on what parts work, and which parts suck.&lt;/p&gt;
+
+&lt;p&gt;Writing words down is a whole new kettle of fish.
+The feedback loop is massive, it’s almost totally non-existent.
+I’m not going to end up rewriting a post after finishing it.
+There is no “second chance”, like how you can refine a story over time.
+These posts are a result of conversations I have with myself a thousand times over.
+First in my head as I come up with the idea, then on my computer as I type and tweak every sentence over and over again.
+So in theory these should be the most fine tuned conversations ever… right?
+Well, at this stage they certainly aren’t, but I’m getting a bit better each time.
+Even though it still takes me a long time, the process is really enjoyable.&lt;/p&gt;
+
+&lt;p&gt;I think of the process as helping readers find the diamonds in my idea mine.
+A willing reader wants to get to my “idea diamonds”, and I’m trying to make their journey as smooth as possible.
+Before I can express my thoughts efficiently, I dig myself plenty of long, winding, waste of fucking time paths.
+Often these paths that don’t go anywhere at all.
+Overtime I’m making these paths more efficient, but a bit of blood is going into the process.&lt;/p&gt;
+
+&lt;p&gt;It’s so worth it though.
+I can’t wait to come back to these posts a few years from now.
+What the hell was Andy like back then?
+And thankfully at the moment, there aren’t many people suffering at the hands of these posts.
+It gives me space to practice and breath without many people watching.
+So, if you aren’t reading, then thanks for giving me some space to get better.
+And if you are reading, then thanks for taking the time to experience my little plop of words.&lt;/p&gt;
+
+&lt;p&gt;If you’ve got any advice then feel free to leave me a comment below.&lt;/p&gt;
+
+&lt;p&gt;Much love.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 17 Aug 2018 00:00:00 +1200</pubDate>
+        <link>https://andyhansen.co.nz/posts/writing-down-words</link>
+        <guid isPermaLink="true">https://andyhansen.co.nz/posts/writing-down-words</guid>
+        
+        <category>meta</category>
+        
+        <category>tangent</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>How Tracy Austin Broke My Heart - David Foster Wallace</title>
+        <description>&lt;p&gt;It’s an absolute thrill to read an exciting story. A story so engrossing that you lose track of time as you slowly fall into it. In &lt;a href=&quot;https://www.scribd.com/doc/134106158/How-Tracy-Austin-Broke-My-Heart-David-Foster-Wallace&quot;&gt;“How Tracy Austin Broke My Heart”&lt;/a&gt;, you get a real understanding on what good writing is able to do as David Foster Wallace breaks down his disappointment in Tracy Austin’s lifeless autobiography.&lt;/p&gt;
+
+&lt;p&gt;It’s a pretty lame realisation, “good writing makes a story more interesting”, but this essay flipped a switch in my head. Tracy’s achievements are nothing short of incredible, but the dull language makes it impossible to feel drawn into her life story. You can have amazing life experiences but you properly unpack your experience, then it is nearly worthless as a story.&lt;/p&gt;
+
+&lt;p&gt;I highly recommend giving the essay a read, or if audio books are more your thing, you can listen to David Foster Wallace himself reading it on YouTube below.&lt;/p&gt;
+
+&lt;div class=&quot;youtube-wrapper&quot;&gt;
+  &lt;iframe src=&quot;https://www.youtube-nocookie.com/embed/U7BYK0hZibk&quot; frameborder=&quot;0&quot; allow=&quot;encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;If you liked my post, or feel like I could have done something better, please let me know in the comments!
+I’m doing my best, but I’ve still got a long way to go.&lt;/p&gt;
+
+&lt;blockquote&gt;
+Note: This is my second attempt at this post. The first ended up way too much like a terrible high school essay. I felt compelled to remove my poorly written justifications, and just stick to the basics. &quot;I like this essay because it is written good&quot;. &lt;a href=&quot;https://github.com/andyhansen/blog/blob/9167215ce27874420b03927ad9b4291d94d39d81/_posts/2018-08-05-david-foster-wallce-tracy-austin.md&quot;&gt;You can find the old version on GitHub.&lt;/a&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Sun, 05 Aug 2018 00:00:00 +1200</pubDate>
+        <link>https://andyhansen.co.nz/posts/david-foster-wallce-tracy-austin</link>
+        <guid isPermaLink="true">https://andyhansen.co.nz/posts/david-foster-wallce-tracy-austin</guid>
+        
+        <category>storytelling</category>
+        
+        <category>stories</category>
+        
+        <category>david-foster-wallace</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Lessons I&apos;ve Learned at Hackathons</title>
+        <description>&lt;p&gt;There are a lot of reasons to love hackathons.
+You get to meet some new people in a casual way, you get a bunch of free food and merch, but most of all, it’s a focused weekend project for you to really grow as a developer.
+Each the three hackathons I’ve participated in, I’ve learned some valuable lessons that I still carry with me.&lt;/p&gt;
+
+&lt;p&gt;The first hackathon, I was able to help put together a basic web front-end with a few graphs.
+Problem was, I had no idea how to get this thing onto the internet!
+Thankfully the other members of the team had that covered, but I gotta say, I was &lt;em&gt;shook&lt;/em&gt;.
+The next week, with my newly highlighted flaws, I learned how to deploy to both Azure and Github pages.
+That feeling of being totally out of my depth was worth it.
+I really thought I was getting the hang of coding, but I was just introduced to the world that exists around it.&lt;/p&gt;
+
+&lt;p&gt;The next hackathon was a year or so down the track.
+Over the weekend I was able to set up an API with a database, and get it deployed to Azure.
+Nice!
+However, I was so focused on what I had to do, that I wasn’t being available to the team members building the front-end.
+“It’s simple enough to connect to”, I thought to myself.
+Through the magic of hindsight, I now realise I should focused a little less on my personal task, and a bit more on what the team was working together to achieve.
+We weren’t trying to build an API with nothing connected to it, we needed an API and a front-end working together.&lt;/p&gt;
+
+&lt;p&gt;The last hackathon went a lot better.
+I was happily building my API, I was helping to connect it to the front-end.
+Communication throughout the team was flowing nicely, and short stand ups kept us in sync.
+We finished on time, &lt;em&gt;and&lt;/em&gt; it was functional!
+Yaaahooooo!
+The problem this time wasn’t clear to me until the very end.
+Our project wasn’t very exciting.
+This hackathon was a competition, and we didn’t play to win.
+We didn’t venture far enough away from everyday ideas and technologies, and we got something adjacent to exciting.&lt;/p&gt;
+
+&lt;p&gt;That weekend I gained a greater appreciation for the purpose of hackathons.
+A chance to experiment and have fun.
+Throw a new idea on the table and see how you can mold it.
+Get a new technology in the mix, use something you want to try, don’t worry if you fail.
+Your two day project probably isn’t going to be used for something after this, so who cares.&lt;/p&gt;
+
+&lt;p&gt;If you have a chance, I highly recommend giving hackathons a try.
+For me, each one has been something I can look back on fondly.
+Not just from what I was able to build, but how I was able to use it to grow.
+It’s a great chance to learn something new about yourself, and even if what you learn is “I don’t want to go to any more hackathons”.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 28 Jul 2018 00:00:00 +1200</pubDate>
+        <link>https://andyhansen.co.nz/posts/hackathon-lessons</link>
+        <guid isPermaLink="true">https://andyhansen.co.nz/posts/hackathon-lessons</guid>
+        
+        <category>hackathons</category>
+        
+        <category>personal-growth</category>
+        
+        
+      </item>
+    
+  </channel>
+</rss>
