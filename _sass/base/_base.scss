@@ -40,7 +40,7 @@ svg {
 
 /* Links */
 
-a:not(.icon) {
+a:not(.plain) {
   color: var(--color-accent-primary);
   box-shadow: var(--color-accent-primary) 0 0 0 inset;
   text-decoration: none;
@@ -50,8 +50,6 @@ a:not(.icon) {
     color: var(--color-white);
     box-shadow: var(--color-accent-primary) 0 -1.4em inset;
   }
-
-
 }
 
 a.nav {

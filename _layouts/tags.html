@@ -3,20 +3,19 @@ layout: page
 ---
 <article class="post">
   <header>
-    <h1>Tags</h1>
+    <h1>Articles tagged with "{{ page.tag-name }}"</h1>
   </header>
   <main>
-    <h1 class="snippets-heading">Articles tagged with "{{ page.tag-name }}"</h1>
-
     <ul>
     {% for post in site.posts %}
       {% if post.tags contains page.tag-name %}
         <li>
-          <a href="{{ post.link }}">{{ post.title }}</a>
+          <a href="{{ site.base_path | append: post.url }}">{{ post.title }}</a>
         </li>
       {% endif %}
     {% endfor %}
     </ul>
+    <a href="/tags">View all tags</a>
   </main>
   <footer>
   </footer>

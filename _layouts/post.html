@@ -6,7 +6,7 @@ layout: page
     <h1 class="title">
       {{ page.title }}
       {% if page.link %}
-        <a href="{{ page.link }}" class="icon"><i class="fas fa-link"></i></a>
+        <a href="{{ page.link }}" class="icon plain"><i class="fas fa-link"></i></a>
       {% endif %}
     </h1>
     <p class="time"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time></p>
@@ -14,7 +14,11 @@ layout: page
   <!-- Post Tags -->
   <ul class="tags">
     {% for tag in page.tags %}
-    <li class="tag">{{ tag }}</li>
+    <a class="plain" href="/{{ site.baseurl | append: 'tags/' | append: tag }}">
+      <li class="tag">
+        {{ tag }}
+      </li>
+    </a>
     {% endfor %}
   </ul>
   <main>

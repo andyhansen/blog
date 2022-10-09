@@ -97,7 +97,7 @@ PLATFORMS
 
 DEPENDENCIES
   html-proofer
-  jekyll
+  jekyll (~> 4.0)
   jekyll-sitemap
   pry
   webrick (~> 1.7)
