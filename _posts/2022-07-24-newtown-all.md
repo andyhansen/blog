@@ -82,6 +82,13 @@ Click on a photo to get a closer look.
 
 {%
   include framed-image.html
+  title="Working Mens"
+  src="newtown-all/working-mens.jpg"
+  alt="A boarded up building which reads 'WORKINGMENS BOWLING CLUB'."
+%}
+
+{%
+  include framed-image.html
   title="A New Purpose"
   src="newtown-all/a-new-purpose.jpg"
   alt="A flower sits in the middle of an empty street sign."
