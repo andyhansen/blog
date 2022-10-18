@@ -14,18 +14,18 @@
 
   .title {
     @include fs--heading-1;
-    color: var(--color-text-dark);
+    color: var(--color-foreground-dark);
   }
 
   .time {
     @include fs--body;
-    color: var(--color-text);
+    color: var(--color-foreground);
   }
 
   & > main {
     margin-bottom: 5rem; // 50px
     @include fs--body;
-    color: var(--color-text);
+    color: var(--color-foreground);
 
     >* {
       margin-bottom: 1.8rem; // 18px
@@ -48,7 +48,7 @@
     }
 
     strong {
-      color: var(--color-text-dark);
+      color: var(--color-foreground-dark);
       font-weight: 700;
     }
 
@@ -74,7 +74,7 @@
 
       .subtitle {
         font-size: .8em;
-        color: var(--color-text-light)
+        color: var(--color-foreground-light)
       }
     }
 

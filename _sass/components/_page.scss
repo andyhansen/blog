@@ -5,7 +5,7 @@
     h1 {
       margin-bottom: 1.2rem;
       @include fs--heading-2;
-      color: var(--color-text-dark);
+      color: var(--color-foreground-dark);
     }
 
     p {
@@ -27,7 +27,7 @@
 
     p {
       @include fs--body;
-      color: var(--color-text);
+      color: var(--color-foreground);
     }
   }
 }
