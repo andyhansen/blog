@@ -31,7 +31,7 @@
     transition: color 0.2s;
 
     &::before {
-      @include background;
+      background-color: var(--color-background);
 
       border-radius: 10px;
       box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
@@ -44,7 +44,8 @@
     }
 
     &::after {
-      @include background;
+      background-color: var(--color-background);
+
       border-bottom: 14px solid transparent;
       border-left: 10px solid #eee;
       border-top: 13px solid transparent;
