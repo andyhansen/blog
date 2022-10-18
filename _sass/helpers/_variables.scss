@@ -1,11 +1,13 @@
 :root {
-  --color-background: hsl(55, 100%, 98%);
-
   --color-white: #FFF;
   --color-black: #000;
 
-  --color-accent-primary: #0067FB;
-  --color-accent-primary-variant: #0029F9;
+  --color-background: hsl(55, 100%, 98%);
+  --color-background-dark: hsl(55, 100%, 93%);
+
+  --color-accent: #0067FB;
+  --color-accent-variant: orangered;
+  --color-accent-inverse: var(--color-background);
 
   --color-foreground: hsl(195, 12%, 41%);
   --color-foreground-dark: hsl(197, 49%, 17%);

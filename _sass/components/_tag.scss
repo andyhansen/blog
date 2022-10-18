@@ -55,11 +55,11 @@
     }
 
     &:hover {
-      background-color: var(--color-accent-primary);
+      background-color: var(--color-accent);
       color: white;
 
       &::after {
-        border-left-color: var(--color-accent-primary);
+        border-left-color: var(--color-accent);
       }
     }
   }

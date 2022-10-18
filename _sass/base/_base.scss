@@ -40,14 +40,14 @@ svg {
 /* Links */
 
 a:not(.plain) {
-  color: var(--color-accent-primary);
-  box-shadow: var(--color-accent-primary) 0 0 0 inset;
+  color: var(--color-accent);
+  box-shadow: var(--color-accent-variant) 0 -2px 0 inset;
   text-decoration: none;
   transition: box-shadow 0.25s ease-out 0s, color 0.25s ease-out 0s;
 
   &:hover {
-    color: var(--color-white);
-    box-shadow: var(--color-accent-primary) 0 -1.4em inset;
+    color: var(--color-accent-inverse);
+    box-shadow: var(--color-accent) 0 -1.4em inset;
   }
 }
 
@@ -66,7 +66,7 @@ a.nav {
 }
 
 i.fa-link {
-  color: var(--color-accent-primary);
+  color: var(--color-accent);
 
   &:hover {
     transition: transform 1.2s ease-in-out;
