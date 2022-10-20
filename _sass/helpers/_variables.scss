@@ -12,16 +12,16 @@
   --color-accent-variant: hsl(16, 100%, 50%);
   --color-accent-inverse: var(--color-background);
 
-  @media (prefers-color-scheme: dark) {
-    --color-foreground: hsl(15, 100%, 99%);
-    --color-foreground-dark: hsl(15, 100%, 90%);
+  // @media (prefers-color-scheme: dark) {
+  //   --color-foreground: hsl(15, 100%, 99%);
+  //   --color-foreground-dark: hsl(15, 100%, 90%);
 
-    --color-background: hsl(16, 100%, 35%);
-    --color-background-dark: hsl(16, 100%, 25%);
+  //   --color-background: hsl(16, 100%, 35%);
+  //   --color-background-dark: hsl(16, 100%, 25%);
 
-    --color-accent: var(--color-foreground-dark);
-    --color-accent-variant: hsl(141, 63%, 28%);
-  }
+  //   --color-accent: var(--color-foreground-dark);
+  //   --color-accent-variant: hsl(141, 63%, 28%);
+  // }
 
   // Couldn't get these to work with media queries
   --breakpoint-mobile: 576px;
