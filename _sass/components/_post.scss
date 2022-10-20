@@ -1,4 +1,5 @@
 .post {
+  color: var(--color-foreground);
   margin-bottom: 10rem; // 100px
 
   & > header {
@@ -19,13 +20,11 @@
 
   .time {
     @include fs--body;
-    color: var(--color-foreground);
   }
 
   & > main {
     margin-bottom: 5rem; // 50px
     @include fs--body;
-    color: var(--color-foreground);
 
     >* {
       margin-bottom: 1.8rem; // 18px
@@ -56,7 +55,7 @@
       margin-left: 0;
       margin-right: 0;
       padding-left: 1.2rem;
-      border-left: 5px solid var(--color-accent);
+      border-left: 5px solid var(--color-accent-variant);
 
       > p {
         margin-bottom: 1em;

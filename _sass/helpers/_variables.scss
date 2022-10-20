@@ -2,15 +2,25 @@
   --color-white: #FFF;
   --color-black: #000;
 
-  --color-background: hsl(55, 100%, 95%);
-  --color-background-dark: hsl(55, 100%, 90%);
+  --color-background: hsl(15, 100%, 97%);
+  --color-background-dark: hsl(15, 100%, 92%);
 
-  --color-accent: #0067FB;
+  --color-foreground: hsl(141, 63%, 32%);
+  --color-foreground-dark: hsl(141, 63%, 28%);
+
+  --color-accent: var(--color-foreground-dark);
   --color-accent-variant: orangered;
   --color-accent-inverse: var(--color-background);
 
-  --color-foreground: hsl(195, 12%, 35%);
-  --color-foreground-dark: hsl(197, 49%, 17%);
+  @media (prefers-color-scheme: dark) {
+    --color-foreground: hsl(15, 100%, 95%);
+    --color-foreground-dark: hsl(15, 100%, 92%);
+
+    --color-background: hsl(141, 63%, 28%);
+    --color-background-dark: hsl(141, 63%, 24%);
+
+    --color-accent: var(--color-foreground-dark);
+  }
 
   // Couldn't get these to work with media queries
   --breakpoint-mobile: 576px;
