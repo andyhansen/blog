@@ -12,14 +12,14 @@
     text-decoration: none;
 
     &:hover {
-      color: var(--color-background-dark)
+      color: var(--color-background)
     }
   }
 
   .tag {
-    background: var(--color-accent-variant);
+    background: var(--color-foreground-dark);
     border-radius: 3px 0 0 3px;
-    color: var(--color-accent-inverse);
+    color: var(--color-background);
     display: inline-block;
     height: 26px;
     line-height: 26px;
@@ -47,7 +47,7 @@
       @include background;
 
       border-bottom: 14px solid transparent;
-      border-left: 10px solid var(--color-accent-variant);
+      border-left: 10px solid var(--color-foreground-dark);
       border-top: 13px solid transparent;
       content: '';
       position: absolute;
@@ -56,11 +56,11 @@
     }
 
     &:hover {
-      background-color: var(--color-accent);
-      color: var(--color-accent-inverse);
+      background-color: var(--color-accent-variant);
+      color: var(--color-accent);
 
       &::after {
-        border-left-color: var(--color-accent);
+        border-left-color: var(--color-accent-variant);
       }
     }
   }
