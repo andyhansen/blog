@@ -15,9 +15,11 @@
 }
 
 @mixin background {
-  background-image: url("../assets/images/background/ep_naturalwhite.png");
+  background-color: var(--color-background);
+  background-image: url("../assets/images/backgrounds/paper.png");
   background-repeat: repeat;
   background-blend-mode: multiply;
+
 }
 
 // Font families
