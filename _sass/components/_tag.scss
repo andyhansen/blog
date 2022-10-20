@@ -12,14 +12,14 @@
     text-decoration: none;
 
     &:hover {
-      color: var(--color-white)
+      color: var(--color-background-dark)
     }
   }
 
   .tag {
-    background: #eee;
+    background: var(--color-accent-variant);
     border-radius: 3px 0 0 3px;
-    color: #999;
+    color: var(--color-accent-inverse);
     display: inline-block;
     height: 26px;
     line-height: 26px;
@@ -47,7 +47,7 @@
       @include background;
 
       border-bottom: 14px solid transparent;
-      border-left: 10px solid #eee;
+      border-left: 10px solid var(--color-accent-variant);
       border-top: 13px solid transparent;
       content: '';
       position: absolute;
@@ -57,7 +57,7 @@
 
     &:hover {
       background-color: var(--color-accent);
-      color: white;
+      color: var(--color-accent-inverse);
 
       &::after {
         border-left-color: var(--color-accent);
