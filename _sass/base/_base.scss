@@ -107,3 +107,7 @@ span.small {
   padding-right: 1rem;
   padding-left: 1rem;
 }
+
+.hidden {
+  @include visually-hidden;
+}

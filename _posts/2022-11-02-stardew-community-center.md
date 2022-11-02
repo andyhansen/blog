@@ -8,6 +8,16 @@ link:
 comments: true
 ---
 
+<script type="text/javascript" src="../assets/js/stardew.js"></script>
+
+This guide is mostly for me.
+I wanted to be able to select a season and see which items I was able to get.
+Items which aren't seasonal are generally not featured because it quickly became a lot of typing.
+
+[A better can be found on the on the Stardew Valley Wiki](https://stardewvalleywiki.com/Remixed_Bundles).
+
+Filter on <a href="?filter=none">None</a> / <a href="?filter=spring">Spring</a> / <a href="?filter=summer">Summer</a> / <a href="?filter=fall">Fall</a> / <a href="?filter=winter">Winter</a>
+
 ## Crafts Room
 
 <table>
