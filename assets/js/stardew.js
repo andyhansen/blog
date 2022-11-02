@@ -1,3 +1,5 @@
+// Horrible JS Lives Here
+
 function extractFilter() {
   const urlParams = new URLSearchParams(window.location.search);
   const filter = urlParams.get("filter");
@@ -11,6 +13,7 @@ function filterRows(filter) {
   seasonTds.forEach((seasonTd) => {
     const season = seasonTd.innerText.toLowerCase();
 
+    // Skip td if it's any of the season we care about
     if (season.includes("any") || season.includes(filter)) return;
 
     seasonTd.parentElement.classList.add("hidden")
