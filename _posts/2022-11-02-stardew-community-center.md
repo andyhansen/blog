@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Stardew Community Center
-description: 
+title: Stardew Valley Community Center Guide
+description: With Season Filter
 date: 2022-11-02
 tags: game-guide
 link: 
@@ -16,7 +16,7 @@ Items which aren't seasonal are generally not featured because it quickly became
 
 [A better can be found on the on the Stardew Valley Wiki](https://stardewvalleywiki.com/Remixed_Bundles).
 
-Filter on <a href="?filter=none">None</a> / <a href="?filter=spring">Spring</a> / <a href="?filter=summer">Summer</a> / <a href="?filter=fall">Fall</a> / <a href="?filter=winter">Winter</a>
+Filtered on: <span><a href="?filter=none">None</a></span> / <span><a href="?filter=spring">Spring</a></span> / <span><a href="?filter=summer">Summer</a></span> / <span><a href="?filter=fall">Fall</a></span> / <span><a href="?filter=winter">Winter</a></span>
 
 ## Crafts Room
 
