@@ -12,11 +12,9 @@ comments: true
 
 This guide is mostly for me.
 I wanted to be able to select a season and see which items I was able to get.
-Items which aren't seasonal are generally not featured because it quickly became a lot of typing.
+Non-seasonal items are generally not featured because it would be a lot of typing, and would never be as complete as the community [Stardew Valley Wiki](https://stardewvalleywiki.com/Bundles).
 
-[A better can be found on the on the Stardew Valley Wiki](https://stardewvalleywiki.com/Remixed_Bundles).
-
-Filtered on: <span><a href="?filter=none">None</a></span> / <span><a href="?filter=spring">Spring</a></span> / <span><a href="?filter=summer">Summer</a></span> / <span><a href="?filter=fall">Fall</a></span> / <span><a href="?filter=winter">Winter</a></span>
+<p>Filtered on: <span><a href="?filter=none">None</a></span> / <span><a href="?filter=spring">Spring</a></span> / <span><a href="?filter=summer">Summer</a></span> / <span><a href="?filter=fall">Fall</a></span> / <span><a href="?filter=winter">Winter</a></span></p>
 
 ## Crafts Room
 
