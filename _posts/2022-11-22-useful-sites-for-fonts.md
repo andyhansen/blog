@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Useful Sites to Find Fonts
-description: Focusing on free or cheap
+description: without breaking the bank
 date: 2022-11-22
 tags: fonts
 link: 
