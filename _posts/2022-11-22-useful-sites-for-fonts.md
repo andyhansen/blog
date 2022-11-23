@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Useful Sites to Find Fonts
-description: without breaking the bank
+description: Without breaking the bank
 date: 2022-11-22
 tags: fonts
 link: 
@@ -50,7 +50,7 @@ Love it.
 </a>
 
 A great site, but a bit sneaky.
-They have a free section which unfortunately a mix of "free for commercial use" and "free for personal use" rather than just being one or the other.
+They have a free section which unfortunately is a mix of "free for commercial use" and "free for personal use" rather than just being one or the other.
 In saying that, fonts that are paid are generally only around the $18 USD mark.
 Their selection is quite large, but you can filter by "Best Selling" as an easy way to see what their popular offerings are.
 
