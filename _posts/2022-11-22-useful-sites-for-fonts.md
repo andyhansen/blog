@@ -16,7 +16,7 @@ I was looking for sites with a smaller, more curated selection.
 Though I wasn't looking to get everything for free, being on the cheaper end would be a bonus.
 At the end of the day, I'm doing this for a hobby.
 
-Here is a collection of websites that I've find useful in my search for the perfect typeface.
+Here is a collection of websites that I've found useful.
 
 ## [Typodermic Fonts](https://typodermicfonts.com/) ([free](https://typodermicfonts.com/some-free/) and paid)
 
@@ -24,9 +24,8 @@ Here is a collection of websites that I've find useful in my search for the perf
   <img src="../assets/images/useful-sites-for-fonts/typodermic.png" />
 </a>
 
-One of the favourites.
-Each of their fonts has a write up explaining it's style and inspiration.
-I find that it's a great help when I want to know the font is going to work for the purpose I have in mind. 
+If I'm looking for an interesting font, this will be the first place I look.
+Each font has a write up explaining it's style and inspiration, which is a great way of knowing if it will fit with my intended purpose.
 
 Though there is a bit too much to choose from, their search works fine if you have an idea of what you are after.
 I've not searched through extensively, but most of the their paid fonts are around $30 USD.
@@ -40,7 +39,7 @@ I've not searched through extensively, but most of the their paid fonts are arou
 Free and open source.
 This is probably one of the better options out there.
 A small set of high quality fonts.
-Similar to Typodermic Fonts, they've got descriptions and background for each of the their fonts.
+Similar to Typodermic Fonts, they've got a description and background for each.
 Love it.
 
 ## [Pixel Surplus](https://pixelsurplus.com/) ([free](https://pixelsurplus.com/collections/free-fonts) and [paid](https://pixelsurplus.com/collections/fonts))
@@ -75,5 +74,5 @@ If you are looking to find a clean, simple font then it will be worth checking t
 ## Conclusion
 
 Hopefully you've been able to find what you are looking for.
-As I've been researching these sites a bit deeper, I've been inspired to make more photography zines.
+As I've been researching these sites a bit deeper, it's certainly inspired me to try new projects and new styles. 
 Forever falling down the rabbit hole.
