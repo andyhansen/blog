@@ -8,31 +8,31 @@ link:
 comments: true
 ---
 
-Creating a few Zines has taught me the importance of fonts.
-It's also taught me that it can be quite hard to find useful font sites via a search engine.
-Often the top sites will have an overwhelming amount of options, minimal quality control, or they are prohibitively expensive.
+Creating zines has taught me the importance of fonts.
+Unfortunately it's also taught me how hard it can be to find the right one.
+Popular sites often have a decent range, but I found there was often too much on offer.
 
-I was looking for sites with a smaller, more curated selection.
-Though I wasn't looking to get everything for free, being on the cheaper end would be a bonus.
-At the end of the day, I'm doing this for a hobby.
+I prefer sites with a focused selection, and prices which are suitable for a hobby.
+They didn't have to be free, but anything over $50 was probably going to be too much for the scope of my projects.
 
-Here is a collection of websites that I've found useful.
+With a bit of searching, these were the sites I've ended up liking the most.
 
 ## [Typodermic Fonts](https://typodermicfonts.com/) ([free](https://typodermicfonts.com/some-free/) and paid)
 
-<a href="../assets/images/useful-sites-for-fonts/typodermic.png">
+<a target="_blank" href="https://typodermicfonts.com/">
   <img src="../assets/images/useful-sites-for-fonts/typodermic.png" />
 </a>
 
 If I'm looking for an interesting font, this will be the first place I look.
-Each font has a write up explaining it's style and inspiration, which is a great way of knowing if it will fit with my intended purpose.
+Each one has a write up explaining it's style and inspiration.
+It's a great way of knowing if it will fit with my intended purpose.
 
 Though there is a bit too much to choose from, their search works fine if you have an idea of what you are after.
-I've not searched through extensively, but most of the their paid fonts are around $30 USD.
+I've looked at prices extensively, but most of the their paid fonts seem to be around $30 USD.
 
 ## [The League of Moveable Type](https://www.theleagueofmoveabletype.com/) (free and open source)
 
-<a href="../assets/images/useful-sites-for-fonts/the-league-of-moveable-type.png">
+<a target="_blank" href="https://www.theleagueofmoveabletype.com/">
   <img src="../assets/images/useful-sites-for-fonts/the-league-of-moveable-type.png" />
 </a>
 
@@ -44,18 +44,18 @@ Love it.
 
 ## [Pixel Surplus](https://pixelsurplus.com/) ([free](https://pixelsurplus.com/collections/free-fonts) and [paid](https://pixelsurplus.com/collections/fonts))
 
-<a href="../assets/images/useful-sites-for-fonts/pixel-surplus.png">
+<a target="_blank" href="https://pixelsurplus.com/">
   <img src="../assets/images/useful-sites-for-fonts/pixel-surplus.png" />
 </a>
 
 A great site, but a bit sneaky.
 They have a free section which unfortunately is a mix of "free for commercial use" and "free for personal use" rather than just being one or the other.
-In saying that, fonts that are paid are generally only around the $18 USD mark.
+Paid fonts are on the lower end at about the $18 USD mark though.
 Their selection is quite large, but you can filter by "Best Selling" as an easy way to see what their popular offerings are.
 
-## [Velvetyne](https://www.velvetyne.fr/fonts/backout/) (free and open source)
+## [Velvetyne](https://www.velvetyne.fr/) (free and open source)
 
-<a href="../assets/images/useful-sites-for-fonts/velvetyne.png">
+<a target="_blank" href="https://www.velvetyne.fr/">
   <img src="../assets/images/useful-sites-for-fonts/velvetyne.png" />
 </a>
 
@@ -64,7 +64,7 @@ Each font has some background, and examples of it being used in the wild.
 
 ## [Collletttivo](http://collletttivo.it/) (free and open source)
 
-<a href="../assets/images/useful-sites-for-fonts/collletttivo.png">
+<a target="_blank" href="http://collletttivo.it/">
   <img src="../assets/images/useful-sites-for-fonts/collletttivo.png" />
 </a>
 
