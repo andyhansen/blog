@@ -17,7 +17,7 @@ They didn't have to be free, but anything over $50 was probably going to be too 
 
 With a bit of searching, these were the sites I've ended up liking the most.
 
-## [Typodermic Fonts](https://typodermicfonts.com/) ([free](https://typodermicfonts.com/some-free/) and paid)
+## <a target="_blank" href="https://typodermicfonts.com/">Typodermic Fonts</a> ([free](https://typodermicfonts.com/some-free/) and paid)
 
 <a target="_blank" href="https://typodermicfonts.com/">
   <img src="../assets/images/useful-sites-for-fonts/typodermic.png" />
@@ -30,7 +30,7 @@ It's a great way of knowing if it will fit with my intended purpose.
 Though there is a bit too much to choose from, their search works fine if you have an idea of what you are after.
 I've looked at prices extensively, but most of the their paid fonts seem to be around $30 USD.
 
-## [The League of Moveable Type](https://www.theleagueofmoveabletype.com/) (free and open source)
+## <a target="_blank" href="https://www.theleagueofmoveabletype.com/">The League of Moveable Type</a> (free and open source)
 
 <a target="_blank" href="https://www.theleagueofmoveabletype.com/">
   <img src="../assets/images/useful-sites-for-fonts/the-league-of-moveable-type.png" />
@@ -42,7 +42,7 @@ A small set of high quality fonts.
 Similar to Typodermic Fonts, they've got a description and background for each.
 Love it.
 
-## [Pixel Surplus](https://pixelsurplus.com/) ([free](https://pixelsurplus.com/collections/free-fonts) and [paid](https://pixelsurplus.com/collections/fonts))
+## <a target="_blank" href="https://pixelsurplus.com/">Pixel Surplus</a> ([free](https://pixelsurplus.com/collections/free-fonts) and [paid](https://pixelsurplus.com/collections/fonts))
 
 <a target="_blank" href="https://pixelsurplus.com/">
   <img src="../assets/images/useful-sites-for-fonts/pixel-surplus.png" />
@@ -53,7 +53,7 @@ They have a free section which unfortunately is a mix of "free for commercial us
 Paid fonts are on the lower end at about the $18 USD mark though.
 Their selection is quite large, but you can filter by "Best Selling" as an easy way to see what their popular offerings are.
 
-## [Velvetyne](https://www.velvetyne.fr/) (free and open source)
+## <a target="_blank" href="https://www.velvetyne.fr/">Velvetyne</a> (free and open source)
 
 <a target="_blank" href="https://www.velvetyne.fr/">
   <img src="../assets/images/useful-sites-for-fonts/velvetyne.png" />
@@ -62,7 +62,7 @@ Their selection is quite large, but you can filter by "Best Selling" as an easy 
 A decent range with some interesting suggested filter options such as Brutalist, Fantasy, and Grotesque.
 Each font has some background, and examples of it being used in the wild.
 
-## [Collletttivo](http://collletttivo.it/) (free and open source)
+## <a target="_blank" href="http://collletttivo.it/">Collletttivo</a> (free and open source)
 
 <a target="_blank" href="http://collletttivo.it/">
   <img src="../assets/images/useful-sites-for-fonts/collletttivo.png" />
