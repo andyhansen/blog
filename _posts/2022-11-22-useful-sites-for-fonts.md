@@ -48,6 +48,8 @@ Love it.
   <img src="../assets/images/useful-sites-for-fonts/pixel-surplus.png" />
 </a>
 
+Update: I've changed my mind a bit on this site. You need to provide credit card and address just to download a free font. Not worth the hassle unless you were already planning on paying.
+
 A great site, but a bit sneaky.
 They have a free section which unfortunately is a mix of "free for commercial use" and "free for personal use" rather than just being one or the other.
 Paid fonts are on the lower end at about the $18 USD mark though.
