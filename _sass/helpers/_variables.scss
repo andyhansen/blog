@@ -2,21 +2,23 @@
   --color-white: #FFF;
   --color-black: #000;
 
-  --color-background: hsl(15, 100%, 97%);
-  --color-background-dark: hsl(15, 100%, 92%);
+  --color-background: hsl(0, 100%, 99%);
+  --color-background-dark: hsl(0, 95%, 99%);
 
-  --color-foreground: hsl(141, 63%, 32%);
-  --color-foreground-dark: hsl(141, 63%, 28%);
+  --color-foreground: hsl(0, 0%, 30%);
+  --color-foreground-dark: hsl(0, 0%, 15%);
+  // --color-foreground: hsl(141, 63%, 32%);
+  // --color-foreground-dark: hsl(141, 63%, 28%);
 
   --color-accent: var(--color-foreground-dark);
   --color-accent-variant: hsl(16, 100%, 50%);
   --color-accent-inverse: var(--color-background);
 
   @media (prefers-color-scheme: dark) {
-    --color-foreground: hsl(12, 100%, 99%);
-    --color-foreground-dark: hsl(15, 100%, 97%);
+    --color-foreground: hsl(0, 100%, 99%);
+    --color-foreground-dark: hsl(0, 95%, 99%);
 
-    --color-background: hsl(0, 0%, 10%);
+    --color-background: hsl(0, 0%, 15%);
     --color-background-dark: hsl(0, 0%, 5%);
 
     --color-accent: var(--color-foreground-dark);
