@@ -20,6 +20,9 @@
   background-repeat: repeat;
   background-blend-mode: multiply;
 
+  @media (prefers-color-scheme: dark) {
+    background-image: url("/assets/images/backgrounds/paper-inverted.png");
+  }
 }
 
 // Font families
