@@ -34,6 +34,8 @@ For a long time I was trying to make a more sustainable team by having us hire a
 
 **Reflect on the ways that you are unreliable**. If you are leading a team, you are part of the glue that’s holding it all together. If you can’t be relied on, then it's going to start to fall apart. As an exercise, I like to take note of times I was unreliable so that I can improve in the future. Generally this is a sign of overwork, and an opportunity to see if there tasks I could be delegating, or if I need to reprioritise my time. Creating checklists in my notebook is one way I make sure that I’m not forgetting those small tasks that can accumulate throughout the day.
 
+**Understand that people have lives outside of work**. Work is how we make our living, but it becomes secondary when life gets in the way. A sustainable team has people who understand this, and look out for each other. You don't have to be a work therapist, being understanding when someone is going through a tough time goes a long way. At my workplace we rebranded Sick Leave to Wellness Leave as a way of making it clear that there are more factors than just physical problems which can make someone unable to work on a given day. People will be happier and stay longer at a workplace that supports them.
+
 ## Conclusion
 
 Hopefully this post has been a healthy mix of new and known. What’s important is that you are constantly reflecting on what you do well, and what you need to change. Be open and honest, and the necessary feedback will make its way to you. At some stage I’d like to make a few follow up posts where I dig a bit deeper into some of these areas, until then, there are plenty of great resources out there on any of these topics.
