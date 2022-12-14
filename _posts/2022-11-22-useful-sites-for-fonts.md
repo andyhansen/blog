@@ -20,7 +20,7 @@ With a bit of searching, these were the sites I've ended up liking the most.
 ## <a target="_blank" href="https://typodermicfonts.com/">Typodermic Fonts</a> ([free](https://typodermicfonts.com/some-free/) and paid)
 
 <a target="_blank" href="https://typodermicfonts.com/">
-  <img src="../assets/images/useful-sites-for-fonts/typodermic.png" />
+  <img src="/assets/images/useful-sites-for-fonts/typodermic.png" />
 </a>
 
 If I'm looking for an interesting font, this will be the first place I look.
@@ -33,7 +33,7 @@ I've looked at prices extensively, but most of the their paid fonts seem to be a
 ## <a target="_blank" href="https://www.theleagueofmoveabletype.com/">The League of Moveable Type</a> (free and open source)
 
 <a target="_blank" href="https://www.theleagueofmoveabletype.com/">
-  <img src="../assets/images/useful-sites-for-fonts/the-league-of-moveable-type.png" />
+  <img src="/assets/images/useful-sites-for-fonts/the-league-of-moveable-type.png" />
 </a>
 
 Free and open source.
@@ -45,7 +45,7 @@ Love it.
 ## <a target="_blank" href="https://pixelsurplus.com/">Pixel Surplus</a> ([free](https://pixelsurplus.com/collections/free-fonts) and [paid](https://pixelsurplus.com/collections/fonts))
 
 <a target="_blank" href="https://pixelsurplus.com/">
-  <img src="../assets/images/useful-sites-for-fonts/pixel-surplus.png" />
+  <img src="/assets/images/useful-sites-for-fonts/pixel-surplus.png" />
 </a>
 
 Update: I've changed my mind a bit on this site. You need to provide credit card and address just to download a free font. Not worth the hassle unless you were already planning on paying.
@@ -58,7 +58,7 @@ Their selection is quite large, but you can filter by "Best Selling" as an easy 
 ## <a target="_blank" href="https://www.velvetyne.fr/">Velvetyne</a> (free and open source)
 
 <a target="_blank" href="https://www.velvetyne.fr/">
-  <img src="../assets/images/useful-sites-for-fonts/velvetyne.png" />
+  <img src="/assets/images/useful-sites-for-fonts/velvetyne.png" />
 </a>
 
 A decent range with some interesting suggested filter options such as Brutalist, Fantasy, and Grotesque.
@@ -67,7 +67,7 @@ Each font has some background, and examples of it being used in the wild.
 ## <a target="_blank" href="http://collletttivo.it/">Collletttivo</a> (free and open source)
 
 <a target="_blank" href="http://collletttivo.it/">
-  <img src="../assets/images/useful-sites-for-fonts/collletttivo.png" />
+  <img src="/assets/images/useful-sites-for-fonts/collletttivo.png" />
 </a>
 
 A small selection of open source fonts.

@@ -8,7 +8,7 @@ link:
 comments: true
 ---
 
-<script type="text/javascript" src="../assets/js/stardew.js"></script>
+<script type="text/javascript" src="/assets/js/stardew.js"></script>
 
 This guide is mostly for me.
 I wanted to be able to select a season and see which items I was able to get.

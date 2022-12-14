@@ -16,7 +16,7 @@
 
 @mixin background {
   background-color: var(--color-background);
-  background-image: url("../assets/images/backgrounds/paper.png");
+  background-image: url("/assets/images/backgrounds/paper.png");
   background-repeat: repeat;
   background-blend-mode: multiply;
 
