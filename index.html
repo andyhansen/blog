@@ -12,14 +12,13 @@ title: Home
   <ul>
     {% endif %}
     <li>
-      <h3>
+      <p class="list__post">
         <a href="{{ post.url | prepend: site.baseurl }}">{{post.title}}</a>
         {% if post.link %}
           <a href="{{ post.link }}" class="icon plain"><i class="fas fa-link"></i></a>
         {% endif %}
-        <br>
-        <span class="small">{{post.description}}</span>
-      </h3>
+      </p>
+      <p><span class="small">{{post.description}}</span></p>
       <p>{{ post.date | date: "%b %-d, %Y" }}</p>
     </li>
     {% if forloop.last %}

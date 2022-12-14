@@ -6,6 +6,10 @@
     @include fs--heading-1;
   }
 
+  &__post {
+    @include fs--heading-3;
+  }
+
   ul {
     margin-bottom: 2.5rem;
     list-style: none;
