@@ -15,7 +15,7 @@ title: Home
       <p class="list__post">
         <a href="{{ post.url | prepend: site.baseurl }}">{{post.title}}</a>
         {% if post.link %}
-          <a href="{{ post.link }}" class="icon plain"><i class="fas fa-link"></i></a>
+          {% include link-icon.html link=post.link %}
         {% endif %}
       </p>
       <p><span class="small">{{post.description}}</span></p>

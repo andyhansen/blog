@@ -59,19 +59,16 @@ a:not(.plain) {
 a.nav {
   padding: 10px 35px;
   overflow: hidden;
-
-  &:before {
-    font-family: FontAwesome;
-    content: "\f07a";
-    position: absolute;
-    top: 11px;
-    left: -30px;
-    transition: all 200ms ease;
-  }
 }
 
-i.fa-link {
-  color: var(--color-accent);
+img.link-icon {
+  display: inline-block;
+  height: 1.1em;
+  transition: transform .6s ease-in-out;
+
+  @media (prefers-color-scheme: dark) {
+    filter: invert(100%);
+  }
 
   &:hover {
     transition: transform 1.2s ease-in-out;

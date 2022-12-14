@@ -6,7 +6,7 @@ layout: page
     <h1 class="title">
       {{ page.title }}
       {% if page.link %}
-        <a href="{{ page.link }}" class="icon plain"><i class="fas fa-link"></i></a>
+        {% include link-icon.html link=page.link %}
       {% endif %}
     </h1>
     <p class="time"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time></p>
