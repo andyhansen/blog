@@ -18,10 +18,11 @@
   background-color: var(--color-background);
   background-image: url("/assets/images/backgrounds/paper.png");
   background-repeat: repeat;
-  background-blend-mode: multiply;
+  background-blend-mode: darken;
 
   @media (prefers-color-scheme: dark) {
     background-image: url("/assets/images/backgrounds/paper-inverted.png");
+    background-blend-mode: lighten;
   }
 }
 
