@@ -14,11 +14,11 @@ layout: page
   <!-- Post Tags -->
   <ul class="tags">
     {% for tag in page.tags %}
-    <a class="plain" href="/{{ site.baseurl | append: 'tags/' | append: tag }}">
-      <li class="tag">
-        {{ tag }}
+      <li>
+        <a class="tag plain" href="/{{ site.baseurl | append: 'tags/' | append: tag }}">
+            {{ tag }}
+        </a>
       </li>
-    </a>
     {% endfor %}
   </ul>
   <article>
