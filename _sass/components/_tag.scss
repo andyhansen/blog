@@ -18,7 +18,7 @@
 
   .tag {
     background: var(--color-foreground-dark);
-    border-radius: 3px 0 0 3px;
+    border-radius: 3px;
     color: var(--color-background);
     display: inline-block;
     height: 26px;
@@ -41,18 +41,6 @@
       position: absolute;
       width: 6px;
       top: 10px;
-    }
-
-    &::after {
-      @include background;
-
-      border-bottom: 14px solid transparent;
-      border-left: 10px solid var(--color-foreground-dark);
-      border-top: 13px solid transparent;
-      content: '';
-      position: absolute;
-      right: 0;
-      top: 0;
     }
 
     &:hover {
