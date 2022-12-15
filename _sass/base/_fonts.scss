@@ -1,25 +1,22 @@
 @font-face {
-	font-family: 'League Spartan';
-	src:
-		url('/assets/fonts/spartan/LeagueSpartan-VF.woff2') format('woff2') tech('variations'),
-		url('/assets/fonts/spartan/LeagueSpartan-VF.woff2') format('woff2-variations'),
-		url('/assets/fonts/spartan/LeagueSpartan-VF.woff') format('woff') tech('variations'),
-		url('/assets/fonts/spartan/LeagueSpartan-VF.woff') format('woff-variations'),
-		url('/assets/fonts/spartan/LeagueSpartan-VF.ttf') format('truetype') tech('variations'),
-		url('/assets/fonts/spartan/LeagueSpartan-VF.ttf') format('truetype-variations');
+	font-family: "League Spartan";
+	src: 
+		url("/assets/fonts/spartan/LeagueSpartan-VF.woff2") format("woff2"),
+		url("/assets/fonts/spartan/LeagueSpartan-VF.woff") format("woff"),
+		url("/assets/fonts/spartan/LeagueSpartan-VF.ttf") format("truetype");
 	font-weight: 100 1000;
-	font-stretch: 25% 151%;
+	font-stretch: 25% 150%;
 }
 
 @font-face {
-	font-family: 'Fira Code';
-	src: url('/assets/fonts/fira-code/FiraCode-VariableFont.ttf') format('truetype') tech('variations');
+	font-family: "Fira Code";
+	src: url("/assets/fonts/fira-code/FiraCode-VariableFont.ttf") format("truetype");
 	font-weight: 100 1000;
 }
 
 // Only includes enough characters to spell Andy Hansen
 @font-face {
-	font-family: 'Fira Code - Andy Hansen';
-	src: url('/assets/fonts/fira-code/FiraCode-VariableFont-AndyHansen.ttf') format('truetype') tech('variations');
-	font-weight: 100 1000;
+	font-family: "Fira Code - Andy Hansen";
+	src: url("/assets/fonts/fira-code/FiraCode-Regular-AndyHansen.ttf");
+	font-weight: 400;
 }
