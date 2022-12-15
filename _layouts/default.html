@@ -2,9 +2,9 @@
 <html lang="en">
   {% include head.html %}
   <body>
-    <main class="page-wrapper">
+    <div class="page-wrapper">
       {{ content }}
-    </main>
+    </div>
     {% if jekyll.environment == 'production' %}
     {% include analytics.html %}
     {% endif %}

@@ -1,7 +1,7 @@
 ---
 layout: page
 ---
-<article class="post">
+<main>
   <header>
     <h1 class="title">
       {{ page.title }}
@@ -21,9 +21,9 @@ layout: page
     </a>
     {% endfor %}
   </ul>
-  <main>
+  <article>
     {{ content }}
-  </main>
+  </article>
   <footer>
     <!-- Previous / Next Buttons -->
     {% if page.previous.url %}
@@ -40,4 +40,4 @@ layout: page
       {% endif %}
   </footer>
   {% include disqus.html %}
-</article>
+</main>

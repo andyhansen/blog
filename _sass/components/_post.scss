@@ -1,4 +1,4 @@
-.post {
+main {
   color: var(--color-foreground);
   margin-bottom: 10rem; // 100px
 
@@ -22,7 +22,7 @@
     @include fs--body;
   }
 
-  & > main {
+  & > article {
     margin-bottom: 5rem; // 50px
     @include fs--body;
 

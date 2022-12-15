@@ -1,11 +1,11 @@
 ---
 layout: page
 ---
-<article class="post">
+<main>
   <header>
     <h1>Articles tagged with "{{ page.tag-name }}"</h1>
   </header>
-  <main>
+  <article>
     <ul>
     {% for post in site.posts %}
       {% if post.tags contains page.tag-name %}
@@ -16,7 +16,7 @@ layout: page
     {% endfor %}
     </ul>
     <a href="/tags">View all tags</a>
-  </main>
+  </article>
   <footer>
   </footer>
-</article>
+</main>
