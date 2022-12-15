@@ -36,6 +36,10 @@
   font-family: 'Fira Code', monospace;
 }
 
+@mixin ff--andy {
+  font-family: 'Fira Code - Andy Hansen', monospace;
+}
+
 // Font sizing
 @mixin fs--title {
     line-height: 1.5;

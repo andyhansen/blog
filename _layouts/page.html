@@ -3,10 +3,9 @@ layout: default
 ---
 <div class="page">
   <header>
+    <code class="its-my-name">{{ site.title}}</code>
     <h1>
-      <code>{{ site.title}}</code>
       {% if page.title == 'Home' %}
-        <br />
         {{ site.description }}
       {% endif %}
     </h1>
