@@ -38,6 +38,7 @@ svg {
 }
 
 .its-my-name {
+  color: var(--color-foreground);
   @include ff--andy;
 }
 
