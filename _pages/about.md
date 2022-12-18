@@ -5,7 +5,7 @@ permalink: /about/
 ---
 
 Hi.
-I'm a Wellington based Ruby developer.
+I'm a Wellington based Tech Lead and Ruby developer.
 
 I use this blog to understand whatever is spinning around in my mind.
 Most of what I've written has never been posted because I don't feel like it would be perfect for every single person who would read it.
