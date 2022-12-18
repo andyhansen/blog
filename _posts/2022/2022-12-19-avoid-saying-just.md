@@ -8,7 +8,7 @@ link:
 comments: true
 ---
 
-"Just" is one of those words that I often found myself using when I'm trying to help solve a problem. If someone is asking you for help, and your response is along the lines of "Can you just X", there is an unnecessary implication that the solution was obvious. If this language is used as part of a mentoring relationship, it's putting pressure on the mentee to just "be better" by implying that they had simply not found the obvious solution.
+"Just" is one of those words that I can find myself using when I'm trying to help solve a problem. If someone is asking you for help, and your response is along the lines of "Can you just X", there is an unnecessary implication that the solution was obvious. If this language is used as part of a mentoring relationship, it's putting pressure on the mentee to just "be better" by implying that they had simply not found the obvious solution.
 
 Unfortunately for me, it was firmly baked into the way I communicated. I couldn't just stop using it. It takes a lot of time and a lot of care. If you are at a workplace that uses Slack or something similar, you can find yourself writing a lot of rapid fire messages to the people that you work with. It's natural that these bad habits sneak their way back in from time to time. At this point, I think I've edited dozens of messages to remove "just", moments after hitting send. It's a great checkpoint to identify when I've overestimated how simple a problem is, or how much knowledge is required for the "just" to be valid. In those situations I'm often not thinking about the full context of the problem they might be facing, to the point that my message may be of no use to them at all.
 
