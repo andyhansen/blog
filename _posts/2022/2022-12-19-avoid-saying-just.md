@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Avoid Saying Just
+title: Avoid Saying "Just"
 description: 
 date: 2022-12-19
 tags: teamwork
