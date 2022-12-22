@@ -3,7 +3,7 @@ layout: post
 title: Colour Schemes
 description: How I've been wasting the last week or so
 date: 2022-10-18
-tags: design
+tags: design discoveries
 link: https://randoma11y.com/
 comments: true
 ---
