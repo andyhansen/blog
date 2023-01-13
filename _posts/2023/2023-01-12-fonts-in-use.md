@@ -2,7 +2,7 @@
 layout: post
 title: Fonts In Use
 description: A great resource for finding real world usage of fonts
-date: 2022-12-19
+date: 2023-01-12
 tags: fonts discoveries 
 link: https://fontsinuse.com/
 comments: true
