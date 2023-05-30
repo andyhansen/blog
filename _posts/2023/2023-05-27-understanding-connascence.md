@@ -8,7 +8,10 @@ link:
 comments: true
 ---
 
-Connascence is a software metric for measuring the impact of coupling within your code. It introduces rules and language that allows you to make more informed decisions about how you structure or refactor your code. Two components are considered connascent if a change to one would require a change to the other. The stronger the connascence between two components, the more change is required.
+Connascence is a software metric for measuring the impact of coupling in your code base.
+The rules and language it provides allow you to make more informed decisions about how to structure or refactor your code.
+Two components are considered connascent if a change to one would require a change to the other.
+The stronger the connascence between two components, the more change is required.
 
 ## How is it measured?
 
@@ -18,9 +21,18 @@ Connascence is measured over three axes, each having an impact on the overall se
 * **Degree.** How many entities are involved. Is it one, or is it thousands?
 * **Locality.** How close the entities are together. Stronger connascence is less of a problem if entities are close together.
 
-## Static Connascenes
+Improving your code on any of these axes will make it easier to work with in the future.
+In some cases I've included a little bit of advice on how I'd approach it.
 
-Static connascence can be found by visually studying the code. 
+Now that we've established what it is, and how it's measured, let's have a look at the rules.
+
+## Static vs Dynamic Connascences
+
+There are two types of connascence. Static and dynamic.
+
+Static connascence can be found by visually studying the code and with static code analysis. 
+
+Dynamic connascence can only be discovered by running your code. These are considered stronger because they are harder to find and fix.
 
 ### Connascence of Name
 
@@ -38,7 +50,8 @@ When multiple components must agree on the type of an entity. A statically typed
 
 #### Mitigating
 
-You can reduce the impact of connascence of type in Ruby by using methods like “respond_to?” to confirm that the entity you are working with has the methods you need before you try and use them. It won’t prevent invalid variables from being given to a method, but it will make the usage of variables within the method clear to other variables.
+You can reduce the impact of connascence of type in dynamically typed languages like Ruby by using methods like `respond_to?`.
+Though it's not as strict as type checking, it makes it clear to the caller what methods the given variable is expected to have.
 
 Using structs instead of hashes is another way that you can add a bit of structure to your code, and make it easier for other developers to understand what they can expect when they are working with a variable.
 
@@ -66,15 +79,13 @@ This applies to both data structures and function arguments.
 
 Use keyword parameters when possible or practical. They are more verbose, but adjusting from positional to keyword parameters changes it from connascence of position to connascence of name, which is weaker (better).
 
-### Algorithm
+### Connascence of Algorithm
 
 When two entities must manipulate data in the same way. Used when communicating with encryption. Both endpoints need to use the same methods to encrypt and decrypt the information if they are going to be able to communicate.
 
 Connascence of algorithm also includes the way that data is validated. If your data is validated differently by different entities, you will end up with inconsistencies and it may break your application in unexpected ways.
 
 ## Dynamic Connascenes
-
-Dynamic connascence can only be discovered by running your code. These are considered stronger because they are harder to find and fix.
 
 ### Connascence of Execution
 
@@ -84,7 +95,10 @@ When the order of execution between multiple components is important. It also in
 
 #### Mitigating
 
-Keep logic which depends on the order of operation as local as possible. Either keeping it within a class, or even within a single method if possible. Connascence of execution is one reason why it’s encouraged to encapsulate logic within classes. If the email class refused to send an email if the subject was set, it would allow you to catch the above issue as a runtime error, rather than silently failing.
+Keep logic which depends on the order of operation as local as possible.
+Encapsulating logic within class allows you to handle out of order calls either by adding checks, or by structuring methods to prevent them.
+For example, the email class could raise a runtime error if the subject wasn't set.
+Adding checks like this won't prevent these errors from happening, but they will make them loud and easy to identify.
 
 ### Connascence of Timing
 
@@ -95,7 +109,7 @@ When the timing of execution matters between multiple components is important. Y
 #### Mitigating
 
 Locks can be used to ensure that a resource is only being worked on by one entity at a time, but won't ensure that they are done in a particular order.
-In a distributed system you can reduce the impact of timing related issues by allows queues to retry when information is missing.
+In a distributed system you can reduce the impact of timing related issues by allowing queues to retry when information is missing.
 This will allow them to work once that information has become available.
 [Designing your system to be self-healing](https://blog.developer.adobe.com/the-road-towards-self-healing-systems-19ea767bd1b5) will allow it to recover when information is missing, either by requesting it, or retrying until the information is available.
 
@@ -116,3 +130,26 @@ Another option is to make your calls rerun safe. Instead of using create, use fi
 ### Connascence of Identity
 
 When multiple components must reference the same instance of an entity. Most commonly this occurs when multiple entities are updating a shared data structure.
+
+#### Mitigating
+
+[Singleton pattern](https://en.wikipedia.org/wiki/Singleton_pattern) is an example of how to avoid connascence of identity.
+A singleton ensures that there will only be one instance of a certain entity.
+That allows other entities to use it without having to guarantee that there are no other instances of it.
+However, singletons can create their own problems and should generally be avoided when possible.
+
+## Resources
+
+Unsurprisingly [connascence.io](https://connascence.io) is a great resource on the topic of connascence. In particular, [their list of resources](https://connascence.io/pages/about.html) is vast.
+
+I'll also list a few other resources I found useful as I was writing this blog post.
+
+* [https://programhappy.net/2020/09/19/fixing-dynamic-connascence/](https://programhappy.net/2020/09/19/fixing-dynamic-connascence/)
+* [https://thoughtbot.com/blog/connascence-as-a-vocabulary-to-discuss-coupling](https://thoughtbot.com/blog/connascence-as-a-vocabulary-to-discuss-coupling)
+* [https://khalilstemmler.com/wiki/coupling-cohesion-connascence/](https://khalilstemmler.com/wiki/coupling-cohesion-connascence/)
+
+## Goodbye
+
+Thanks for coming.
+I feel like this is a post I'll come back and edit, so don't get too attached.
+If you have any feedback you are welcome to [send it to the email found on my about page](/about).
