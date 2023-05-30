@@ -123,9 +123,22 @@ This is a major problem when you want to create a transaction over distributed s
 
 #### Mitigating
 
-If you want to avoid custom written rollback scenarios, and have to perform operations over multiple services, perform the one that is most likely to fail first. This doesn’t always work though, because calls can fail even if an operation half completes or times out.
+Transactions over multiple services are a pain.
+It's best to avoid them if possible.
 
-Another option is to make your calls rerun safe. Instead of using create, use find_or_create where possible. This isn’t perfect, but it allows calls to happen multiple times and work eventually without having to get too custom with it.
+If there is no way around it, there are three techniques I'd recommend.
+They aren't mutually exclusive, but are in order of preference.
+
+Queues can be used if you don't mind eventual consistency.
+Ensure that you have a [dead letter queue](https://en.wikipedia.org/wiki/Dead_letter_queue) to catch the messages that fail to process successfully.
+
+Make your endpoints [idempotent](https://en.wikipedia.org/wiki/Idempotence).
+There are many "good enough" ways of making code idempotent.
+For example, using `find_or_create` instead of `create`.
+It's not perfect, but it allows an API to be called multiple times without needing much custom logic.
+
+When interacting with remote services, perform the actions that are most likely to fail first.
+This is pretty flimsy, but it can be better than nothing.
 
 ### Connascence of Identity
 
