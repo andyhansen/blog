@@ -8,7 +8,7 @@ link:
 comments: true
 ---
 
-Connascence is a software metric for measuring the impact of coupling in your code base.
+Connascence is a software metric for measuring the impact of [coupling](https://en.wikipedia.org/wiki/Coupling_(computer_programming)) in your code base.
 The rules and language it provides allow you to make more informed decisions about how to structure or refactor your code.
 Two components are considered connascent if a change to one would require a change to the other.
 The stronger the connascence between two components, the more change is required.
