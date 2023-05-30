@@ -2,7 +2,7 @@
 layout: post
 title: Understanding Connascence
 description: 
-date: 2023-05-26
+date: 2023-05-30
 tags: programming code-quality
 link: 
 comments: true
