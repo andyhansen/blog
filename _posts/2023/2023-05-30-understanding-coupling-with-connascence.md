@@ -160,7 +160,7 @@ If you had entities putting messages onto a queue and an entity processing those
 
 #### Managing Connascence of Identity
 
-[Singleton pattern](https://en.wikipedia.org/wiki/Singleton_pattern) can be used to avoid connascence of identity, because it ensures there will only be one instance of a given entity. This guarenttees that the referenced instances will match, but does prevent you from having more than one instance.
+[Singleton pattern](https://en.wikipedia.org/wiki/Singleton_pattern) can be used to avoid connascence of identity, because it ensures there will only be one instance of a given entity. This guarantees that the referenced instances will match, but does prevent you from having more than one instance.
 
 ## Resources
 
