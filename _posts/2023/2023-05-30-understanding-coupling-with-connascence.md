@@ -142,9 +142,9 @@ This is a major problem when you want to create a transaction over distributed s
 
 #### Managing Connascence of Value
 
-Transactions over multiple distributed services are a pain, so it's best to avoid them as much as possible. If this is happening often within your system, it could be an indication that the responsiblities of these systems need to be adjusted.
+Transactions over multiple distributed services are a pain, so it’s best to avoid them as much as possible. If this is happening often within your system, it could be an indication that the responsibilities of these systems need to be adjusted.
 
-However, there are often times that there is no way of avoiding a distributed transaction. In those cases there are a few ways methods I've used to mitigate it these types of issues.
+However, there are often times that there is no way of avoiding a distributed transaction. In those cases there are a few methods I’ve used to mitigate these types of issues.
 
 Queues can be used if you don't mind eventual consistency. Having a [dead letter queue](https://en.wikipedia.org/wiki/Dead_letter_queue) to catch the messages that fail to process successfully will allow you to ensure that no message is left unprocessed.
 
@@ -154,7 +154,7 @@ When interacting with remote services, perform the actions that are most likely 
 
 ### Connascence of Identity
 
-When multiple components must reference the same instance of an entity. Imagine seperate entities thinking that they were working with the same instance of an object, when in reality they had different copies.
+When multiple components must reference the same instance of an entity. Imagine separate entities thinking that they were working with the same instance of an object, when in reality they had different copies.
 
 If you had entities putting messages onto a queue and an entity processing those messages, you would run into issues if they weren't referencing the queues that they thought they were.
 
