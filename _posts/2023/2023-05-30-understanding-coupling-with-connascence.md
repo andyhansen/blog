@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Managing Coupling with Connascence
+title: Understanding Coupling with Connascence
 description: 
 date: 2023-05-30
 tags: programming code-quality
