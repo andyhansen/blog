@@ -25,7 +25,7 @@ It's an honour be exihibiting at Black Coffee, a cornerstone of Newtown through 
 
 ## Sample
 
-Below are a selection of photos from the exhibition.
+Click on an image to give it a closer look.
 
 {%
   include framed-image.html
