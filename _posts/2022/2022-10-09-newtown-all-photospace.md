@@ -1,13 +1,11 @@
 ---
 layout: post
 title: Newtown All
-description: 
+description: Exhibitied at Photospace Gallery
 date: 2022-10-09
 tags: photography
 comments: true
 ---
-
-## Newtown All
 
 I was lucky enough to be in a small group photographic exhibition as part of [Photocourse 3](http://www.photocoursenz.com/courses.html) with [Photospace Gallery](http://www.photospacegallery.com/).
 
@@ -25,7 +23,7 @@ The following is the blurb for my contribution to the exhibition.
 
 ## A Sample
 
-I thought it would be nice to write about some of the photos in the series. Since this is just for my blog I'll include a few of my favourite B-Sides. I'll let you decide which those are.
+Since this is just for my blog I'll include a few of my favourite B-Sides. I'll let you decide which those are.
 
 Click on a photo to get a closer look.
 
@@ -89,7 +87,7 @@ Click on a photo to get a closer look.
 
 {%
   include framed-image.html
-  title="A New Purpose"
-  src="newtown-all/a-new-purpose.jpg"
+  title="Framed"
+  src="newtown-all/framed.jpg"
   alt="A flower sits in the middle of an empty street sign."
 %}

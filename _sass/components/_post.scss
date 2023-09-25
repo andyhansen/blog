@@ -82,11 +82,11 @@ main {
     }
 
     .framed {
-      padding: 30px;
+      padding: 20px;
       background-color: var(--color-white);
 
       @media screen and (max-width: $breakpoint-mobile) {
-        padding: 15px;
+        padding: 10px;
       }
     }
   }
