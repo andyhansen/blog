@@ -7,7 +7,7 @@ tags: photography
 comments: true
 ---
 
-It's an honour be exihibiting at Black Coffee, a cornerstone of Newtown through it's ebbs and flows.
+It's an honour to be exihibiting at Black Coffee, a cornerstone of Newtown through it's ebbs and flows.
 
 >Newtown All is an attempt to observe the ways we shape the world around us, and how small anonymous actions can impact others’ experience within a space.
 >
