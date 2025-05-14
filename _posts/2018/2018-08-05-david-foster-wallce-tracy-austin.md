@@ -5,6 +5,7 @@ description: "David Foster Wallace taught me about emotive language"
 date: 2018-08-05
 tags: discoveries
 comments: true
+published: false
 link: https://www.scribd.com/doc/134106158/How-Tracy-Austin-Broke-My-Heart-David-Foster-Wallace
 ---
 
