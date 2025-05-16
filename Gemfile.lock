@@ -195,7 +195,6 @@ DEPENDENCIES
   jekyll (~> 4.0)
   jekyll-sitemap
   pry
-  rake
   webrick (~> 1.7)
 
 BUNDLED WITH
