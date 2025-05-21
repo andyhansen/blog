@@ -43,7 +43,7 @@ There are dozens of lists of coaching questions out there, so if these don’t c
 
 ## Explicit coaching
 
-Coaching can be weaved quite naturally into most conversations, but at times it makes sense to do it explicitly. If you want to try it out with someone it makes sense to ask a few questions before and after to make sure that you stay on track, and that you got the person where they wanted to go.
+Coaching can be weaved quite naturally into most conversations, but at times it makes sense to do it explicitly. If you want to try it out with someone it can help to ask a few questions before and after to make sure that you stay on track, and that you got the person where they wanted to go.
 
 Questions you could ask before a coaching conversation
 
