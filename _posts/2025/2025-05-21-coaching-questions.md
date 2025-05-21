@@ -34,12 +34,15 @@ Listening is the most important skill. Where you are fully present with the inte
 
 There are dozens of lists of coaching questions out there, so if these don’t cover what you are looking for then feel free to dig around a bit more. However, having a small list on your mind when you are starting out helps you from getting overwhelmed with too many options. Find the ones that work for you and make a shortlist for yourself somewhere that’s easy to reference.
 
-- **How are you?** Open the conversation without making it too specific to what you have in mind.
-- **Can you tell me more about that?**
-- **Can you tell me more about ‘x’?** Can be more helpful if there are specific details you’d like to dig into. Pair with this paraphrasing for best results.
-- **What do you think is stopping ‘x’ from happening?** Understand their version of the things getting in their way.
-- **What have you tried so far?** Understand what they’ve tried before making suggestions. They may have already tried what you were going to suggest.
-- **How can I support you?** Offer your support without giving too much direction.
+**How are you?** Open the conversation without making it too specific to what you have in mind.
+
+**Can you tell me more about that? / Can you tell me more about ‘x’?** Can be more helpful if there are specific details you’d like to dig into. Pair with this paraphrasing for best results.
+
+**What do you think is stopping ‘x’ from happening?** Understand their version of the things getting in their way.
+
+**What have you tried so far?** Understand what they’ve tried before making suggestions. They may have already tried what you were going to suggest.
+
+**How can I support you?** Offer your support without giving too much direction.
 
 ## Explicit coaching
 
