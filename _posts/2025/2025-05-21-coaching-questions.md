@@ -32,7 +32,7 @@ Listening is the most important skill. Where you are fully present with the inte
 
 ## Coaching questions
 
-There are dozens of lists of coaching questions out there, so if these don’t cover what you are looking for then feel free to dig around a bit more. However, having a small list on your mind when you are starting out helps you from getting overwhelmed with too many options. Find the ones that work for you and make a shortlist for yourself somewhere that’s easy to reference.
+There are dozens of lists of coaching questions out there, so if these don’t cover what you are looking for then feel free to dig around a bit more. However, having a small list on your mind when starting out helps to avoid getting overwhelmed with too many options. Find the ones that work for you and make a shortlist for yourself somewhere that’s easy to reference.
 
 **How are you?** Open the conversation without making it too specific to what you have in mind.
 
