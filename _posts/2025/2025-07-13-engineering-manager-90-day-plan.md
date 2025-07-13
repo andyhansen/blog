@@ -62,4 +62,4 @@ This is not something I’ve been able to put into practice at a new company yet
 
 If I’m lucky I’ll be able to put this all into action at some point and write a follow up post!
 
-My email is on my [About](../../_pages/about.md) page. I’d love feedback on anything you’ve seen here.
+My email is on my [About](/about/) page. I’d love feedback on anything you’ve seen here.
