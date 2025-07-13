@@ -31,6 +31,8 @@ Now that we've covered the “why”, I'll talk a bit about the “how”.
 
 **Build an understanding of how personal performance is measured.** The people I'm leading deserve to have a leader that cares about them and their growth. Each company measures this a little differently, and values slightly different skill sets. By understanding the way that the company measures people it will make sure that when I'm making suggestions for people's goals, that I'm able to focus on the goals that will help them the most in this particular business.
 
+**Build an understanding of how team performance is measured.** Identifying the automated and manual ways that a teams performance is measured. At Flick we use [Multitudes](https://www.multitudes.com/) which has been a great way to automate some of the measurement of teams. We use these tools to help teams understand their own performance, rather than reporting up, but I'm sure different organisations will want different levels of oversight.
+
 **Socialise!** I've made many close friends over the years at workplaces. I love to meet new people and learn what makes them tick. What hobbies do they have? What travel do they have planned? What's their background? Assuming there are company parties / mixers of some kind, I'd be making sure to go to those so that I can meet the people outside of my immediate bubble. Having existing relationships with people all over the business can make everything a bit smoother when you end up collaborating with them, or if there is some degree of conflict to manage in the future.
 
 ## Month 2: Support, tweak, and share
