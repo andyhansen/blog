@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Engineering Manager 90 day plan
-date: 2025-05-21
+date: 2025-07-13
 tags: engineering-management leadership
 comments: true
 ---
