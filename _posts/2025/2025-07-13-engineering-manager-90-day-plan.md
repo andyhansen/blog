@@ -61,6 +61,6 @@ At this stage I will likely have my hands full. Realistically, I'll still be wor
 
 This is not something I've been able to put into practice at a new company yet, but I'm confident that it's flexible enough to pivot into whatever else is needed of me. I believe that all of these are useful things to do at some point, but the rate at which I end up doing them will depend on what's important to the company when I join.
 
-If I'm lucky I'll be able to put this all into action at some point and write a follow up post!
+If I'm lucky I'll be able to put this all into action at some point and write a follow up post! Even if I completely fall on my face, I'm sure I'll come out of it with a bunch of lessons that will be worth growing through.
 
 My email is on my [About](/about/) page. I'd love feedback on anything you've seen here.
