@@ -10,6 +10,19 @@ As part of an interview process I was asked to put together the rough shape of w
 
 I will say that I haven't changed jobs in almost 8 years(!), so what I've got here is framed deeply within my experience in one company. Though the company changed massively over those years, and I'd like to think that there are plenty of transferable lessons for me to put into place elsewhere.
 
+## What I'm generally looking out for
+
+* **Psychological safety.** Who isn't comfortable sharing their opinion? What might be stopping them from doing so?
+* **Motivation.** Who is struggling to feel motivated? What's missing for them to feel motivated?
+* **Developer time.** Are there any specific bugs or process sticking points that are taking up more developer time than they should? What can we change to give them more time to focus on features?
+* **Burnout.** Is anyone at risk of burnout? What can we adjust to make their workload more manageable?
+* **Engagement.** Is anyone disengaged from the team? What's stopping them from engaging with others? Are people avoiding responsibility, and putting more pressure on other members of the team?
+* **Delivery.** Are teams getting stuck as they try to deliver? Is there something I can do to smooth out the bumps and have them more consistent?
+* **Fun.** Are people having fun? Is there anything I can do that can make people excited to come to work, and to build relationships within the business?
+* **Tension.** Are their people who are struggling to get on with each other? What's the history behind it, and are we able to move forward together?
+* **Dependence.** Are we depending on a handful of people for some specific tasks? Are there ways we can share that workload? Are there any knowledge silos?
+* **Gatekeeping.** Is there anyone overly protective of their "turf"? What can we do to ensure that everyone has a chance to take some ownership every now and then?
+
 ## Month 1: Understand people and build relationships
 
 I've seen a lot of leaders come into businesses and attempt to change things quite quickly. When wide reaching change is needed, this can be great, but it can also make it harder for that change to be successful. I believe there are two reasons for this. One is that they likely don't understand the context of the organisation yet. Similar to tech debt, things can look strange until you understand why they've come to look the way they do. The other is that for change to be successful, you need to have buy-in, to have buy-in you need to clearly explain the “why”, and to clearly explain the “why”, you need to have a solid understanding of why the existing processes aren't working.
